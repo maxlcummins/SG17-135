@@ -5,7 +5,7 @@ DOI: **To be added post publication**
 
 Please see the scripts above for the generation of specific Figures. Note that the grey bars on Figures 2 and 4 were added manually using photoshop.
 
-##Contents
+## Contents
 
 |Filename|File Contents|
 |--------|------|
