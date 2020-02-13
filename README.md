@@ -25,7 +25,9 @@ Please see the scripts above for the generation of specific Figures. Note that t
 
 
 
-
+<p align="center">
+  <img width="460" height="300" src="https://raw.githubusercontent.com/maxlcummins/SG17-135/master/majestic_gull_dot_jpeg.png">
+</p>
 
 
 
