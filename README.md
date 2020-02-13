@@ -16,7 +16,7 @@ Please see the scripts above for the generation of specific Figures. Note that t
 |SG17-135.clean.fullcore.tree|A SNP tree used in the generation of Figures 2 and 4|
 
 
-![Majestic Seagull dot jpeg] (https://raw.githubusercontent.com/maxlcummins/Romanian-mcr-1-Escherichia-coli/master/SG17-135/majestic_seagull_dot_jpeg.png)
+![Majestic Seagull dot jpeg](https://raw.githubusercontent.com/maxlcummins/SG17-135/master/majestic_gull_dot_jpeg.png)
 
 
 
