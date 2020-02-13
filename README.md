@@ -15,8 +15,9 @@ Please see the scripts above for the generation of specific Figures. Note that t
 |Random_Subset_IncX.R| A script used to identify a random subset of 10 IncX *repA* gene positive strains from HC5-4181 to be analysed using BRIG|
 |SG17-135.clean.fullcore.tree|A SNP tree used in the generation of Figures 2 and 4|
 
-```
 
+## R Session info
+```
 R version 3.6.0 (2019-04-26)
 Platform: x86_64-apple-darwin15.6.0 (64-bit)
 Running under: macOS Mojave 10.14.6
