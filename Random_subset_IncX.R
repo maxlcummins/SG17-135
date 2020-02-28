@@ -23,6 +23,8 @@ df <- read_delim("abricate_HC5-4181.txt",
 #Remove cases where there are multiple headers from concatenation of abricate reports
 df <- df %>% filter(X2 != "SEQUENCE")
 
+df <- df %>% filter(X2 != "SAL_BA7906AA_AS.scaffold.fasta" & X2 != "SAL_CA4730AA_AS.scaffold.fasta")
+
 #Colname reassignment
 colnames(df) <- df_colnames
 
@@ -57,13 +59,27 @@ colSums(df3) -> sums
 #reassign Colnames to include the number the format "gene_A 50% (n=41/82)"
 colnames(df3) <- paste0(colnames(df3), " ", sums, "/", nrow(df3), " (", round(sums/nrow(df3)*100), "%)")
 
-IncX <- df3[df3$`IncX1_1 76/82 (93%)` == 1,] 
+#Change column names to more widely used versions
+colnames(df3) <- gsub("APH\\(3''\\)-Ib","strA",colnames(df3))
+colnames(df3) <- gsub("APH\\(6\\)-Id","strB",colnames(df3))
+colnames(df3) <- gsub("Qnrs1","qnrs1",colnames(df3))
+colnames(df3) <- gsub("TEM-1","blaTEM-1",colnames(df3))
+colnames(df3) <- gsub("^CMY","blaCMY",colnames(df3))
+colnames(df3) <- gsub("^CTX","blaCTX",colnames(df3))
+
+df3$Assembly_barcode <- rownames(df3)
+
+df3 <- df3 %>% select(Assembly_barcode, everything())
+
+write.table(df3, "Supplementary Table 2.txt", sep = "\t", row.names = FALSE)
+
+IncX <- df3[df3$`IncX1_1 74/80 (92%)` == 1,] 
 
 IncX_names <- rownames(IncX)
 
 set.seed(1)
 
-base::sample(IncX_names, size = 10) %>% sort()
+test3 <- base::sample(IncX_names, size = 10) %>% sort()
 
 
 

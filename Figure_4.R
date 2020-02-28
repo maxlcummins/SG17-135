@@ -53,6 +53,16 @@ df3 <- df3[,2:ncol(df3)]
 #Change multiple hits to a binary hit (gene considered present or absent, regardless of copy number)
 df3[df3 > 1] <- 1
 
+#Change column names to more widely used versions
+colnames(df3) <- gsub("APH\\(3''\\)-Ib","strA",colnames(df3))
+colnames(df3) <- gsub("APH\\(6\\)-Id","strB",colnames(df3))
+colnames(df3) <- gsub("Qnrs1","qnrs1",colnames(df3))
+colnames(df3) <- gsub("TEM-1","blaTEM-1",colnames(df3))
+colnames(df3) <- gsub("^CMY","blaCMY",colnames(df3))
+colnames(df3) <- gsub("^CTX","blaCTX",colnames(df3))
+
+df3 <- df3[,sort(colnames(df3))]
+
 #Sum the number of hits per gene
 colSums(df3) -> sums
 
