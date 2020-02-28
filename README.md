@@ -19,13 +19,16 @@ Please see the scripts above for the generation of specific Figures. Note that t
 
 
 
+
+
+
 ## Majestic Seagull
 
-![Majestic Seagull dot jpeg](https://raw.githubusercontent.com/maxlcummins/SG17-135/master/majestic_gull_dot_jpeg.png)
 
 
-
-
+<p align="center">
+  <img width="600" height="600" src="https://raw.githubusercontent.com/maxlcummins/SG17-135/master/majestic_gull_dot_jpeg.png">
+</p>
 
 
 
