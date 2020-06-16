@@ -74,7 +74,7 @@ colSums(df3) -> sums
 colnames(df3) <- paste0(colnames(df3), " ", sums, "/", nrow(df3), " (", round(sums/nrow(df3)*100), "%)")
 
 #Read in the tree file
-tree <- read.tree(file = "analysis/snp_outputs/fasttree/SG17-135.clean.fullcore.tree")
+tree <- read.tree(file = "analysis/snp_outputs/SG17-135.clean.fullcore.tree")
 
 #trim the names of the assemblies in the tree tip labels
 tree$tip.label <- gsub("\\..*","",tree$tip.label)
@@ -100,10 +100,10 @@ rownames(df4) <- rownames(df3)
 df4[df4 == 0] <- "N"
 
 #Read in metadata
-Metadata <- read_delim("S.agona-3-6-20.txt", 
+Metadata <- read_delim("Metadata/S.agona-3-6-20.txt", 
                              "\t", escape_double = FALSE, trim_ws = TRUE)
 
-cgMLST <- read_delim("cgMLST.txt", 
+cgMLST <- read_delim("Metadata/cgMLST.txt", 
            "\t", escape_double = FALSE, trim_ws = TRUE)
 
 cgMLST <- cgMLST %>% select(Uberstrain, starts_with("HC"))
