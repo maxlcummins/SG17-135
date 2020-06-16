@@ -1,0 +1,1810 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 36
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	fasttree
+	1	gubbins
+	1	snippy_clean
+	1	snippy_core
+	1	snp_dists
+	1	snp_sites
+	7
+
+[Tue Jun 16 08:56:32 2020]
+rule snippy_core:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/core/SG17-135.full.aln
+    jobid: 205
+    wildcards: output_prefix=Agona_200, reference=SG17-135
+    threads: 32
+
+
+        snippy-core --prefix /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/core/SG17-135 --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/*.out
+        
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+This is snippy-core 4.4.3
+Obtained from http://github.com/tseemann/snippy
+Enabling bundled tools.
+Found any2fasta - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/binaries/noarch/any2fasta
+Found samtools - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/samtools
+Found minimap2 - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/minimap2
+Found bedtools - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/bedtools
+Found snp-sites - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snp-sites
+Saving reference FASTA: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/core/SG17-135.ref.fa
+This is any2fasta 0.4.2
+Opening '/home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa'
+Detected FASTA format
+Read 64410 lines from '/home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa'
+Wrote 3 sequences from FASTA file.
+Processed 1 files.
+Done.
+Loaded 3 sequences totalling 5152410 bp.
+Will mask 0 regions totalling 0 bp ~ 0.00%
+0	SAL_AB5642AA_AS.out	snp=182	del=42	ins=8	het=0	unaligned=445626
+1	SAL_AB5674AA_AS.out	snp=942	del=14	ins=50	het=0	unaligned=500594
+2	SAL_AB5906AA_AS.out	snp=215	del=25	ins=8	het=0	unaligned=478900
+3	SAL_AB5909AA_AS.out	snp=115	del=24	ins=5	het=0	unaligned=485170
+4	SAL_AB6160AA_AS.out	snp=130	del=3	ins=5	het=0	unaligned=440603
+5	SAL_AB7534AA_AS.out	snp=13	del=1	ins=1	het=68	unaligned=425297
+6	SAL_AB7542AA_AS.out	snp=25	del=10	ins=8	het=0	unaligned=435908
+7	SAL_AB7588AA_AS.out	snp=357	del=20	ins=40	het=216	unaligned=452649
+8	SAL_AB7634AA_AS.out	snp=12	del=10	ins=7	het=0	unaligned=443024
+9	SAL_AB8884AA_AS.out	snp=60	del=10	ins=17	het=0	unaligned=433934
+10	SAL_AB9321AA_AS.out	snp=357	del=19	ins=25	het=224	unaligned=454860
+11	SAL_BA5105AA_AS.out	snp=1835	del=49	ins=47	het=0	unaligned=501233
+12	SAL_BA7932AA_AS.out	snp=22	del=2	ins=4	het=0	unaligned=439729
+13	SAL_BA7945AA_AS.out	snp=2136	del=23	ins=56	het=0	unaligned=482931
+14	SAL_BA8052AA_AS.out	snp=15	del=1	ins=1	het=0	unaligned=433098
+15	SAL_BB0648AA_AS.out	snp=382	del=27	ins=60	het=430	unaligned=487563
+16	SAL_BB1066AA_AS.out	snp=68	del=1	ins=9	het=0	unaligned=492941
+17	SAL_BB1353AA_AS.out	snp=10286	del=277	ins=191	het=2327	unaligned=499905
+18	SAL_BB1371AA_AS.out	snp=384	del=27	ins=53	het=432	unaligned=477178
+19	SAL_BB1424AA_AS.out	snp=18	del=2	ins=1	het=0	unaligned=462047
+20	SAL_BB1915AA_AS.out	snp=19	del=1	ins=0	het=0	unaligned=471321
+21	SAL_BB1956AA_AS.out	snp=24	del=7	ins=7	het=0	unaligned=429822
+22	SAL_BB2131AA_AS.out	snp=22	del=10	ins=2	het=0	unaligned=457273
+23	SAL_BB2593AA_AS.out	snp=2238	del=68	ins=57	het=151	unaligned=477954
+24	SAL_BB2899AA_AS.out	snp=15	del=1	ins=0	het=0	unaligned=473454
+25	SAL_BB2967AA_AS.out	snp=49	del=8	ins=1	het=0	unaligned=429507
+26	SAL_BB2970AA_AS.out	snp=12	del=3	ins=2	het=0	unaligned=454351
+27	SAL_BB3127AA_AS.out	snp=17	del=1	ins=1	het=0	unaligned=431185
+28	SAL_BB4431AA_AS.out	snp=16	del=1	ins=0	het=0	unaligned=447855
+29	SAL_BB4524AA_AS.out	snp=17	del=7	ins=1	het=0	unaligned=429092
+30	SAL_BB4921AA_AS.out	snp=2171	del=41	ins=68	het=0	unaligned=470442
+31	SAL_BB4937AA_AS.out	snp=26	del=1	ins=1	het=0	unaligned=450484
+32	SAL_BB5050AA_AS.out	snp=25	del=1	ins=1	het=0	unaligned=450435
+33	SAL_BB5062AA_AS.out	snp=55	del=3	ins=4	het=0	unaligned=450035
+34	SAL_BB6441AA_AS.out	snp=145	del=15	ins=5	het=0	unaligned=419421
+35	SAL_BB6687AA_AS.out	snp=91	del=2	ins=13	het=0	unaligned=491312
+36	SAL_BB7027AA_AS.out	snp=20	del=1	ins=1	het=0	unaligned=433286
+37	SAL_BB7197AA_AS.out	snp=22	del=1	ins=1	het=0	unaligned=428581
+38	SAL_BB7261AA_AS.out	snp=17	del=1	ins=1	het=1	unaligned=430804
+39	SAL_BB7947AA_AS.out	snp=183	del=6	ins=5	het=1	unaligned=439268
+40	SAL_BB8135AA_AS.out	snp=21	del=1	ins=1	het=0	unaligned=428995
+41	SAL_BB8331AA_AS.out	snp=2887	del=23	ins=54	het=1	unaligned=510146
+42	SAL_BB9086AA_AS.out	snp=17	del=1	ins=13	het=236	unaligned=436116
+43	SAL_BB9562AA_AS.out	snp=19	del=2	ins=2	het=0	unaligned=428737
+44	SAL_BB9821AA_AS.out	snp=9225	del=242	ins=128	het=6750	unaligned=493744
+45	SAL_BB9988AA_AS.out	snp=41	del=2	ins=1	het=0	unaligned=433129
+46	SAL_CA4728AA_AS.out	snp=112	del=9	ins=9	het=1	unaligned=492607
+47	SAL_CA4744AA_AS.out	snp=2141	del=21	ins=57	het=0	unaligned=477717
+48	SAL_CA4803AA_AS.out	snp=2156	del=20	ins=54	het=0	unaligned=492612
+49	SAL_CB0053AA_AS.out	snp=25	del=1	ins=4	het=0	unaligned=439538
+50	SAL_CB0088AA_AS.out	snp=25	del=1	ins=0	het=0	unaligned=453288
+51	SAL_CB0612AA_AS.out	snp=2954	del=87	ins=52	het=6054	unaligned=489908
+52	SAL_CB1153AA_AS.out	snp=361	del=21	ins=40	het=216	unaligned=452235
+53	SAL_CB1324AA_AS.out	snp=14	del=3	ins=2	het=0	unaligned=448816
+54	SAL_CB1790AA_AS.out	snp=28	del=1	ins=4	het=0	unaligned=429741
+55	SAL_CB2372AA_AS.out	snp=14	del=1	ins=1	het=1	unaligned=431433
+56	SAL_CB2598AA_AS.out	snp=23	del=67	ins=3	het=0	unaligned=450203
+57	SAL_CB2669AA_AS.out	snp=13	del=11	ins=1	het=0	unaligned=432606
+58	SAL_CB3409AA_AS.out	snp=105	del=82	ins=9	het=0	unaligned=489134
+59	SAL_CB3497AA_AS.out	snp=98	del=2	ins=2	het=0	unaligned=437109
+60	SAL_CB5243AA_AS.out	snp=16	del=3	ins=3	het=0	unaligned=447151
+61	SAL_CB5376AA_AS.out	snp=23	del=10	ins=1	het=0	unaligned=475461
+62	SAL_CB5379AA_AS.out	snp=9	del=23	ins=1	het=0	unaligned=432804
+63	SAL_CB5468AA_AS.out	snp=24	del=11	ins=1	het=0	unaligned=428976
+64	SAL_CB6250AA_AS.out	snp=103	del=34	ins=3	het=0	unaligned=489069
+65	SAL_CB9243AA_AS.out	snp=23	del=10	ins=1	het=0	unaligned=433761
+66	SAL_CB9389AA_AS.out	snp=25	del=1	ins=1	het=0	unaligned=452454
+67	SAL_CB9820AA_AS.out	snp=20	del=1	ins=1	het=0	unaligned=454161
+68	SAL_CB9822AA_AS.out	snp=15	del=1	ins=1	het=0	unaligned=436302
+69	SAL_CB9835AA_AS.out	snp=584	del=86	ins=17	het=0	unaligned=474879
+70	SAL_CB9988AA_AS.out	snp=653	del=18	ins=26	het=0	unaligned=468036
+71	SAL_DB1444AA_AS.out	snp=136	del=14	ins=5	het=26	unaligned=495052
+72	SAL_EA3229AA_AS.out	snp=2165	del=22	ins=58	het=0	unaligned=476726
+73	SAL_EB1026AA_AS.out	snp=10	del=1	ins=17	het=0	unaligned=433054
+74	SAL_EB1045AA_AS.out	snp=414	del=24	ins=26	het=236	unaligned=451693
+75	SAL_EB2895AA_AS.out	snp=35	del=1	ins=1	het=0	unaligned=430989
+76	SAL_EB4083AA_AS.out	snp=106	del=34	ins=3	het=1	unaligned=489128
+77	SAL_EB4088AA_AS.out	snp=17	del=1	ins=13	het=0	unaligned=435647
+78	SAL_EB5876AA_AS.out	snp=2183	del=14	ins=58	het=0	unaligned=494656
+79	SAL_EB6812AA_AS.out	snp=20	del=6	ins=2	het=0	unaligned=436001
+80	SAL_EB8845AA_AS.out	snp=20	del=1	ins=1	het=1	unaligned=424985
+81	SAL_FA1940AA_AS.out	snp=2127	del=29	ins=55	het=22	unaligned=483830
+82	SAL_FA2493AA_AS.out	snp=258	del=12	ins=22	het=12	unaligned=462145
+83	SAL_FA5706AA_AS.out	snp=2036	del=28	ins=53	het=7	unaligned=472577
+84	SAL_FB5769AA_AS.out	snp=14	del=3	ins=2	het=0	unaligned=446572
+85	SAL_FB7879AA_AS.out	snp=2624	del=27	ins=52	het=169	unaligned=459870
+86	SAL_FB8051AA_AS.out	snp=20	del=10	ins=1	het=0	unaligned=529916
+87	SAL_GB0225AA_AS.out	snp=16	del=6	ins=2	het=0	unaligned=437578
+88	SAL_GB5373AA_AS.out	snp=905	del=26	ins=28	het=0	unaligned=493837
+89	SAL_HB2219AA_AS.out	snp=14	del=1	ins=7	het=0	unaligned=430476
+90	SAL_HB2224AA_AS.out	snp=21	del=10	ins=1	het=0	unaligned=424955
+91	SAL_HB2237AA_AS.out	snp=902	del=26	ins=27	het=0	unaligned=492551
+92	SAL_HB5660AA_AS.out	snp=113	del=24	ins=13	het=0	unaligned=485694
+93	SAL_HB6699AA_AS.out	snp=64	del=10	ins=4	het=4	unaligned=457150
+94	SAL_IA5065AA_AS.out	snp=2199	del=22	ins=57	het=0	unaligned=494061
+95	SAL_IB1406AA_AS.out	snp=33	del=10	ins=1	het=0	unaligned=450789
+96	SAL_IB2995AA_AS.out	snp=9210	del=194	ins=120	het=5212	unaligned=450115
+97	SAL_IB3115AA_AS.out	snp=1852	del=120	ins=49	het=0	unaligned=497586
+98	SAL_IB6779AA_AS.out	snp=2287	del=56	ins=61	het=0	unaligned=498247
+99	SAL_IB6801AA_AS.out	snp=41	del=1	ins=1	het=0	unaligned=431592
+100	SAL_IB7540AA_AS.out	snp=400	del=22	ins=26	het=224	unaligned=452028
+101	SAL_IB7996AA_AS.out	snp=18	del=1	ins=1	het=0	unaligned=428956
+102	SAL_IB9118AA_AS.out	snp=184	del=19	ins=12	het=4	unaligned=468420
+103	SAL_IB9302AA_AS.out	snp=25	del=7	ins=0	het=0	unaligned=460664
+104	SAL_JA4169AA_AS.out	snp=28	del=1	ins=15	het=0	unaligned=449094
+105	SAL_JB0953AA_AS.out	snp=1990	del=13	ins=45	het=78	unaligned=498634
+106	SAL_JB1150AA_AS.out	snp=4326	del=90	ins=107	het=53	unaligned=511625
+107	SAL_JB4414AA_AS.out	snp=129	del=3	ins=5	het=0	unaligned=436417
+108	SAL_JB5195AA_AS.out	snp=118	del=42	ins=2	het=0	unaligned=643923
+109	SAL_JB5221AA_AS.out	snp=64	del=6	ins=2	het=0	unaligned=496464
+110	SAL_JB6580AA_AS.out	snp=13	del=10	ins=1	het=0	unaligned=445733
+111	SAL_JB9521AA_AS.out	snp=71	del=5	ins=2	het=0	unaligned=452706
+112	SAL_JB9710AA_AS.out	snp=409	del=22	ins=40	het=198	unaligned=448903
+113	SAL_KA0676AA_AS.out	snp=11	del=1	ins=1	het=0	unaligned=456413
+114	SAL_KA0984AA_AS.out	snp=317	del=7	ins=3	het=41	unaligned=468314
+115	SAL_KA1119AA_AS.out	snp=16	del=1	ins=0	het=0	unaligned=433355
+116	SAL_KA4888AA_AS.out	snp=33	del=20	ins=3	het=0	unaligned=418336
+117	SAL_KA5244AA_AS.out	snp=6	del=10	ins=7	het=4	unaligned=424842
+118	SAL_KA8881AA_AS.out	snp=986	del=33	ins=38	het=374	unaligned=451257
+119	SAL_KB1136AA_AS.out	snp=2150	del=30	ins=56	het=0	unaligned=485693
+120	SAL_KB1789AA_AS.out	snp=2892	del=23	ins=54	het=1	unaligned=510985
+121	SAL_KB1826AA_AS.out	snp=550	del=61	ins=16	het=0	unaligned=477081
+122	SAL_KB2744AA_AS.out	snp=19	del=1	ins=7	het=0	unaligned=428444
+123	SAL_KB3375AA_AS.out	snp=954	del=18	ins=29	het=0	unaligned=493014
+124	SAL_KB3640AA_AS.out	snp=130	del=116	ins=8	het=0	unaligned=505200
+125	SAL_KB4026AA_AS.out	snp=115	del=23	ins=10	het=24	unaligned=460680
+126	SAL_KB4651AA_AS.out	snp=7355	del=124	ins=177	het=2	unaligned=533508
+127	SAL_KB6210AA_AS.out	snp=20	del=2	ins=2	het=0	unaligned=429806
+128	SAL_KB6734AA_AS.out	snp=99	del=11	ins=2	het=0	unaligned=495549
+129	SAL_KB6773AA_AS.out	snp=271	del=22	ins=46	het=654	unaligned=490736
+130	SAL_KB6830AA_AS.out	snp=1989	del=18	ins=64	het=11	unaligned=489822
+131	SAL_KB8607AA_AS.out	snp=1832	del=42	ins=48	het=0	unaligned=497994
+132	SAL_KB8676AA_AS.out	snp=431	del=35	ins=34	het=40	unaligned=473490
+133	SAL_KB9523AA_AS.out	snp=147	del=20	ins=35	het=8	unaligned=494063
+134	SAL_LA4572AA_AS.out	snp=127	del=9	ins=9	het=0	unaligned=486794
+135	SAL_LA7782AA_AS.out	snp=2287	del=29	ins=64	het=9	unaligned=473932
+136	SAL_LA7787AA_AS.out	snp=2321	del=27	ins=54	het=69	unaligned=472179
+137	SAL_LB4034AA_AS.out	snp=1883	del=21	ins=48	het=0	unaligned=516596
+138	SAL_LB7623AA_AS.out	snp=2377	del=23	ins=53	het=97	unaligned=490553
+139	SAL_LB8076AA_AS.out	snp=497	del=35	ins=16	het=0	unaligned=451936
+140	SAL_MA3067AA_AS.out	snp=492	del=2	ins=13	het=0	unaligned=464486
+141	SAL_MB2521AA_AS.out	snp=303	del=39	ins=17	het=0	unaligned=451368
+142	SAL_MB5439AA_AS.out	snp=1997	del=19	ins=65	het=0	unaligned=488147
+143	SAL_MB7066AA_AS.out	snp=412	del=24	ins=27	het=199	unaligned=452079
+144	SAL_MB7965AA_AS.out	snp=18	del=1	ins=6	het=0	unaligned=452272
+145	SAL_NA2865AA_AS.out	snp=11	del=1	ins=1	het=0	unaligned=442577
+146	SAL_NA5728AA_AS.out	snp=2004	del=26	ins=51	het=6	unaligned=529226
+147	SAL_NA8627AA_AS.out	snp=377	del=27	ins=58	het=431	unaligned=477464
+148	SAL_NB4129AA_AS.out	snp=2030	del=20	ins=57	het=0	unaligned=483720
+149	SAL_NB6620AA_AS.out	snp=15	del=10	ins=1	het=0	unaligned=432044
+150	SAL_OA4067AA_AS.out	snp=16	del=1	ins=2	het=0	unaligned=423923
+151	SAL_OA4072AA_AS.out	snp=16	del=1	ins=2	het=1	unaligned=425979
+152	SAL_OB6949AA_AS.out	snp=1868	del=19	ins=49	het=0	unaligned=498972
+153	SAL_PA3767AA_AS.out	snp=2014	del=26	ins=48	het=0	unaligned=489942
+154	SAL_PB5476AA_AS.out	snp=393	del=23	ins=42	het=150	unaligned=450870
+155	SAL_PB8418AA_AS.out	snp=1982	del=20	ins=47	het=1	unaligned=495015
+156	SAL_QA4878AA_AS.out	snp=539	del=35	ins=58	het=441	unaligned=466771
+157	SAL_QA5436AA_AS.out	snp=901	del=28	ins=46	het=364	unaligned=455616
+158	SAL_RA1578AA_AS.out	snp=16	del=10	ins=1	het=0	unaligned=424169
+159	SAL_RA1599AA_AS.out	snp=15	del=10	ins=1	het=0	unaligned=425795
+160	SAL_SA1324AA_AS.out	snp=23	del=10	ins=1	het=224	unaligned=425866
+161	SAL_SA1344AA_AS.out	snp=9	del=10	ins=1	het=0	unaligned=423686
+162	SAL_SA2453AA_AS.out	snp=1997	del=20	ins=48	het=0	unaligned=490787
+163	SAL_SA9173AA_AS.out	snp=104	del=34	ins=3	het=0	unaligned=490802
+164	SAL_SA9246AA_AS.out	snp=18	del=1	ins=13	het=0	unaligned=435538
+165	SAL_SA9330AA_AS.out	snp=106	del=51	ins=2	het=0	unaligned=549158
+166	SAL_TA1544AA_AS.out	snp=399	del=21	ins=41	het=228	unaligned=455204
+167	SAL_TA1967AA_AS.out	snp=98	del=34	ins=18	het=0	unaligned=530657
+168	SAL_TA2587AA_AS.out	snp=959	del=27	ins=38	het=380	unaligned=455206
+169	SAL_TA4227AA_AS.out	snp=916	del=27	ins=38	het=381	unaligned=455510
+170	SAL_TA6324AA_AS.out	snp=2010	del=13	ins=65	het=0	unaligned=487363
+171	SAL_TA7615AA_AS.out	snp=2279	del=29	ins=52	het=95	unaligned=469510
+172	SAL_UA4237AA_AS.out	snp=1983	del=19	ins=65	het=0	unaligned=488277
+173	SAL_UA4307AA_AS.out	snp=914	del=31	ins=38	het=382	unaligned=454744
+174	SAL_UA6621AA_AS.out	snp=1986	del=33	ins=53	het=0	unaligned=489817
+175	SAL_UA7988AA_AS.out	snp=1972	del=34	ins=54	het=0	unaligned=503519
+176	SAL_UA7989AA_AS.out	snp=2006	del=33	ins=52	het=0	unaligned=506489
+177	SAL_VA1155AA_AS.out	snp=8038	del=112	ins=187	het=10	unaligned=529303
+178	SAL_VA4537AA_AS.out	snp=1965	del=31	ins=54	het=0	unaligned=489119
+179	SAL_WA2841AA_AS.out	snp=17	del=1	ins=1	het=0	unaligned=470280
+180	SAL_WA5013AA_AS.out	snp=2261	del=32	ins=57	het=153	unaligned=475573
+181	SAL_WA5463AA_AS.out	snp=2280	del=28	ins=52	het=189	unaligned=466557
+182	SAL_WA5465AA_AS.out	snp=2268	del=27	ins=52	het=117	unaligned=464593
+183	SAL_WA6251AA_AS.out	snp=332	del=23	ins=41	het=638	unaligned=476043
+184	SAL_WA9926AA_AS.out	snp=23	del=3	ins=3	het=0	unaligned=447251
+185	SAL_XA1299AA_AS.out	snp=22	del=12	ins=3	het=31	unaligned=440057
+186	SAL_XA1733AA_AS.out	snp=79	del=13	ins=3	het=0	unaligned=519870
+187	SAL_XA1782AA_AS.out	snp=140	del=2	ins=3	het=3	unaligned=468274
+188	SAL_XA3156AA_AS.out	snp=26	del=1	ins=3	het=0	unaligned=427275
+189	SAL_XA3268AA_AS.out	snp=92	del=37	ins=11	het=0	unaligned=479344
+190	SAL_YA6600AA_AS.out	snp=2399	del=23	ins=72	het=96	unaligned=435696
+191	SAL_YA6602AA_AS.out	snp=2403	del=24	ins=72	het=95	unaligned=443666
+192	SAL_YA6631AA_AS.out	snp=2647	del=62	ins=82	het=0	unaligned=514171
+193	SAL_YA6663AA_AS.out	snp=60	del=1	ins=10	het=0	unaligned=492831
+194	SAL_YA7748AA_AS.out	snp=2007	del=22	ins=52	het=0	unaligned=489864
+195	SAL_YA9385AA_AS.out	snp=1870	del=19	ins=48	het=0	unaligned=511360
+196	SAL_ZA0287AA_AS.out	snp=2133	del=14	ins=57	het=0	unaligned=492379
+197	SAL_ZA5298AA_AS.out	snp=403	del=22	ins=32	het=188	unaligned=444993
+198	SAL_ZA8731AA_AS.out	snp=2260	del=58	ins=52	het=169	unaligned=468559
+Opening: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/core/SG17-135.tab
+Opening: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/core/SG17-135.vcf
+Processing contig: CP048775.1
+Processing contig: CP048776.1
+Processing contig: CP048777.1
+Generating /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/core/SG17-135.full.aln
+Creating TSV file: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/core/SG17-135.txt
+Running: snp-sites -c -o /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/core/SG17-135.aln /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/core/SG17-135.full.aln
+Have a suggestion? Tell me at http://github.com/tseemann/snippy/issues
+Done.
+[Tue Jun 16 08:57:09 2020]
+Finished job 205.
+1 of 7 steps (14%) done
+
+[Tue Jun 16 08:57:09 2020]
+rule snippy_clean:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/core/SG17-135.full.aln
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/core/SG17-135.clean.full.aln
+    jobid: 204
+    wildcards: output_prefix=Agona_200, reference=SG17-135
+    threads: 32
+
+snippy-clean_full_aln /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/core/SG17-135.full.aln > /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/core/SG17-135.clean.full.aln
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Tue Jun 16 08:57:40 2020]
+Finished job 204.
+2 of 7 steps (29%) done
+
+[Tue Jun 16 08:57:40 2020]
+rule gubbins:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/core/SG17-135.clean.full.aln
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/gubbins/SG17-135.filtered_polymorphic_sites.fasta
+    jobid: 203
+    wildcards: output_prefix=Agona_200, reference=SG17-135
+    threads: 32
+
+
+        run_gubbins.py -v -f 25 -p /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/gubbins/SG17-135 /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/core/SG17-135.clean.full.aln
+        rm SG17-135.clean.full.aln.seq.joint.txt
+        
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/0d285378
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 8648 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 6.55%
+
+RAxML rapid hill-climbing mode
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+Executing 1 inferences on the original alignment using 1 distinct randomized MP trees
+
+All free model parameters will be estimated by RAxML
+ML estimate of 25 per site rate categories
+
+Likelihood of final tree will be evaluated and optimized under GAMMA
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 8648
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-AVX2 -f d -p 1 -m GTRCAT -V -s SG17-135.clean.full.aln.phylip -n SG17-135.clean.full.iteration_1 
+
+
+Partition: 0 with name: No Name Provided
+Base frequencies: 0.228 0.276 0.266 0.229 
+
+Inference[0]: Time 312.494207 CAT-based likelihood -306556.167187, best rearrangement setting 10
+
+
+Conducting final model optimizations on all 1 trees under GAMMA-based models ....
+
+
+WARNING the alpha parameter with a value of 11.714062 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 26.637794 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 60.972287 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 140.147755 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 313.679648 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 714.275567 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+Inference[0] final GAMMA-based Likelihood: -306569.737910 tree written to file /data/malcummi/pipelord/snplord/RAxML_result.SG17-135.clean.full.iteration_1
+
+
+Starting final GAMMA-based thorough Optimization on tree 0 likelihood -306569.737910 .... 
+
+Final GAMMA-based Score of best tree -306569.737850
+
+Program execution info written to /data/malcummi/pipelord/snplord/RAxML_info.SG17-135.clean.full.iteration_1
+Best-scoring ML tree written to: /data/malcummi/pipelord/snplord/RAxML_bestTree.SG17-135.clean.full.iteration_1
+
+Overall execution time: 634.093924 secs or 0.176137 hours or 0.007339 days
+
+
+RAxML can't, parse the alignment file as phylip file 
+it will now try to parse it as FASTA file
+
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 8648 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 6.55%
+
+RAxML marginal ancestral state computation
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heterogeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 8648
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-AVX2 -f A -p 1 -m GTRGAMMA -s /data/malcummi/pipelord/snplord/SG17-135.clean.full.aln.snp_sites.aln -t /data/malcummi/pipelord/snplord/tmpca5idudw/rooted_tree.newick -n internal 
+
+
+
+WARNING the alpha parameter with a value of 11.841696 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 26.930738 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 61.646397 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 141.692147 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 317.246705 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 722.509818 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+Marginal Ancestral Probabilities written to file:
+/data/malcummi/pipelord/snplord/tmpca5idudw/RAxML_marginalAncestralProbabilities.internal
+
+Ancestral Sequences based on Marginal Ancestral Probabilities written to file:
+/data/malcummi/pipelord/snplord/tmpca5idudw/RAxML_marginalAncestralStates.internal
+
+Node-laballed ROOTED tree written to file:
+/data/malcummi/pipelord/snplord/tmpca5idudw/RAxML_nodeLabelledRootedTree.internal
+
+
+Time for marginal ancestral state computation: 112.322069
+
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 6057 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 1.86%
+
+RAxML rapid hill-climbing mode
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+Executing 1 inferences on the original alignment using 1 user-specified trees
+
+All free model parameters will be estimated by RAxML
+ML estimate of 25 per site rate categories
+
+Likelihood of final tree will be evaluated and optimized under GAMMA
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 6057
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-AVX2 -f d -p 1 -m GTRCAT -V -s RAxML_result.SG17-135.clean.full.iteration_1.phylip -n SG17-135.clean.full.iteration_2 -t RAxML_result.SG17-135.clean.full.iteration_1 
+
+
+Partition: 0 with name: No Name Provided
+Base frequencies: 0.228 0.276 0.267 0.229 
+
+Inference[0]: Time 296.223885 CAT-based likelihood -141768.084738, best rearrangement setting 20
+
+
+Conducting final model optimizations on all 1 trees under GAMMA-based models ....
+
+
+WARNING the alpha parameter with a value of 10.543019 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 24.016645 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 55.076705 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 126.750369 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 282.964353 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 643.623618 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 999.860881 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+Inference[0] final GAMMA-based Likelihood: -141775.633302 tree written to file /data/malcummi/pipelord/snplord/RAxML_result.SG17-135.clean.full.iteration_2
+
+
+Starting final GAMMA-based thorough Optimization on tree 0 likelihood -141775.633302 .... 
+
+Final GAMMA-based Score of best tree -141775.633302
+
+Program execution info written to /data/malcummi/pipelord/snplord/RAxML_info.SG17-135.clean.full.iteration_2
+Best-scoring ML tree written to: /data/malcummi/pipelord/snplord/RAxML_bestTree.SG17-135.clean.full.iteration_2
+
+Overall execution time: 518.392325 secs or 0.143998 hours or 0.006000 days
+
+
+RAxML can't, parse the alignment file as phylip file 
+it will now try to parse it as FASTA file
+
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 8648 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 6.55%
+
+RAxML marginal ancestral state computation
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heterogeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 8648
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-AVX2 -f A -p 1 -m GTRGAMMA -s /data/malcummi/pipelord/snplord/SG17-135.clean.full.aln.snp_sites.aln -t /data/malcummi/pipelord/snplord/tmp0__5mde7/rooted_tree.newick -n internal 
+
+
+
+WARNING the alpha parameter with a value of 11.357789 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 25.579564 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 58.086984 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 132.819395 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 295.909980 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 672.284261 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+Marginal Ancestral Probabilities written to file:
+/data/malcummi/pipelord/snplord/tmp0__5mde7/RAxML_marginalAncestralProbabilities.internal
+
+Ancestral Sequences based on Marginal Ancestral Probabilities written to file:
+/data/malcummi/pipelord/snplord/tmp0__5mde7/RAxML_marginalAncestralStates.internal
+
+Node-laballed ROOTED tree written to file:
+/data/malcummi/pipelord/snplord/tmp0__5mde7/RAxML_nodeLabelledRootedTree.internal
+
+
+Time for marginal ancestral state computation: 110.733950
+
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 6135 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 1.79%
+
+RAxML rapid hill-climbing mode
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+Executing 1 inferences on the original alignment using 1 user-specified trees
+
+All free model parameters will be estimated by RAxML
+ML estimate of 25 per site rate categories
+
+Likelihood of final tree will be evaluated and optimized under GAMMA
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 6135
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-AVX2 -f d -p 1 -m GTRCAT -V -s RAxML_result.SG17-135.clean.full.iteration_2.phylip -n SG17-135.clean.full.iteration_3 -t RAxML_result.SG17-135.clean.full.iteration_2 
+
+
+Partition: 0 with name: No Name Provided
+Base frequencies: 0.228 0.276 0.267 0.229 
+
+Inference[0]: Time 117.723228 CAT-based likelihood -141630.837130, best rearrangement setting 5
+
+
+Conducting final model optimizations on all 1 trees under GAMMA-based models ....
+
+
+WARNING the alpha parameter with a value of 10.495312 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 23.907178 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 54.824718 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 126.169046 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 281.622508 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 640.525699 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 999.814612 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+Inference[0] final GAMMA-based Likelihood: -141638.536346 tree written to file /data/malcummi/pipelord/snplord/RAxML_result.SG17-135.clean.full.iteration_3
+
+
+Starting final GAMMA-based thorough Optimization on tree 0 likelihood -141638.536346 .... 
+
+Final GAMMA-based Score of best tree -141638.527851
+
+Program execution info written to /data/malcummi/pipelord/snplord/RAxML_info.SG17-135.clean.full.iteration_3
+Best-scoring ML tree written to: /data/malcummi/pipelord/snplord/RAxML_bestTree.SG17-135.clean.full.iteration_3
+
+Overall execution time: 336.472595 secs or 0.093465 hours or 0.003894 days
+
+
+RAxML can't, parse the alignment file as phylip file 
+it will now try to parse it as FASTA file
+
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 8648 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 6.55%
+
+RAxML marginal ancestral state computation
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heterogeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 8648
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-AVX2 -f A -p 1 -m GTRGAMMA -s /data/malcummi/pipelord/snplord/SG17-135.clean.full.aln.snp_sites.aln -t /data/malcummi/pipelord/snplord/tmpgu_62gm2/rooted_tree.newick -n internal 
+
+
+
+WARNING the alpha parameter with a value of 11.504456 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 25.913522 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 58.852961 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 134.573234 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 299.955925 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 681.642736 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+Marginal Ancestral Probabilities written to file:
+/data/malcummi/pipelord/snplord/tmpgu_62gm2/RAxML_marginalAncestralProbabilities.internal
+
+Ancestral Sequences based on Marginal Ancestral Probabilities written to file:
+/data/malcummi/pipelord/snplord/tmpgu_62gm2/RAxML_marginalAncestralStates.internal
+
+Node-laballed ROOTED tree written to file:
+/data/malcummi/pipelord/snplord/tmpgu_62gm2/RAxML_nodeLabelledRootedTree.internal
+
+
+Time for marginal ancestral state computation: 113.969289
+
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 6135 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 1.79%
+
+RAxML rapid hill-climbing mode
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+Executing 1 inferences on the original alignment using 1 user-specified trees
+
+All free model parameters will be estimated by RAxML
+ML estimate of 25 per site rate categories
+
+Likelihood of final tree will be evaluated and optimized under GAMMA
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 6135
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-AVX2 -f d -p 1 -m GTRCAT -V -s RAxML_result.SG17-135.clean.full.iteration_3.phylip -n SG17-135.clean.full.iteration_4 -t RAxML_result.SG17-135.clean.full.iteration_3 
+
+
+Partition: 0 with name: No Name Provided
+Base frequencies: 0.228 0.276 0.267 0.229 
+
+Inference[0]: Time 119.253266 CAT-based likelihood -141630.837623, best rearrangement setting 5
+
+
+Conducting final model optimizations on all 1 trees under GAMMA-based models ....
+
+
+WARNING the alpha parameter with a value of 11.238157 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 25.618454 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 58.775577 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 135.293896 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 302.713837 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 689.203677 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+Inference[0] final GAMMA-based Likelihood: -141638.533945 tree written to file /data/malcummi/pipelord/snplord/RAxML_result.SG17-135.clean.full.iteration_4
+
+
+Starting final GAMMA-based thorough Optimization on tree 0 likelihood -141638.533945 .... 
+
+Final GAMMA-based Score of best tree -141638.525452
+
+Program execution info written to /data/malcummi/pipelord/snplord/RAxML_info.SG17-135.clean.full.iteration_4
+Best-scoring ML tree written to: /data/malcummi/pipelord/snplord/RAxML_bestTree.SG17-135.clean.full.iteration_4
+
+Overall execution time: 335.909662 secs or 0.093308 hours or 0.003888 days
+
+
+RAxML can't, parse the alignment file as phylip file 
+it will now try to parse it as FASTA file
+
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 8648 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 6.55%
+
+RAxML marginal ancestral state computation
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heterogeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 8648
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-AVX2 -f A -p 1 -m GTRGAMMA -s /data/malcummi/pipelord/snplord/SG17-135.clean.full.aln.snp_sites.aln -t /data/malcummi/pipelord/snplord/tmpgrds1lzk/rooted_tree.newick -n internal 
+
+
+
+WARNING the alpha parameter with a value of 11.178067 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 25.170334 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 57.148545 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 130.658001 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 290.893855 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 660.726072 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+Marginal Ancestral Probabilities written to file:
+/data/malcummi/pipelord/snplord/tmpgrds1lzk/RAxML_marginalAncestralProbabilities.internal
+
+Ancestral Sequences based on Marginal Ancestral Probabilities written to file:
+/data/malcummi/pipelord/snplord/tmpgrds1lzk/RAxML_marginalAncestralStates.internal
+
+Node-laballed ROOTED tree written to file:
+/data/malcummi/pipelord/snplord/tmpgrds1lzk/RAxML_nodeLabelledRootedTree.internal
+
+
+Time for marginal ancestral state computation: 108.167877
+
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 6135 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 1.79%
+
+RAxML rapid hill-climbing mode
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+Executing 1 inferences on the original alignment using 1 user-specified trees
+
+All free model parameters will be estimated by RAxML
+ML estimate of 25 per site rate categories
+
+Likelihood of final tree will be evaluated and optimized under GAMMA
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 6135
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-AVX2 -f d -p 1 -m GTRCAT -V -s RAxML_result.SG17-135.clean.full.iteration_4.phylip -n SG17-135.clean.full.iteration_5 -t RAxML_result.SG17-135.clean.full.iteration_4 
+
+
+Partition: 0 with name: No Name Provided
+Base frequencies: 0.228 0.276 0.267 0.229 
+
+Inference[0]: Time 118.616478 CAT-based likelihood -141630.837195, best rearrangement setting 5
+
+
+Conducting final model optimizations on all 1 trees under GAMMA-based models ....
+
+
+WARNING the alpha parameter with a value of 10.854596 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 24.734765 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 56.740685 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 130.590871 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 291.828725 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 664.077853 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+Inference[0] final GAMMA-based Likelihood: -141638.532026 tree written to file /data/malcummi/pipelord/snplord/RAxML_result.SG17-135.clean.full.iteration_5
+
+
+Starting final GAMMA-based thorough Optimization on tree 0 likelihood -141638.532026 .... 
+
+Final GAMMA-based Score of best tree -141638.523533
+
+Program execution info written to /data/malcummi/pipelord/snplord/RAxML_info.SG17-135.clean.full.iteration_5
+Best-scoring ML tree written to: /data/malcummi/pipelord/snplord/RAxML_bestTree.SG17-135.clean.full.iteration_5
+
+Overall execution time: 335.795694 secs or 0.093277 hours or 0.003887 days
+
+
+RAxML can't, parse the alignment file as phylip file 
+it will now try to parse it as FASTA file
+
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 8648 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 6.55%
+
+RAxML marginal ancestral state computation
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heterogeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 8648
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-AVX2 -f A -p 1 -m GTRGAMMA -s /data/malcummi/pipelord/snplord/SG17-135.clean.full.aln.snp_sites.aln -t /data/malcummi/pipelord/snplord/tmppfhki60g/rooted_tree.newick -n internal 
+
+
+
+WARNING the alpha parameter with a value of 11.178067 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 25.170334 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 57.148545 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 130.658001 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 290.893855 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 660.726072 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+Marginal Ancestral Probabilities written to file:
+/data/malcummi/pipelord/snplord/tmppfhki60g/RAxML_marginalAncestralProbabilities.internal
+
+Ancestral Sequences based on Marginal Ancestral Probabilities written to file:
+/data/malcummi/pipelord/snplord/tmppfhki60g/RAxML_marginalAncestralStates.internal
+
+Node-laballed ROOTED tree written to file:
+/data/malcummi/pipelord/snplord/tmppfhki60g/RAxML_nodeLabelledRootedTree.internal
+
+
+Time for marginal ancestral state computation: 110.468895
+
+Sample Reference has missing data percentage of 0.0
+Sample SAL_AB5642AA_AS.out has missing data percentage of 9.029036897296605
+Sample SAL_AB5674AA_AS.out has missing data percentage of 9.983599907616048
+Sample SAL_AB5906AA_AS.out has missing data percentage of 9.590288816301499
+Sample SAL_AB5909AA_AS.out has missing data percentage of 9.685060001048054
+Sample SAL_AB6160AA_AS.out has missing data percentage of 8.885201294151669
+Sample SAL_AB7534AA_AS.out has missing data percentage of 8.596540259800754
+Sample SAL_AB7542AA_AS.out has missing data percentage of 8.768362766161854
+Sample SAL_AB7588AA_AS.out has missing data percentage of 9.121925467887843
+Sample SAL_AB7634AA_AS.out has missing data percentage of 8.895118983155456
+Sample SAL_AB8884AA_AS.out has missing data percentage of 8.736416550701517
+Sample SAL_AB9321AA_AS.out has missing data percentage of 9.2003159686438
+Sample SAL_BA5105AA_AS.out has missing data percentage of 10.007452823047855
+Sample SAL_BA7932AA_AS.out has missing data percentage of 9.069949790486394
+Sample SAL_BA7945AA_AS.out has missing data percentage of 9.706525684097345
+Sample SAL_BA8052AA_AS.out has missing data percentage of 8.781987458296214
+Sample SAL_BB0648AA_AS.out has missing data percentage of 9.837260621728472
+Sample SAL_BB1066AA_AS.out has missing data percentage of 9.966015903237514
+Sample SAL_BB1353AA_AS.out has missing data percentage of 10.329535110753996
+Sample SAL_BB1371AA_AS.out has missing data percentage of 9.562709489345762
+Sample SAL_BB1424AA_AS.out has missing data percentage of 9.20856453581916
+Sample SAL_BB1915AA_AS.out has missing data percentage of 9.440223118889994
+Sample SAL_BB1956AA_AS.out has missing data percentage of 8.693892760863363
+Sample SAL_BB2131AA_AS.out has missing data percentage of 9.456778478420778
+Sample SAL_BB2593AA_AS.out has missing data percentage of 9.797939216793695
+Sample SAL_BB2899AA_AS.out has missing data percentage of 9.455070539805645
+Sample SAL_BB2967AA_AS.out has missing data percentage of 8.68911829609833
+Sample SAL_BB2970AA_AS.out has missing data percentage of 9.277813683305482
+Sample SAL_BB3127AA_AS.out has missing data percentage of 8.664818987619386
+Sample SAL_BB4431AA_AS.out has missing data percentage of 8.984397592582889
+Sample SAL_BB4524AA_AS.out has missing data percentage of 8.66740030393544
+Sample SAL_BB4921AA_AS.out has missing data percentage of 9.513450987013844
+Sample SAL_BB4937AA_AS.out has missing data percentage of 9.079498720016458
+Sample SAL_BB5050AA_AS.out has missing data percentage of 9.097373850295298
+Sample SAL_BB5062AA_AS.out has missing data percentage of 9.002525031975328
+Sample SAL_BB6441AA_AS.out has missing data percentage of 8.568999749631725
+Sample SAL_BB6687AA_AS.out has missing data percentage of 9.79627009496527
+Sample SAL_BB7027AA_AS.out has missing data percentage of 8.776960684417583
+Sample SAL_BB7197AA_AS.out has missing data percentage of 8.703480507180135
+Sample SAL_BB7261AA_AS.out has missing data percentage of 8.732690139177588
+Sample SAL_BB7947AA_AS.out has missing data percentage of 8.829673880766476
+Sample SAL_BB8135AA_AS.out has missing data percentage of 8.666294025514274
+Sample SAL_BB8331AA_AS.out has missing data percentage of 10.23829625359783
+Sample SAL_BB9086AA_AS.out has missing data percentage of 8.765994942172693
+Sample SAL_BB9562AA_AS.out has missing data percentage of 8.632756321798926
+Sample SAL_BB9821AA_AS.out has missing data percentage of 10.20147853140569
+Sample SAL_BB9988AA_AS.out has missing data percentage of 8.708643139812244
+Sample SAL_CA4728AA_AS.out has missing data percentage of 9.855912087741464
+Sample SAL_CA4744AA_AS.out has missing data percentage of 9.588367385359472
+Sample SAL_CA4803AA_AS.out has missing data percentage of 9.898727003479925
+Sample SAL_CB0053AA_AS.out has missing data percentage of 8.833070349603389
+Sample SAL_CB0088AA_AS.out has missing data percentage of 9.115734190407984
+Sample SAL_CB0612AA_AS.out has missing data percentage of 9.98018403038578
+Sample SAL_CB1153AA_AS.out has missing data percentage of 9.136675846836724
+Sample SAL_CB1324AA_AS.out has missing data percentage of 9.07274459912934
+Sample SAL_CB1790AA_AS.out has missing data percentage of 8.68777911695692
+Sample SAL_CB2372AA_AS.out has missing data percentage of 8.770730590151016
+Sample SAL_CB2598AA_AS.out has missing data percentage of 9.099547590350923
+Sample SAL_CB2669AA_AS.out has missing data percentage of 8.730943383775747
+Sample SAL_CB3409AA_AS.out has missing data percentage of 9.760675101554419
+Sample SAL_CB3497AA_AS.out has missing data percentage of 8.833807868550833
+Sample SAL_CB5243AA_AS.out has missing data percentage of 9.034820598516035
+Sample SAL_CB5376AA_AS.out has missing data percentage of 9.539768768401583
+Sample SAL_CB5379AA_AS.out has missing data percentage of 8.733388841338325
+Sample SAL_CB5468AA_AS.out has missing data percentage of 8.694397379090562
+Sample SAL_CB6250AA_AS.out has missing data percentage of 9.784974410033364
+Sample SAL_CB9243AA_AS.out has missing data percentage of 8.770885857297847
+Sample SAL_CB9389AA_AS.out has missing data percentage of 9.10240062417393
+Sample SAL_CB9820AA_AS.out has missing data percentage of 9.145099089552268
+Sample SAL_CB9822AA_AS.out has missing data percentage of 8.856379830021291
+Sample SAL_CB9835AA_AS.out has missing data percentage of 9.588367385359472
+Sample SAL_CB9988AA_AS.out has missing data percentage of 9.419786080688455
+Sample SAL_DB1444AA_AS.out has missing data percentage of 9.850419512422341
+Sample SAL_EA3229AA_AS.out has missing data percentage of 9.603020722341585
+Sample SAL_EB1026AA_AS.out has missing data percentage of 8.72158853817922
+Sample SAL_EB1045AA_AS.out has missing data percentage of 9.141566761961878
+Sample SAL_EB2895AA_AS.out has missing data percentage of 8.683140510945364
+Sample SAL_EB4083AA_AS.out has missing data percentage of 9.761529070861984
+Sample SAL_EB4088AA_AS.out has missing data percentage of 8.757319390343548
+Sample SAL_EB5876AA_AS.out has missing data percentage of 10.070355425907488
+Sample SAL_EB6812AA_AS.out has missing data percentage of 8.721452679425745
+Sample SAL_EB8845AA_AS.out has missing data percentage of 8.579402648469356
+Sample SAL_FA1940AA_AS.out has missing data percentage of 9.774726778342561
+Sample SAL_FA2493AA_AS.out has missing data percentage of 9.340522202231577
+Sample SAL_FA5706AA_AS.out has missing data percentage of 9.52208772205628
+Sample SAL_FB5769AA_AS.out has missing data percentage of 9.007357721920421
+Sample SAL_FB7879AA_AS.out has missing data percentage of 9.492412288618336
+Sample SAL_FB8051AA_AS.out has missing data percentage of 10.644572151672712
+Sample SAL_GB0225AA_AS.out has missing data percentage of 8.777212993531183
+Sample SAL_GB5373AA_AS.out has missing data percentage of 9.903404426278188
+Sample SAL_HB2219AA_AS.out has missing data percentage of 8.6656535485336
+Sample SAL_HB2224AA_AS.out has missing data percentage of 8.584875815395126
+Sample SAL_HB2237AA_AS.out has missing data percentage of 9.892671584753543
+Sample SAL_HB5660AA_AS.out has missing data percentage of 9.699325170163089
+Sample SAL_HB6699AA_AS.out has missing data percentage of 9.291865360093626
+Sample SAL_IA5065AA_AS.out has missing data percentage of 10.062281534272312
+Sample SAL_IB1406AA_AS.out has missing data percentage of 9.123633406502977
+Sample SAL_IB2995AA_AS.out has missing data percentage of 9.32041510671705
+Sample SAL_IB3115AA_AS.out has missing data percentage of 9.950469780161129
+Sample SAL_IB6779AA_AS.out has missing data percentage of 10.016671809890905
+Sample SAL_IB6801AA_AS.out has missing data percentage of 8.692883524408966
+Sample SAL_IB7540AA_AS.out has missing data percentage of 9.144633288111777
+Sample SAL_IB7996AA_AS.out has missing data percentage of 8.649893933130322
+Sample SAL_IB9118AA_AS.out has missing data percentage of 9.39517623791585
+Sample SAL_IB9302AA_AS.out has missing data percentage of 9.261588266461715
+Sample SAL_JA4169AA_AS.out has missing data percentage of 8.977488204548939
+Sample SAL_JB0953AA_AS.out has missing data percentage of 10.432981847329696
+Sample SAL_JB1150AA_AS.out has missing data percentage of 10.240644669193639
+Sample SAL_JB4414AA_AS.out has missing data percentage of 8.79338018519489
+Sample SAL_JB5195AA_AS.out has missing data percentage of 13.999681702348997
+Sample SAL_JB5221AA_AS.out has missing data percentage of 10.1134420591529
+Sample SAL_JB6580AA_AS.out has missing data percentage of 8.96007887571059
+Sample SAL_JB9521AA_AS.out has missing data percentage of 9.10587472658426
+Sample SAL_JB9710AA_AS.out has missing data percentage of 9.061468322590787
+Sample SAL_KA0676AA_AS.out has missing data percentage of 9.242179873107924
+Sample SAL_KA0984AA_AS.out has missing data percentage of 9.471722941303195
+Sample SAL_KA1119AA_AS.out has missing data percentage of 8.726692945631267
+Sample SAL_KA4888AA_AS.out has missing data percentage of 8.44201063191788
+Sample SAL_KA5244AA_AS.out has missing data percentage of 8.563196640018942
+Sample SAL_KA8881AA_AS.out has missing data percentage of 9.12949474129582
+Sample SAL_KB1136AA_AS.out has missing data percentage of 9.740665048006662
+Sample SAL_KB1789AA_AS.out has missing data percentage of 10.225059729330546
+Sample SAL_KB1826AA_AS.out has missing data percentage of 9.600614081565714
+Sample SAL_KB2744AA_AS.out has missing data percentage of 8.646982674127253
+Sample SAL_KB3375AA_AS.out has missing data percentage of 9.882986796470002
+Sample SAL_KB3640AA_AS.out has missing data percentage of 10.466422509078276
+Sample SAL_KB4026AA_AS.out has missing data percentage of 9.36532612893772
+Sample SAL_KB4651AA_AS.out has missing data percentage of 10.732569807138795
+Sample SAL_KB6210AA_AS.out has missing data percentage of 8.658685935319589
+Sample SAL_KB6734AA_AS.out has missing data percentage of 9.85839636209075
+Sample SAL_KB6773AA_AS.out has missing data percentage of 10.178615444034927
+Sample SAL_KB6830AA_AS.out has missing data percentage of 9.868779852535027
+Sample SAL_KB8607AA_AS.out has missing data percentage of 9.896029236803749
+Sample SAL_KB8676AA_AS.out has missing data percentage of 9.476206280167922
+Sample SAL_KB9523AA_AS.out has missing data percentage of 9.838172816216101
+Sample SAL_LA4572AA_AS.out has missing data percentage of 9.725875852271074
+Sample SAL_LA7782AA_AS.out has missing data percentage of 9.60434049308964
+Sample SAL_LA7787AA_AS.out has missing data percentage of 9.542660619011297
+Sample SAL_LB4034AA_AS.out has missing data percentage of 10.404762043393285
+Sample SAL_LB7623AA_AS.out has missing data percentage of 10.803895652713972
+Sample SAL_LB8076AA_AS.out has missing data percentage of 9.187816963323959
+Sample SAL_MA3067AA_AS.out has missing data percentage of 9.319502912229423
+Sample SAL_MB2521AA_AS.out has missing data percentage of 9.088329538992433
+Sample SAL_MB5439AA_AS.out has missing data percentage of 9.748467222134884
+Sample SAL_MB7066AA_AS.out has missing data percentage of 9.143313517363719
+Sample SAL_MB7965AA_AS.out has missing data percentage of 9.069076412785472
+Sample SAL_NA2865AA_AS.out has missing data percentage of 8.817271917413404
+Sample SAL_NA5728AA_AS.out has missing data percentage of 10.90738120607638
+Sample SAL_NA8627AA_AS.out has missing data percentage of 9.558575501561405
+Sample SAL_NB4129AA_AS.out has missing data percentage of 9.678325288554289
+Sample SAL_NB6620AA_AS.out has missing data percentage of 8.722636591420326
+Sample SAL_OA4067AA_AS.out has missing data percentage of 8.534743935362286
+Sample SAL_OA4072AA_AS.out has missing data percentage of 8.60436184232233
+Sample SAL_OB6949AA_AS.out has missing data percentage of 9.932788733815826
+Sample SAL_PA3767AA_AS.out has missing data percentage of 9.796619446045638
+Sample SAL_PB5476AA_AS.out has missing data percentage of 9.102478257747345
+Sample SAL_PB8418AA_AS.out has missing data percentage of 9.957398576588432
+Sample SAL_QA4878AA_AS.out has missing data percentage of 9.393468299300716
+Sample SAL_QA5436AA_AS.out has missing data percentage of 9.190728222327028
+Sample SAL_RA1578AA_AS.out has missing data percentage of 8.545709677607178
+Sample SAL_RA1599AA_AS.out has missing data percentage of 8.609815600854745
+Sample SAL_SA1324AA_AS.out has missing data percentage of 8.590659516614554
+Sample SAL_SA1344AA_AS.out has missing data percentage of 8.55186213830033
+Sample SAL_SA2453AA_AS.out has missing data percentage of 9.820918754524582
+Sample SAL_SA9173AA_AS.out has missing data percentage of 9.812689595742574
+Sample SAL_SA9246AA_AS.out has missing data percentage of 8.718289111309076
+Sample SAL_SA9330AA_AS.out has missing data percentage of 11.61027557977723
+Sample SAL_TA1544AA_AS.out has missing data percentage of 9.21009779889411
+Sample SAL_TA1967AA_AS.out has missing data percentage of 10.550771386593846
+Sample SAL_TA2587AA_AS.out has missing data percentage of 9.20928264637325
+Sample SAL_TA4227AA_AS.out has missing data percentage of 9.183760609113017
+Sample SAL_TA6324AA_AS.out has missing data percentage of 9.734958980360647
+Sample SAL_TA7615AA_AS.out has missing data percentage of 9.52146665346896
+Sample SAL_UA4237AA_AS.out has missing data percentage of 9.776415308564342
+Sample SAL_UA4307AA_AS.out has missing data percentage of 9.206546062910366
+Sample SAL_UA6621AA_AS.out has missing data percentage of 9.821209880424888
+Sample SAL_UA7988AA_AS.out has missing data percentage of 10.198974848663052
+Sample SAL_UA7989AA_AS.out has missing data percentage of 10.314823548591823
+Sample SAL_VA1155AA_AS.out has missing data percentage of 10.605289563524641
+Sample SAL_VA4537AA_AS.out has missing data percentage of 9.771213859145526
+Sample SAL_WA2841AA_AS.out has missing data percentage of 9.439097432075476
+Sample SAL_WA5013AA_AS.out has missing data percentage of 9.613113086885555
+Sample SAL_WA5463AA_AS.out has missing data percentage of 9.449655598059937
+Sample SAL_WA5465AA_AS.out has missing data percentage of 9.397447019938243
+Sample SAL_WA6251AA_AS.out has missing data percentage of 9.63065827447738
+Sample SAL_WA9926AA_AS.out has missing data percentage of 9.035247583169818
+Sample SAL_XA1299AA_AS.out has missing data percentage of 8.870159789302482
+Sample SAL_XA1733AA_AS.out has missing data percentage of 10.426402401982761
+Sample SAL_XA1782AA_AS.out has missing data percentage of 9.484066679476205
+Sample SAL_XA3156AA_AS.out has missing data percentage of 8.573308412956267
+Sample SAL_XA3268AA_AS.out has missing data percentage of 9.590579942201805
+Sample SAL_YA6600AA_AS.out has missing data percentage of 8.837281970961161
+Sample SAL_YA6602AA_AS.out has missing data percentage of 8.97917673477072
+Sample SAL_YA6631AA_AS.out has missing data percentage of 10.305255210668406
+Sample SAL_YA6663AA_AS.out has missing data percentage of 9.849313234001176
+Sample SAL_YA7748AA_AS.out has missing data percentage of 9.836542511174382
+Sample SAL_YA9385AA_AS.out has missing data percentage of 10.250698216950903
+Sample SAL_ZA0287AA_AS.out has missing data percentage of 10.184321511680942
+Sample SAL_ZA5298AA_AS.out has missing data percentage of 9.002039822141484
+Sample SAL_ZA8731AA_AS.out has missing data percentage of 9.473916089752175
+gubbins /data/malcummi/pipelord/snplord/tmpeccsipzg/SG17-135.clean.full.aln
+1592261984
+Tree building command: raxmlHPC-AVX2 -f d -p 1 -m GTRCAT -V 
+raxmlHPC-AVX2 -f d -p 1 -m GTRCAT -V  -s SG17-135.clean.full.aln.phylip -n SG17-135.clean.full.iteration_1 
+1592263013
+Internal sequence reconstruction command: raxmlHPC-AVX2 -f A -p 1 -m GTRGAMMA 
+raxmlHPC-AVX2 -f A -p 1 -m GTRGAMMA   -s /data/malcummi/pipelord/snplord/SG17-135.clean.full.aln.snp_sites.aln -t /data/malcummi/pipelord/snplord/tmpca5idudw/rooted_tree.newick -n internal 
+1592263125
+1592263181
+gubbins -r -v SG17-135.clean.full.aln.gaps.vcf -a 100 -b 10000 -f /data/malcummi/pipelord/snplord/tmpeccsipzg/SG17-135.clean.full.aln -t RAxML_result.SG17-135.clean.full.iteration_1 -m 3 SG17-135.clean.full.aln.gaps.snp_sites.aln
+1592263246
+Tree building command: raxmlHPC-AVX2 -f d -p 1 -m GTRCAT -V 
+raxmlHPC-AVX2 -f d -p 1 -m GTRCAT -V  -s RAxML_result.SG17-135.clean.full.iteration_1.phylip -n SG17-135.clean.full.iteration_2 -t RAxML_result.SG17-135.clean.full.iteration_1
+1592263765
+Internal sequence reconstruction command: raxmlHPC-AVX2 -f A -p 1 -m GTRGAMMA 
+raxmlHPC-AVX2 -f A -p 1 -m GTRGAMMA   -s /data/malcummi/pipelord/snplord/SG17-135.clean.full.aln.snp_sites.aln -t /data/malcummi/pipelord/snplord/tmp0__5mde7/rooted_tree.newick -n internal 
+1592263876
+1592263932
+gubbins -r -v SG17-135.clean.full.aln.gaps.vcf -a 100 -b 10000 -f /data/malcummi/pipelord/snplord/tmpeccsipzg/SG17-135.clean.full.aln -t RAxML_result.SG17-135.clean.full.iteration_2 -m 3 SG17-135.clean.full.aln.gaps.snp_sites.aln
+1592263995
+Tree building command: raxmlHPC-AVX2 -f d -p 1 -m GTRCAT -V 
+raxmlHPC-AVX2 -f d -p 1 -m GTRCAT -V  -s RAxML_result.SG17-135.clean.full.iteration_2.phylip -n SG17-135.clean.full.iteration_3 -t RAxML_result.SG17-135.clean.full.iteration_2
+1592264331
+Internal sequence reconstruction command: raxmlHPC-AVX2 -f A -p 1 -m GTRGAMMA 
+raxmlHPC-AVX2 -f A -p 1 -m GTRGAMMA   -s /data/malcummi/pipelord/snplord/SG17-135.clean.full.aln.snp_sites.aln -t /data/malcummi/pipelord/snplord/tmpgu_62gm2/rooted_tree.newick -n internal 
+1592264445
+1592264502
+gubbins -r -v SG17-135.clean.full.aln.gaps.vcf -a 100 -b 10000 -f /data/malcummi/pipelord/snplord/tmpeccsipzg/SG17-135.clean.full.aln -t RAxML_result.SG17-135.clean.full.iteration_3 -m 3 SG17-135.clean.full.aln.gaps.snp_sites.aln
+1592264564
+Tree building command: raxmlHPC-AVX2 -f d -p 1 -m GTRCAT -V 
+raxmlHPC-AVX2 -f d -p 1 -m GTRCAT -V  -s RAxML_result.SG17-135.clean.full.iteration_3.phylip -n SG17-135.clean.full.iteration_4 -t RAxML_result.SG17-135.clean.full.iteration_3
+1592264900
+Internal sequence reconstruction command: raxmlHPC-AVX2 -f A -p 1 -m GTRGAMMA 
+raxmlHPC-AVX2 -f A -p 1 -m GTRGAMMA   -s /data/malcummi/pipelord/snplord/SG17-135.clean.full.aln.snp_sites.aln -t /data/malcummi/pipelord/snplord/tmpgrds1lzk/rooted_tree.newick -n internal 
+1592265008
+1592265064
+gubbins -r -v SG17-135.clean.full.aln.gaps.vcf -a 100 -b 10000 -f /data/malcummi/pipelord/snplord/tmpeccsipzg/SG17-135.clean.full.aln -t RAxML_result.SG17-135.clean.full.iteration_4 -m 3 SG17-135.clean.full.aln.gaps.snp_sites.aln
+1592265126
+Tree building command: raxmlHPC-AVX2 -f d -p 1 -m GTRCAT -V 
+raxmlHPC-AVX2 -f d -p 1 -m GTRCAT -V  -s RAxML_result.SG17-135.clean.full.iteration_4.phylip -n SG17-135.clean.full.iteration_5 -t RAxML_result.SG17-135.clean.full.iteration_4
+1592265462
+Internal sequence reconstruction command: raxmlHPC-AVX2 -f A -p 1 -m GTRGAMMA 
+raxmlHPC-AVX2 -f A -p 1 -m GTRGAMMA   -s /data/malcummi/pipelord/snplord/SG17-135.clean.full.aln.snp_sites.aln -t /data/malcummi/pipelord/snplord/tmppfhki60g/rooted_tree.newick -n internal 
+1592265573
+1592265629
+gubbins -r -v SG17-135.clean.full.aln.gaps.vcf -a 100 -b 10000 -f /data/malcummi/pipelord/snplord/tmpeccsipzg/SG17-135.clean.full.aln -t RAxML_result.SG17-135.clean.full.iteration_5 -m 3 SG17-135.clean.full.aln.gaps.snp_sites.aln
+1592265692
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_2.phylip regex:^RAxML_result.SG17-135.clean.full.iteration_2\.
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_2.snp_sites.aln regex:^RAxML_result.SG17-135.clean.full.iteration_2\.
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_2.tab regex:^RAxML_result.SG17-135.clean.full.iteration_2\.
+Deleting file: ./RAxML_log.SG17-135.clean.full.iteration_1 regex:^RAxML_(bestTree|info|log|parsimonyTree).SG17-135.clean.full.iteration_
+Deleting file: ./RAxML_info.SG17-135.clean.full.iteration_4 regex:^RAxML_(bestTree|info|log|parsimonyTree).SG17-135.clean.full.iteration_
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_1.branch_snps.tab regex:^RAxML_result.SG17-135.clean.full.iteration_1\.
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_1 regex:^RAxML_result.SG17-135.clean.full.iteration_1$
+Deleting file: ./RAxML_log.SG17-135.clean.full.iteration_2 regex:^RAxML_(bestTree|info|log|parsimonyTree).SG17-135.clean.full.iteration_
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_1.gff regex:^RAxML_result.SG17-135.clean.full.iteration_1\.
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_3.vcf regex:^RAxML_result.SG17-135.clean.full.iteration_3\.
+Deleting file: ./RAxML_bestTree.SG17-135.clean.full.iteration_1 regex:^RAxML_(bestTree|info|log|parsimonyTree).SG17-135.clean.full.iteration_
+Deleting file: ./RAxML_bestTree.SG17-135.clean.full.iteration_2 regex:^RAxML_(bestTree|info|log|parsimonyTree).SG17-135.clean.full.iteration_
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_2.gff regex:^RAxML_result.SG17-135.clean.full.iteration_2\.
+Deleting file: ./RAxML_info.SG17-135.clean.full.iteration_1 regex:^RAxML_(bestTree|info|log|parsimonyTree).SG17-135.clean.full.iteration_
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_4.gff regex:^RAxML_result.SG17-135.clean.full.iteration_4\.
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_4.snp_sites.aln regex:^RAxML_result.SG17-135.clean.full.iteration_4\.
+Deleting file: ./RAxML_bestTree.SG17-135.clean.full.iteration_3 regex:^RAxML_(bestTree|info|log|parsimonyTree).SG17-135.clean.full.iteration_
+Deleting file: ./RAxML_log.SG17-135.clean.full.iteration_3 regex:^RAxML_(bestTree|info|log|parsimonyTree).SG17-135.clean.full.iteration_
+Deleting file: ./RAxML_info.SG17-135.clean.full.iteration_2 regex:^RAxML_(bestTree|info|log|parsimonyTree).SG17-135.clean.full.iteration_
+Deleting file: ./RAxML_log.SG17-135.clean.full.iteration_4 regex:^RAxML_(bestTree|info|log|parsimonyTree).SG17-135.clean.full.iteration_
+Deleting file: ./RAxML_info.SG17-135.clean.full.iteration_5 regex:^RAxML_(bestTree|info|log|parsimonyTree).SG17-135.clean.full.iteration_
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_4 regex:^RAxML_result.SG17-135.clean.full.iteration_4$
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_3.gff regex:^RAxML_result.SG17-135.clean.full.iteration_3\.
+Deleting file: ./RAxML_info.SG17-135.clean.full.iteration_3 regex:^RAxML_(bestTree|info|log|parsimonyTree).SG17-135.clean.full.iteration_
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_1.stats regex:^RAxML_result.SG17-135.clean.full.iteration_1\.
+Deleting file: ./RAxML_log.SG17-135.clean.full.iteration_5 regex:^RAxML_(bestTree|info|log|parsimonyTree).SG17-135.clean.full.iteration_
+Deleting file: ./RAxML_bestTree.SG17-135.clean.full.iteration_4 regex:^RAxML_(bestTree|info|log|parsimonyTree).SG17-135.clean.full.iteration_
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_2.stats regex:^RAxML_result.SG17-135.clean.full.iteration_2\.
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_4.stats regex:^RAxML_result.SG17-135.clean.full.iteration_4\.
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_2.branch_snps.tab regex:^RAxML_result.SG17-135.clean.full.iteration_2\.
+Deleting file: ./RAxML_bestTree.SG17-135.clean.full.iteration_5 regex:^RAxML_(bestTree|info|log|parsimonyTree).SG17-135.clean.full.iteration_
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_3.snp_sites.aln regex:^RAxML_result.SG17-135.clean.full.iteration_3\.
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_4.vcf regex:^RAxML_result.SG17-135.clean.full.iteration_4\.
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_4.tab regex:^RAxML_result.SG17-135.clean.full.iteration_4\.
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_1.snp_sites.aln regex:^RAxML_result.SG17-135.clean.full.iteration_1\.
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_3 regex:^RAxML_result.SG17-135.clean.full.iteration_3$
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_1.tab regex:^RAxML_result.SG17-135.clean.full.iteration_1\.
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_2 regex:^RAxML_result.SG17-135.clean.full.iteration_2$
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_3.branch_snps.tab regex:^RAxML_result.SG17-135.clean.full.iteration_3\.
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_4.phylip regex:^RAxML_result.SG17-135.clean.full.iteration_4\.
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_3.tab regex:^RAxML_result.SG17-135.clean.full.iteration_3\.
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_4.branch_snps.tab regex:^RAxML_result.SG17-135.clean.full.iteration_4\.
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_3.phylip regex:^RAxML_result.SG17-135.clean.full.iteration_3\.
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_2.vcf regex:^RAxML_result.SG17-135.clean.full.iteration_2\.
+Deleting file: ./RAxML_parsimonyTree.SG17-135.clean.full.iteration_1 regex:^RAxML_(bestTree|info|log|parsimonyTree).SG17-135.clean.full.iteration_
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_1.phylip regex:^RAxML_result.SG17-135.clean.full.iteration_1\.
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_3.stats regex:^RAxML_result.SG17-135.clean.full.iteration_3\.
+Deleting file: ./RAxML_result.SG17-135.clean.full.iteration_1.vcf regex:^RAxML_result.SG17-135.clean.full.iteration_1\.
+Deleting file: ./SG17-135.clean.full.aln.phylip regex:^SG17-135.clean.full.aln.(gaps|vcf|snp_sites|phylip|start)
+Deleting file: ./SG17-135.clean.full.aln.vcf regex:^SG17-135.clean.full.aln.(gaps|vcf|snp_sites|phylip|start)
+Deleting file: ./SG17-135.clean.full.aln.gaps.vcf regex:^SG17-135.clean.full.aln.(gaps|vcf|snp_sites|phylip|start)
+Deleting file: ./SG17-135.clean.full.aln.start regex:^SG17-135.clean.full.aln.(gaps|vcf|snp_sites|phylip|start)
+Deleting file: ./SG17-135.clean.full.aln.gaps.phylip regex:^SG17-135.clean.full.aln.(gaps|vcf|snp_sites|phylip|start)
+Deleting file: ./SG17-135.clean.full.aln.snp_sites.aln regex:^SG17-135.clean.full.aln.(gaps|vcf|snp_sites|phylip|start)
+Deleting file: ./SG17-135.clean.full.aln.gaps.snp_sites.aln regex:^SG17-135.clean.full.aln.(gaps|vcf|snp_sites|phylip|start)
+[Tue Jun 16 10:01:45 2020]
+Finished job 203.
+3 of 7 steps (43%) done
+
+[Tue Jun 16 10:01:45 2020]
+rule snp_sites:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/gubbins/SG17-135.filtered_polymorphic_sites.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snp_sites/SG17-135.clean.fullcore.aln
+    jobid: 202
+    wildcards: output_prefix=Agona_200, reference=SG17-135
+    threads: 32
+
+snp-sites -c /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/gubbins/SG17-135.filtered_polymorphic_sites.fasta > /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snp_sites/SG17-135.clean.fullcore.aln
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Tue Jun 16 10:01:46 2020]
+Finished job 202.
+4 of 7 steps (57%) done
+
+[Tue Jun 16 10:01:46 2020]
+rule snp_dists:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snp_sites/SG17-135.clean.fullcore.aln
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snp_dists/SG17-135.pairwise_snps.csv
+    jobid: 201
+    wildcards: output_prefix=Agona_200, reference=SG17-135
+    threads: 32
+
+snp-dists -c /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snp_sites/SG17-135.clean.fullcore.aln > /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snp_dists/SG17-135.pairwise_snps.csv
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/4ead7ed0
+This is snp-dists 0.6.3
+Read 200 sequences of length 12972
+[Tue Jun 16 10:01:47 2020]
+Finished job 201.
+5 of 7 steps (71%) done
+
+[Tue Jun 16 10:01:47 2020]
+rule fasttree:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snp_sites/SG17-135.clean.fullcore.aln
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/fasttree/SG17-135.clean.fullcore.tree
+    jobid: 200
+    wildcards: output_prefix=Agona_200, reference=SG17-135
+    threads: 32
+
+fasttree -gtr -nt /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snp_sites/SG17-135.clean.fullcore.aln > /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/fasttree/SG17-135.clean.fullcore.tree
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/89835887
+FastTree Version 2.1.10 Double precision (No SSE3)
+Alignment: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snp_sites/SG17-135.clean.fullcore.aln
+Nucleotide distances: Jukes-Cantor Joins: balanced Support: SH-like 1000
+Search: Normal +NNI +SPR (2 rounds range 10) +ML-NNI opt-each=1
+TopHits: 1.00*sqrtN close=default refresh=0.80
+ML Model: Generalized Time-Reversible, CAT approximation with 20 rate categories
+      0.10 seconds: Top hits for    106 of    180 seqs (at seed    100)
+      0.70 seconds: Joined    100 of    177
+Initial topology in 1.01 seconds
+Refining topology: 30 rounds ME-NNIs, 2 rounds ME-SPRs, 15 rounds ML-NNIs
+      1.01 seconds: ME NNI round 1 of 30, 1 of 178 splits
+      1.14 seconds: ME NNI round 2 of 30, 1 of 178 splits
+      1.27 seconds: ME NNI round 3 of 30, 1 of 178 splits
+      1.38 seconds: ME NNI round 4 of 30, 1 of 178 splits
+      1.49 seconds: ME NNI round 6 of 30, 1 of 178 splits
+      1.60 seconds: ME NNI round 9 of 30, 1 of 178 splits
+      2.54 seconds: SPR round   1 of   2, 101 of 358 nodes
+      3.89 seconds: SPR round   1 of   2, 201 of 358 nodes
+      5.14 seconds: SPR round   1 of   2, 301 of 358 nodes
+      5.80 seconds: ME NNI round 11 of 30, 1 of 178 splits
+      5.93 seconds: ME NNI round 12 of 30, 1 of 178 splits
+      6.05 seconds: SPR round   2 of   2, 1 of 358 nodes
+      7.37 seconds: SPR round   2 of   2, 101 of 358 nodes
+      8.64 seconds: SPR round   2 of   2, 201 of 358 nodes
+     10.11 seconds: ME NNI round 21 of 30, 1 of 178 splits
+Total branch-length 1.441 after 10.39 sec
+     10.41 seconds: ML Lengths 1 of 178 splits
+     10.98 seconds: ML Lengths 101 of 178 splits
+     11.37 seconds: ML NNI round 1 of 15, 1 of 178 splits
+     13.67 seconds: ML NNI round 1 of 15, 101 of 178 splits, 23 changes (max delta 0.000)
+ML-NNI round 1: LogLk = -75464.589 NNIs 49 max delta 0.00 Time 15.22
+     15.22 seconds: Optimizing GTR model, step 1 of 12
+     16.81 seconds: Optimizing GTR model, step 2 of 12
+     18.01 seconds: Optimizing GTR model, step 3 of 12
+     19.60 seconds: Optimizing GTR model, step 4 of 12
+     21.37 seconds: Optimizing GTR model, step 5 of 12
+     22.80 seconds: Optimizing GTR model, step 6 of 12
+     24.12 seconds: Optimizing GTR model, step 7 of 12
+     25.42 seconds: Optimizing GTR model, step 8 of 12
+     26.26 seconds: Optimizing GTR model, step 9 of 12
+     27.55 seconds: Optimizing GTR model, step 10 of 12
+     28.86 seconds: Optimizing GTR model, step 11 of 12
+     29.69 seconds: Optimizing GTR model, step 12 of 12
+GTR Frequencies: 0.2184 0.2792 0.2701 0.2323
+GTR rates(ac ag at cg ct gt) 1.1886 7.6509 0.6299 0.3929 7.5011 1.0000
+     30.69 seconds: ML Lengths 1 of 178 splits
+     31.47 seconds: ML Lengths 101 of 178 splits
+     32.14 seconds: Site likelihoods with rate category 1 of 20
+     32.24 seconds: Site likelihoods with rate category 2 of 20
+     32.34 seconds: Site likelihoods with rate category 3 of 20
+     32.54 seconds: Site likelihoods with rate category 5 of 20
+     32.74 seconds: Site likelihoods with rate category 7 of 20
+     32.94 seconds: Site likelihoods with rate category 9 of 20
+     33.13 seconds: Site likelihoods with rate category 11 of 20
+     33.33 seconds: Site likelihoods with rate category 13 of 20
+     33.52 seconds: Site likelihoods with rate category 15 of 20
+     33.73 seconds: Site likelihoods with rate category 17 of 20
+     33.92 seconds: Site likelihoods with rate category 19 of 20
+Switched to using 20 rate categories (CAT approximation)
+Rate categories were divided by 0.699 so that average rate = 1.0
+CAT-based log-likelihoods may not be comparable across runs
+Use -gamma for approximate but comparable Gamma(20) log-likelihoods
+     34.17 seconds: ML NNI round 2 of 15, 1 of 178 splits
+     36.00 seconds: ML NNI round 2 of 15, 101 of 178 splits, 10 changes (max delta 0.000)
+ML-NNI round 2: LogLk = -68332.845 NNIs 22 max delta 0.00 Time 37.89
+Turning off heuristics for final round of ML NNIs (converged)
+     37.88 seconds: ML NNI round 3 of 15, 1 of 178 splits
+     40.67 seconds: ML NNI round 3 of 15, 101 of 178 splits, 4 changes (max delta 0.000)
+ML-NNI round 3: LogLk = -68320.243 NNIs 5 max delta 0.00 Time 42.90 (final)
+     42.90 seconds: ML Lengths 1 of 178 splits
+     43.66 seconds: ML Lengths 101 of 178 splits
+Optimize all lengths: LogLk = -68320.197 Time 44.24
+     48.43 seconds: ML split tests for    100 of    177 internal splits
+Total time: 51.62 seconds Unique: 180/200 Bad splits: 0/177
+[Tue Jun 16 10:02:40 2020]
+Finished job 200.
+6 of 7 steps (86%) done
+
+[Tue Jun 16 10:02:40 2020]
+localrule all:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB0648AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CB5376AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB7197AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_TA2587AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_AB6160AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CB9822AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BA8052AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_AB5674AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_HB5660AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_YA6631AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CB0088AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_KB1136AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_AB5642AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB4431AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_LA7782AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_NA8627AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_IB1406AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB6687AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BA7945AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_WA5465AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_ZA0287AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB2593AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_YA9385AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_JB1150AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB2131AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB1956AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_KB3640AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_AB5909AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_NA5728AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_IB9118AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_IB6779AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_EB5876AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_EB2895AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_KB6830AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CB1790AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_VA1155AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_HB6699AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_NB6620AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_ZA8731AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CB9243AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_IB9302AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB6441AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_SA9246AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_MB7066AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_IB3115AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_KB4026AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_SA9330AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB9086AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CB1153AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_KB2744AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB2899AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_LA7787AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_YA7748AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_LB8076AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_XA1733AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_HB2219AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_KA0676AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB9988AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_DB1444AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB7261AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CA4744AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_TA4227AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_KB3375AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB5062AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB4921AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_EA3229AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_QA4878AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CB9835AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_IB2995AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_KA4888AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_RA1599AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CB6250AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_KA8881AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CB5379AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_SA1344AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_JB0953AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_NB4129AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CB2598AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CB9820AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_EB4083AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_SA9173AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_XA3268AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_EB4088AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_EB8845AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB9821AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_MB5439AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_JB6580AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_OB6949AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_KB4651AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_KB6773AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB3127AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_AB8884AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_UA7989AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_AB7534AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CB3497AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CB5468AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_GB0225AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BA7932AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_OA4072AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_KB1826AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CB0053AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB4524AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_XA3156AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_YA6663AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB1371AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_KB6210AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_HB2237AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CB1324AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_KB1789AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_FB5769AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_KB9523AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_FA5706AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_KB8676AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_AB7634AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_AB7588AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_UA7988AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_AB7542AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB4937AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_LB4034AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_KB8607AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_IB6801AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CA4728AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_XA1782AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_FA1940AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_UA4307AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_IB7996AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_KA0984AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CB9988AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_EB1045AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_WA9926AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB7947AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_MB2521AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB1915AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CB0612AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_LB7623AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_JB5195AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_RA1578AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_WA6251AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_YA6602AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB5050AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_HB2224AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_PA3767AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_KB6734AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB2970AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_FA2493AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_TA7615AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_TA1967AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_FB8051AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_EB1026AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_KA5244AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_YA6600AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CB3409AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BA5105AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_MB7965AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB9562AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB2967AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_ZA5298AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_JB4414AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_WA5013AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_XA1299AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_IB7540AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_AB9321AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_JA4169AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_PB8418AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_FB7879AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB7027AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CA4803AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB8331AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_LA4572AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_SA2453AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB1424AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_VA4537AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_TA6324AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_PB5476AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_QA5436AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_JB9710AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB1066AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_OA4067AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CB2372AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CB2669AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_EB6812AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_SA1324AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_GB5373AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_UA6621AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CB9389AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_TA1544AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_WA5463AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_CB5243AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_AB5906AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB1353AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_KA1119AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_JB5221AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_IA5065AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_BB8135AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_UA4237AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_NA2865AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_JB9521AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_WA2841AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snippyout/SG17-135/SAL_MA3067AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/fasttree/SG17-135.clean.fullcore.tree, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snp_dists/SG17-135.pairwise_snps.csv
+    jobid: 0
+
+[Tue Jun 16 10:02:40 2020]
+Finished job 0.
+7 of 7 steps (100%) done
+Complete log: /data/malcummi/pipelord/snplord/.snakemake/log/2020-06-16T085631.046037.snakemake.log
+['SAL_BB0648AA_AS', 'SAL_CB5376AA_AS', 'SAL_BB7197AA_AS', 'SAL_TA2587AA_AS', 'SAL_AB6160AA_AS', 'SAL_CB9822AA_AS', 'SAL_BA8052AA_AS', 'SAL_AB5674AA_AS', 'SAL_HB5660AA_AS', 'SAL_YA6631AA_AS', 'SAL_CB0088AA_AS', 'SAL_KB1136AA_AS', 'SAL_AB5642AA_AS', 'SAL_BB4431AA_AS', 'SAL_LA7782AA_AS', 'SAL_NA8627AA_AS', 'SAL_IB1406AA_AS', 'SAL_BB6687AA_AS', 'SAL_BA7945AA_AS', 'SAL_WA5465AA_AS', 'SAL_ZA0287AA_AS', 'SAL_BB2593AA_AS', 'SAL_YA9385AA_AS', 'SAL_JB1150AA_AS', 'SAL_BB2131AA_AS', 'SAL_BB1956AA_AS', 'SAL_KB3640AA_AS', 'SAL_AB5909AA_AS', 'SAL_NA5728AA_AS', 'SAL_IB9118AA_AS', 'SAL_IB6779AA_AS', 'SAL_EB5876AA_AS', 'SAL_EB2895AA_AS', 'SAL_KB6830AA_AS', 'SAL_CB1790AA_AS', 'SAL_VA1155AA_AS', 'SAL_HB6699AA_AS', 'SAL_NB6620AA_AS', 'SAL_ZA8731AA_AS', 'SAL_CB9243AA_AS', 'SAL_IB9302AA_AS', 'SAL_BB6441AA_AS', 'SAL_SA9246AA_AS', 'SAL_MB7066AA_AS', 'SAL_IB3115AA_AS', 'SAL_KB4026AA_AS', 'SAL_SA9330AA_AS', 'SAL_BB9086AA_AS', 'SAL_CB1153AA_AS', 'SAL_KB2744AA_AS', 'SAL_BB2899AA_AS', 'SAL_LA7787AA_AS', 'SAL_YA7748AA_AS', 'SAL_LB8076AA_AS', 'SAL_XA1733AA_AS', 'SAL_HB2219AA_AS', 'SAL_KA0676AA_AS', 'SAL_BB9988AA_AS', 'SAL_DB1444AA_AS', 'SAL_BB7261AA_AS', 'SAL_CA4744AA_AS', 'SAL_TA4227AA_AS', 'SAL_KB3375AA_AS', 'SAL_BB5062AA_AS', 'SAL_BB4921AA_AS', 'SAL_EA3229AA_AS', 'SAL_QA4878AA_AS', 'SAL_CB9835AA_AS', 'SAL_IB2995AA_AS', 'SAL_KA4888AA_AS', 'SAL_RA1599AA_AS', 'SAL_CB6250AA_AS', 'SAL_KA8881AA_AS', 'SAL_CB5379AA_AS', 'SAL_SA1344AA_AS', 'SAL_JB0953AA_AS', 'SAL_NB4129AA_AS', 'SAL_CB2598AA_AS', 'SAL_CB9820AA_AS', 'SAL_EB4083AA_AS', 'SAL_SA9173AA_AS', 'SAL_XA3268AA_AS', 'SAL_EB4088AA_AS', 'SAL_EB8845AA_AS', 'SAL_BB9821AA_AS', 'SAL_MB5439AA_AS', 'SAL_JB6580AA_AS', 'SAL_OB6949AA_AS', 'SAL_KB4651AA_AS', 'SAL_KB6773AA_AS', 'SAL_BB3127AA_AS', 'SAL_AB8884AA_AS', 'SAL_UA7989AA_AS', 'SAL_AB7534AA_AS', 'SAL_CB3497AA_AS', 'SAL_CB5468AA_AS', 'SAL_GB0225AA_AS', 'SAL_BA7932AA_AS', 'SAL_OA4072AA_AS', 'SAL_KB1826AA_AS', 'SAL_CB0053AA_AS', 'SAL_BB4524AA_AS', 'SAL_XA3156AA_AS', 'SAL_YA6663AA_AS', 'SAL_BB1371AA_AS', 'SAL_KB6210AA_AS', 'SAL_HB2237AA_AS', 'SAL_CB1324AA_AS', 'SAL_KB1789AA_AS', 'SAL_FB5769AA_AS', 'SAL_KB9523AA_AS', 'SAL_FA5706AA_AS', 'SAL_KB8676AA_AS', 'SAL_AB7634AA_AS', 'SAL_AB7588AA_AS', 'SAL_UA7988AA_AS', 'SAL_AB7542AA_AS', 'SAL_BB4937AA_AS', 'SAL_LB4034AA_AS', 'SAL_KB8607AA_AS', 'SAL_IB6801AA_AS', 'SAL_CA4728AA_AS', 'SAL_XA1782AA_AS', 'SAL_FA1940AA_AS', 'SAL_UA4307AA_AS', 'SAL_IB7996AA_AS', 'SAL_KA0984AA_AS', 'SAL_CB9988AA_AS', 'SAL_EB1045AA_AS', 'SAL_WA9926AA_AS', 'SAL_BB7947AA_AS', 'SAL_MB2521AA_AS', 'SAL_BB1915AA_AS', 'SAL_CB0612AA_AS', 'SAL_LB7623AA_AS', 'SAL_JB5195AA_AS', 'SAL_RA1578AA_AS', 'SAL_WA6251AA_AS', 'SAL_YA6602AA_AS', 'SAL_BB5050AA_AS', 'SAL_HB2224AA_AS', 'SAL_PA3767AA_AS', 'SAL_KB6734AA_AS', 'SAL_BB2970AA_AS', 'SAL_FA2493AA_AS', 'SAL_TA7615AA_AS', 'SAL_TA1967AA_AS', 'SAL_FB8051AA_AS', 'SAL_EB1026AA_AS', 'SAL_KA5244AA_AS', 'SAL_YA6600AA_AS', 'SAL_CB3409AA_AS', 'SAL_BA5105AA_AS', 'SAL_MB7965AA_AS', 'SAL_BB9562AA_AS', 'SAL_BB2967AA_AS', 'SAL_ZA5298AA_AS', 'SAL_JB4414AA_AS', 'SAL_WA5013AA_AS', 'SAL_XA1299AA_AS', 'SAL_IB7540AA_AS', 'SAL_AB9321AA_AS', 'SAL_JA4169AA_AS', 'SAL_PB8418AA_AS', 'SAL_FB7879AA_AS', 'SAL_BB7027AA_AS', 'SAL_CA4803AA_AS', 'SAL_BB8331AA_AS', 'SAL_LA4572AA_AS', 'SAL_SA2453AA_AS', 'SAL_BB1424AA_AS', 'SAL_VA4537AA_AS', 'SAL_TA6324AA_AS', 'SAL_PB5476AA_AS', 'SAL_QA5436AA_AS', 'SAL_JB9710AA_AS', 'SAL_BB1066AA_AS', 'SAL_OA4067AA_AS', 'SAL_CB2372AA_AS', 'SAL_CB2669AA_AS', 'SAL_EB6812AA_AS', 'SAL_SA1324AA_AS', 'SAL_GB5373AA_AS', 'SAL_UA6621AA_AS', 'SAL_CB9389AA_AS', 'SAL_TA1544AA_AS', 'SAL_WA5463AA_AS', 'SAL_CB5243AA_AS', 'SAL_AB5906AA_AS', 'SAL_BB1353AA_AS', 'SAL_KA1119AA_AS', 'SAL_JB5221AA_AS', 'SAL_IA5065AA_AS', 'SAL_BB8135AA_AS', 'SAL_UA4237AA_AS', 'SAL_NA2865AA_AS', 'SAL_JB9521AA_AS', 'SAL_WA2841AA_AS', 'SAL_MA3067AA_AS']
+['SG17-135']

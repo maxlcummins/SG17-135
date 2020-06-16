@@ -1,0 +1,10 @@
+# Run on Jupiter13 on 15-6-2020
+# Command 1 - Run abricate
+nohup snakemake -j --use-conda -s ./Snakefile  -p > /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/logs/abricate/nohup_Agona_200.out &
+# Command 2 - Run snplord with SG17-135 as reference.
+# Note that SG17-135 is not included as an input file (and only as an input)
+nohup snakemake -j -s Snakefile_assemblies-j --use-conda -p > /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/logs/snplord/nohup_Agona_200.out &
+# Command 3 - snplord failed at snippy core step due to some pathing issues resulting from changes made to the Snakefile (Snakefile_assemblies-j)
+# It was rerun after fixing the snakefile (by adding in a step that adds a directory called "core" on line 44
+#
+nohup snakemake -s Snakefile_assemblies-j --use-conda -p -j > /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/logs/snplord/nohup_pt_2.out &
