@@ -1,10 +1,12 @@
 # Run on Jupiter13 on 15-6-2020
 # Command 1 - Run abricate
-nohup snakemake -j --use-conda -s ./Snakefile  -p > /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/logs/abricate/nohup_Agona_200.out &
+nohup snakemake -j --use-conda  -p > /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/logs/abricate/nohup_abricatelord.out &
 # Command 2 - Run snplord with SG17-135 as reference.
 # Note that SG17-135 is not included as an input file (and only as an input)
-nohup snakemake -j -s Snakefile_assemblies-j --use-conda -p > /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/logs/snplord/nohup_Agona_200.out &
-# Command 3 - snplord failed at snippy core step due to some pathing issues resulting from changes made to the Snakefile (Snakefile_assemblies-j)
-# It was rerun after fixing the snakefile (by adding in a step that adds a directory called "core" on line 44
-#
-nohup snakemake -s Snakefile_assemblies-j --use-conda -p -j > /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/logs/snplord/nohup_pt_2.out &
+# Note that the following strains were excluded as a previous run of analysis found them to be highly divergent from our strains, obscuring branching.
+# "SAL_BB1353AA_AS", "SAL_IB2995AA_AS","SAL_BB9821AA_AS","SAL_CB0612AA_AS"
+nohup snakemake -s Snakefile_assemblies-j --use-conda -p -j > /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/logs/snplord/nohup_snplord.out &
+# Copied the tree, snp table and abricate files to their new destination
+cp /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/fasttree/SG17-135.clean.fullcore.tree /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snp_dists/SG17-135.pairwise_snps.csv /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/analysis/snp_outputs/
+cat /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysisabricateAgona_200/*/* > /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/analysis/abricate.txt
+
