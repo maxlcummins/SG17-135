@@ -9,4 +9,5 @@ nohup snakemake -s Snakefile_assemblies-j --use-conda -p -j > /home/malcummi/Dat
 # Copied the tree, snp table and abricate files to their new destination
 cp /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/fasttree/SG17-135.clean.fullcore.tree /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_200/snp_dists/SG17-135.pairwise_snps.csv /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/analysis/snp_outputs/
 cat /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysisabricateAgona_200/*/* > /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/analysis/abricate.txt
-
+# Command 3 - Ran abricate with new Salmonella PIA database
+nohup snakemake -j --use-conda  -p > /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/logs/abricate/nohup_abricatelord_PIAs.out &
