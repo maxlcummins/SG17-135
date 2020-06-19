@@ -11,3 +11,15 @@ cp /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/
 cat /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysisabricateAgona_200/*/* > /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/analysis/abricate.txt
 # Command 3 - Ran abricate with new Salmonella PIA database
 nohup snakemake -j --use-conda  -p > /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/logs/abricate/nohup_abricatelord_PIAs.out &
+
+# Command 4 - ran snplord with Agona80
+nohup snakemake -s Snakefile_assemblies-j  -j --use-conda -p > /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/logs/snplord/nohup_Agona80.out &
+
+# Command 5 - ran snplord with Agona195 (SAL_LB7623AA_AS was trash [stuck out on tree and highest number of low quality bases and second lowest N50)
+nohup snakemake -s Snakefile_assemblies-j  -j --use-conda -p > /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/logs/snplord/nohup_Agona80.out &
+
+# Command 6 - cp
+cd /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp
+for f in *; do mkdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/analysis/snp_outputs/${f}; done
+for f in *; do cp ${f}/fasttree/* /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/analysis/snp_outputs/${f}/${f}_SG17-135.clean.fullcore.tree; done
+for f in *; do cp ${f}/snp_dists/* /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/analysis/snp_outputs/${f}/${f}_SG17-135.pairwise_snps.csv; done

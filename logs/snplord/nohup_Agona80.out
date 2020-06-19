@@ -1,0 +1,1220 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 36
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	fasttree
+	1	gubbins
+	1	snippy_clean
+	1	snippy_core
+	79	snippy_run
+	1	snp_dists
+	1	snp_sites
+	86
+
+[Fri Jun 19 10:39:18 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB1915AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB1915AA_AS.out
+    jobid: 54
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_BB1915AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB1915AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB1915AA_AS.fasta
+
+[Fri Jun 19 10:39:18 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB5468AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB5468AA_AS.out
+    jobid: 37
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_CB5468AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB5468AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB5468AA_AS.fasta
+
+[Fri Jun 19 10:39:18 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_MB7965AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_MB7965AA_AS.out
+    jobid: 62
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_MB7965AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_MB7965AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_MB7965AA_AS.fasta
+
+[Fri Jun 19 10:39:18 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_EB2895AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_EB2895AA_AS.out
+    jobid: 9
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_EB2895AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_EB2895AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_EB2895AA_AS.fasta
+
+[Fri Jun 19 10:39:18 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB5243AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB5243AA_AS.out
+    jobid: 74
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_CB5243AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB5243AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB5243AA_AS.fasta
+
+[Fri Jun 19 10:39:18 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB1790AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB1790AA_AS.out
+    jobid: 10
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_CB1790AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB1790AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB1790AA_AS.fasta
+
+[Fri Jun 19 10:39:18 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_KA4888AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_KA4888AA_AS.out
+    jobid: 24
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_KA4888AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_KA4888AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_KA4888AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:39:41 2020]
+Finished job 54.
+1 of 86 steps (1%) done
+
+[Fri Jun 19 10:39:41 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_JB9521AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_JB9521AA_AS.out
+    jobid: 78
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_JB9521AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_JB9521AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_JB9521AA_AS.fasta
+[Fri Jun 19 10:39:41 2020]
+Finished job 62.
+2 of 86 steps (2%) done
+
+[Fri Jun 19 10:39:41 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB2967AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB2967AA_AS.out
+    jobid: 64
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_BB2967AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB2967AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB2967AA_AS.fasta
+[Fri Jun 19 10:39:41 2020]
+Finished job 24.
+3 of 86 steps (3%) done
+
+[Fri Jun 19 10:39:41 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB9243AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB9243AA_AS.out
+    jobid: 13
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_CB9243AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB9243AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB9243AA_AS.fasta
+[Fri Jun 19 10:39:41 2020]
+Finished job 74.
+4 of 86 steps (5%) done
+
+[Fri Jun 19 10:39:41 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB6441AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB6441AA_AS.out
+    jobid: 15
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_BB6441AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB6441AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB6441AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:39:42 2020]
+Finished job 10.
+5 of 86 steps (6%) done
+
+[Fri Jun 19 10:39:42 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_XA1299AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_XA1299AA_AS.out
+    jobid: 65
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_XA1299AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_XA1299AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_XA1299AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:39:42 2020]
+Finished job 9.
+6 of 86 steps (7%) done
+
+[Fri Jun 19 10:39:42 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB9086AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB9086AA_AS.out
+    jobid: 17
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_BB9086AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB9086AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB9086AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:39:43 2020]
+Finished job 37.
+7 of 86 steps (8%) done
+
+[Fri Jun 19 10:39:43 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_AB7534AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_AB7534AA_AS.out
+    jobid: 35
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_AB7534AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_AB7534AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_AB7534AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:40:03 2020]
+Finished job 64.
+8 of 86 steps (9%) done
+
+[Fri Jun 19 10:40:03 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_EB8845AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_EB8845AA_AS.out
+    jobid: 31
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_EB8845AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_EB8845AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_EB8845AA_AS.fasta
+[Fri Jun 19 10:40:03 2020]
+Finished job 13.
+9 of 86 steps (10%) done
+
+[Fri Jun 19 10:40:03 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_HB2224AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_HB2224AA_AS.out
+    jobid: 57
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_HB2224AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_HB2224AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_HB2224AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:40:03 2020]
+Finished job 65.
+10 of 86 steps (12%) done
+
+[Fri Jun 19 10:40:03 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_AB8884AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_AB8884AA_AS.out
+    jobid: 34
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_AB8884AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_AB8884AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_AB8884AA_AS.fasta
+[Fri Jun 19 10:40:03 2020]
+Finished job 78.
+11 of 86 steps (13%) done
+
+[Fri Jun 19 10:40:03 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_FB5769AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_FB5769AA_AS.out
+    jobid: 46
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_FB5769AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_FB5769AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_FB5769AA_AS.fasta
+[Fri Jun 19 10:40:03 2020]
+Finished job 17.
+12 of 86 steps (14%) done
+
+[Fri Jun 19 10:40:03 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_NB6620AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_NB6620AA_AS.out
+    jobid: 12
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_NB6620AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_NB6620AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_NB6620AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:40:04 2020]
+Finished job 15.
+13 of 86 steps (15%) done
+
+[Fri Jun 19 10:40:04 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB5050AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB5050AA_AS.out
+    jobid: 56
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_BB5050AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB5050AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB5050AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:40:05 2020]
+Finished job 35.
+14 of 86 steps (16%) done
+
+[Fri Jun 19 10:40:05 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_IB7996AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_IB7996AA_AS.out
+    jobid: 51
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_IB7996AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_IB7996AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_IB7996AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:40:24 2020]
+Finished job 31.
+15 of 86 steps (17%) done
+
+[Fri Jun 19 10:40:24 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_SA1324AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_SA1324AA_AS.out
+    jobid: 72
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_SA1324AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_SA1324AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_SA1324AA_AS.fasta
+[Fri Jun 19 10:40:24 2020]
+Finished job 57.
+16 of 86 steps (19%) done
+
+[Fri Jun 19 10:40:24 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_AB7542AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_AB7542AA_AS.out
+    jobid: 48
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_AB7542AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_AB7542AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_AB7542AA_AS.fasta
+[Fri Jun 19 10:40:24 2020]
+Finished job 12.
+17 of 86 steps (20%) done
+
+[Fri Jun 19 10:40:24 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB9988AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB9988AA_AS.out
+    jobid: 22
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_BB9988AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB9988AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB9988AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:40:25 2020]
+Finished job 56.
+18 of 86 steps (21%) done
+
+[Fri Jun 19 10:40:25 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB2669AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB2669AA_AS.out
+    jobid: 70
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_CB2669AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB2669AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB2669AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:40:25 2020]
+Finished job 46.
+19 of 86 steps (22%) done
+
+[Fri Jun 19 10:40:25 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB2598AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB2598AA_AS.out
+    jobid: 28
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_CB2598AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB2598AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB2598AA_AS.fasta
+[Fri Jun 19 10:40:25 2020]
+Finished job 34.
+20 of 86 steps (23%) done
+
+[Fri Jun 19 10:40:25 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_IB6801AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_IB6801AA_AS.out
+    jobid: 50
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_IB6801AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_IB6801AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_IB6801AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:40:26 2020]
+Finished job 51.
+21 of 86 steps (24%) done
+
+[Fri Jun 19 10:40:26 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB1324AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB1324AA_AS.out
+    jobid: 45
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_CB1324AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB1324AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB1324AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:40:46 2020]
+Finished job 48.
+22 of 86 steps (26%) done
+
+[Fri Jun 19 10:40:46 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB2970AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB2970AA_AS.out
+    jobid: 58
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_BB2970AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB2970AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB2970AA_AS.fasta
+[Fri Jun 19 10:40:47 2020]
+Finished job 70.
+23 of 86 steps (27%) done
+
+[Fri Jun 19 10:40:47 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB2131AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB2131AA_AS.out
+    jobid: 8
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_BB2131AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB2131AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB2131AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:40:47 2020]
+Finished job 28.
+24 of 86 steps (28%) done
+
+[Fri Jun 19 10:40:47 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB5379AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB5379AA_AS.out
+    jobid: 26
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_CB5379AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB5379AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB5379AA_AS.fasta
+[Fri Jun 19 10:40:47 2020]
+Finished job 50.
+25 of 86 steps (29%) done
+
+[Fri Jun 19 10:40:47 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_HB2219AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_HB2219AA_AS.out
+    jobid: 20
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_HB2219AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_HB2219AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_HB2219AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:40:48 2020]
+Finished job 22.
+26 of 86 steps (30%) done
+
+[Fri Jun 19 10:40:48 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB4937AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB4937AA_AS.out
+    jobid: 49
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_BB4937AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB4937AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB4937AA_AS.fasta
+[Fri Jun 19 10:40:48 2020]
+Finished job 72.
+27 of 86 steps (31%) done
+
+[Fri Jun 19 10:40:48 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB9389AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB9389AA_AS.out
+    jobid: 73
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_CB9389AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB9389AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB9389AA_AS.fasta
+[Fri Jun 19 10:40:48 2020]
+Finished job 45.
+28 of 86 steps (33%) done
+
+[Fri Jun 19 10:40:48 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_IB1406AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_IB1406AA_AS.out
+    jobid: 7
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_IB1406AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_IB1406AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_IB1406AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:41:07 2020]
+Finished job 8.
+29 of 86 steps (34%) done
+
+[Fri Jun 19 10:41:07 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BA8052AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BA8052AA_AS.out
+    jobid: 4
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_BA8052AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BA8052AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BA8052AA_AS.fasta
+[Fri Jun 19 10:41:07 2020]
+Finished job 26.
+30 of 86 steps (35%) done
+
+[Fri Jun 19 10:41:07 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_HB6699AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_HB6699AA_AS.out
+    jobid: 11
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_HB6699AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_HB6699AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_HB6699AA_AS.fasta
+[Fri Jun 19 10:41:08 2020]
+Finished job 58.
+31 of 86 steps (36%) done
+
+[Fri Jun 19 10:41:08 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB1424AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB1424AA_AS.out
+    jobid: 67
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_BB1424AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB1424AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB1424AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:41:08 2020]
+Finished job 7.
+32 of 86 steps (37%) done
+
+[Fri Jun 19 10:41:08 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB5376AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB5376AA_AS.out
+    jobid: 1
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_CB5376AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB5376AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB5376AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:41:08 2020]
+Finished job 20.
+33 of 86 steps (38%) done
+
+[Fri Jun 19 10:41:08 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_JB6580AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_JB6580AA_AS.out
+    jobid: 32
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_JB6580AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_JB6580AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_JB6580AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:41:09 2020]
+Finished job 73.
+34 of 86 steps (40%) done
+
+[Fri Jun 19 10:41:09 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_IB9302AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_IB9302AA_AS.out
+    jobid: 14
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_IB9302AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_IB9302AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_IB9302AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:41:10 2020]
+Finished job 49.
+35 of 86 steps (41%) done
+
+[Fri Jun 19 10:41:10 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_EB1026AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_EB1026AA_AS.out
+    jobid: 60
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_EB1026AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_EB1026AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_EB1026AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:41:28 2020]
+Finished job 11.
+36 of 86 steps (42%) done
+
+[Fri Jun 19 10:41:28 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_OA4067AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_OA4067AA_AS.out
+    jobid: 68
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_OA4067AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_OA4067AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_OA4067AA_AS.fasta
+[Fri Jun 19 10:41:28 2020]
+Finished job 1.
+37 of 86 steps (43%) done
+
+[Fri Jun 19 10:41:28 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB7261AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB7261AA_AS.out
+    jobid: 23
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_BB7261AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB7261AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB7261AA_AS.fasta
+[Fri Jun 19 10:41:28 2020]
+Finished job 4.
+38 of 86 steps (44%) done
+
+[Fri Jun 19 10:41:28 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB9820AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB9820AA_AS.out
+    jobid: 29
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_CB9820AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB9820AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB9820AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:41:29 2020]
+Finished job 67.
+39 of 86 steps (45%) done
+
+[Fri Jun 19 10:41:29 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_AB7634AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_AB7634AA_AS.out
+    jobid: 47
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_AB7634AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_AB7634AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_AB7634AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:41:29 2020]
+Finished job 32.
+40 of 86 steps (47%) done
+
+[Fri Jun 19 10:41:29 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB7197AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB7197AA_AS.out
+    jobid: 2
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_BB7197AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB7197AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB7197AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:41:30 2020]
+Finished job 14.
+41 of 86 steps (48%) done
+
+[Fri Jun 19 10:41:30 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_WA9926AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_WA9926AA_AS.out
+    jobid: 53
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_WA9926AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_WA9926AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_WA9926AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:41:31 2020]
+Finished job 60.
+42 of 86 steps (49%) done
+
+[Fri Jun 19 10:41:31 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_OA4072AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_OA4072AA_AS.out
+    jobid: 40
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_OA4072AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_OA4072AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_OA4072AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:41:49 2020]
+Finished job 29.
+43 of 86 steps (50%) done
+
+[Fri Jun 19 10:41:49 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB2372AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB2372AA_AS.out
+    jobid: 69
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_CB2372AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB2372AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB2372AA_AS.fasta
+[Fri Jun 19 10:41:49 2020]
+Finished job 47.
+44 of 86 steps (51%) done
+
+[Fri Jun 19 10:41:49 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB8135AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB8135AA_AS.out
+    jobid: 76
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_BB8135AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB8135AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB8135AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:41:49 2020]
+Finished job 68.
+45 of 86 steps (52%) done
+
+[Fri Jun 19 10:41:49 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB7027AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB7027AA_AS.out
+    jobid: 66
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_BB7027AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB7027AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB7027AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:41:50 2020]
+Finished job 23.
+46 of 86 steps (53%) done
+
+[Fri Jun 19 10:41:50 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_EB4088AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_EB4088AA_AS.out
+    jobid: 30
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_EB4088AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_EB4088AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_EB4088AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:41:50 2020]
+Finished job 2.
+47 of 86 steps (55%) done
+
+[Fri Jun 19 10:41:50 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB9822AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB9822AA_AS.out
+    jobid: 3
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_CB9822AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB9822AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB9822AA_AS.fasta
+[Fri Jun 19 10:41:51 2020]
+Finished job 53.
+48 of 86 steps (56%) done
+
+[Fri Jun 19 10:41:51 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB3497AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB3497AA_AS.out
+    jobid: 36
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_CB3497AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB3497AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB3497AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:41:52 2020]
+Finished job 40.
+49 of 86 steps (57%) done
+
+[Fri Jun 19 10:41:52 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB0088AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB0088AA_AS.out
+    jobid: 5
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_CB0088AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB0088AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB0088AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:42:09 2020]
+Finished job 76.
+50 of 86 steps (58%) done
+
+[Fri Jun 19 10:42:09 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB3127AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB3127AA_AS.out
+    jobid: 33
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_BB3127AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB3127AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB3127AA_AS.fasta
+[Fri Jun 19 10:42:09 2020]
+Finished job 69.
+51 of 86 steps (59%) done
+
+[Fri Jun 19 10:42:09 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_KB6210AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_KB6210AA_AS.out
+    jobid: 44
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_KB6210AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_KB6210AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_KB6210AA_AS.fasta
+[Fri Jun 19 10:42:09 2020]
+Finished job 66.
+52 of 86 steps (60%) done
+
+[Fri Jun 19 10:42:09 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_KB2744AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_KB2744AA_AS.out
+    jobid: 18
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_KB2744AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_KB2744AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_KB2744AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:42:10 2020]
+Finished job 30.
+53 of 86 steps (62%) done
+
+[Fri Jun 19 10:42:10 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB9562AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB9562AA_AS.out
+    jobid: 63
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_BB9562AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB9562AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB9562AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:42:11 2020]
+Finished job 3.
+54 of 86 steps (63%) done
+
+[Fri Jun 19 10:42:11 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB4524AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB4524AA_AS.out
+    jobid: 42
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_BB4524AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB4524AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB4524AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:42:11 2020]
+Finished job 36.
+55 of 86 steps (64%) done
+
+[Fri Jun 19 10:42:11 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_FB8051AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_FB8051AA_AS.out
+    jobid: 59
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_FB8051AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_FB8051AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_FB8051AA_AS.fasta
+[Fri Jun 19 10:42:12 2020]
+Finished job 5.
+56 of 86 steps (65%) done
+
+[Fri Jun 19 10:42:12 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB0053AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB0053AA_AS.out
+    jobid: 41
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_CB0053AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB0053AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_CB0053AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:42:29 2020]
+Finished job 44.
+57 of 86 steps (66%) done
+
+[Fri Jun 19 10:42:29 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_EB6812AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_EB6812AA_AS.out
+    jobid: 71
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_EB6812AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_EB6812AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_EB6812AA_AS.fasta
+[Fri Jun 19 10:42:29 2020]
+Finished job 33.
+58 of 86 steps (67%) done
+
+[Fri Jun 19 10:42:29 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_GB0225AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_GB0225AA_AS.out
+    jobid: 38
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_GB0225AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_GB0225AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_GB0225AA_AS.fasta
+[Fri Jun 19 10:42:29 2020]
+Finished job 18.
+59 of 86 steps (69%) done
+
+[Fri Jun 19 10:42:29 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_KA1119AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_KA1119AA_AS.out
+    jobid: 75
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_KA1119AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_KA1119AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_KA1119AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:42:30 2020]
+Finished job 63.
+60 of 86 steps (70%) done
+
+[Fri Jun 19 10:42:30 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_SA9246AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_SA9246AA_AS.out
+    jobid: 16
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_SA9246AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_SA9246AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_SA9246AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:42:31 2020]
+Finished job 42.
+61 of 86 steps (71%) done
+
+[Fri Jun 19 10:42:31 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_KA0984AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_KA0984AA_AS.out
+    jobid: 52
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_KA0984AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_KA0984AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_KA0984AA_AS.fasta
+[Fri Jun 19 10:42:31 2020]
+Finished job 59.
+62 of 86 steps (72%) done
+
+[Fri Jun 19 10:42:31 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BA7932AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BA7932AA_AS.out
+    jobid: 39
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_BA7932AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BA7932AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BA7932AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:42:32 2020]
+Finished job 41.
+63 of 86 steps (73%) done
+
+[Fri Jun 19 10:42:32 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_XA3156AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_XA3156AA_AS.out
+    jobid: 43
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_XA3156AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_XA3156AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_XA3156AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:42:49 2020]
+Finished job 75.
+64 of 86 steps (74%) done
+
+[Fri Jun 19 10:42:49 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB2899AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB2899AA_AS.out
+    jobid: 19
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_BB2899AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB2899AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB2899AA_AS.fasta
+[Fri Jun 19 10:42:49 2020]
+Finished job 71.
+65 of 86 steps (76%) done
+
+[Fri Jun 19 10:42:49 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_KA5244AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_KA5244AA_AS.out
+    jobid: 61
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_KA5244AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_KA5244AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_KA5244AA_AS.fasta
+[Fri Jun 19 10:42:49 2020]
+Finished job 38.
+66 of 86 steps (77%) done
+
+[Fri Jun 19 10:42:49 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_RA1578AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_RA1578AA_AS.out
+    jobid: 55
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_RA1578AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_RA1578AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_RA1578AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:42:50 2020]
+Finished job 16.
+67 of 86 steps (78%) done
+
+[Fri Jun 19 10:42:50 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB4431AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB4431AA_AS.out
+    jobid: 6
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_BB4431AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB4431AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_BB4431AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:42:51 2020]
+Finished job 52.
+68 of 86 steps (79%) done
+
+[Fri Jun 19 10:42:51 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_RA1599AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_RA1599AA_AS.out
+    jobid: 25
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_RA1599AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_RA1599AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_RA1599AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:42:52 2020]
+Finished job 39.
+69 of 86 steps (80%) done
+
+[Fri Jun 19 10:42:52 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_SA1344AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_SA1344AA_AS.out
+    jobid: 27
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_SA1344AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_SA1344AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_SA1344AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:42:53 2020]
+Finished job 43.
+70 of 86 steps (81%) done
+
+[Fri Jun 19 10:42:53 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_NA2865AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_NA2865AA_AS.out
+    jobid: 77
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_NA2865AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_NA2865AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_NA2865AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:43:09 2020]
+Finished job 19.
+71 of 86 steps (83%) done
+
+[Fri Jun 19 10:43:09 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_KA0676AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_KA0676AA_AS.out
+    jobid: 21
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_KA0676AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_KA0676AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_KA0676AA_AS.fasta
+[Fri Jun 19 10:43:10 2020]
+Finished job 6.
+72 of 86 steps (84%) done
+
+[Fri Jun 19 10:43:10 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_WA2841AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_WA2841AA_AS.out
+    jobid: 79
+    wildcards: output_prefix=HC5-4181, reference=SG17-135, sample=SAL_WA2841AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_WA2841AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/HC5-4181_no_ref/SAL_WA2841AA_AS.fasta
+[Fri Jun 19 10:43:10 2020]
+Finished job 61.
+73 of 86 steps (85%) done
+[Fri Jun 19 10:43:10 2020]
+Finished job 55.
+74 of 86 steps (86%) done
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:43:11 2020]
+Finished job 25.
+75 of 86 steps (87%) done
+[Fri Jun 19 10:43:15 2020]
+Finished job 77.
+76 of 86 steps (88%) done
+[Fri Jun 19 10:43:16 2020]
+Finished job 27.
+77 of 86 steps (90%) done
+[Fri Jun 19 10:43:28 2020]
+Finished job 79.
+78 of 86 steps (91%) done
+[Fri Jun 19 10:43:28 2020]
+Finished job 21.
+79 of 86 steps (92%) done
+
+[Fri Jun 19 10:43:28 2020]
+rule snippy_core:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/core/SG17-135.full.aln
+    jobid: 85
+    wildcards: output_prefix=HC5-4181, reference=SG17-135
+    threads: 32
+
+
+        snippy-core --prefix /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/core/SG17-135 --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/*.out
+        
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:43:40 2020]
+Finished job 85.
+80 of 86 steps (93%) done
+
+[Fri Jun 19 10:43:40 2020]
+rule snippy_clean:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/core/SG17-135.full.aln
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/core/SG17-135.clean.full.aln
+    jobid: 84
+    wildcards: output_prefix=HC5-4181, reference=SG17-135
+    threads: 32
+
+snippy-clean_full_aln /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/core/SG17-135.full.aln > /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/core/SG17-135.clean.full.aln
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:43:53 2020]
+Finished job 84.
+81 of 86 steps (94%) done
+
+[Fri Jun 19 10:43:53 2020]
+rule gubbins:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/core/SG17-135.clean.full.aln
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/gubbins/SG17-135.filtered_polymorphic_sites.fasta
+    jobid: 83
+    wildcards: output_prefix=HC5-4181, reference=SG17-135
+    threads: 32
+
+
+        run_gubbins.py -v -f 25 -p /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/gubbins/SG17-135 /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/core/SG17-135.clean.full.aln
+        rm SG17-135.clean.full.aln.seq.joint.txt
+        
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/0d285378
+[Fri Jun 19 10:47:26 2020]
+Finished job 83.
+82 of 86 steps (95%) done
+
+[Fri Jun 19 10:47:26 2020]
+rule snp_sites:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/gubbins/SG17-135.filtered_polymorphic_sites.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snp_sites/SG17-135.clean.fullcore.aln
+    jobid: 82
+    wildcards: output_prefix=HC5-4181, reference=SG17-135
+    threads: 32
+
+snp-sites -c /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/gubbins/SG17-135.filtered_polymorphic_sites.fasta > /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snp_sites/SG17-135.clean.fullcore.aln
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[Fri Jun 19 10:47:27 2020]
+Finished job 82.
+83 of 86 steps (97%) done
+
+[Fri Jun 19 10:47:27 2020]
+rule snp_dists:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snp_sites/SG17-135.clean.fullcore.aln
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snp_dists/SG17-135.pairwise_snps.csv
+    jobid: 81
+    wildcards: output_prefix=HC5-4181, reference=SG17-135
+    threads: 32
+
+snp-dists -c /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snp_sites/SG17-135.clean.fullcore.aln > /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snp_dists/SG17-135.pairwise_snps.csv
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/4ead7ed0
+[Fri Jun 19 10:47:28 2020]
+Finished job 81.
+84 of 86 steps (98%) done
+
+[Fri Jun 19 10:47:28 2020]
+rule fasttree:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snp_sites/SG17-135.clean.fullcore.aln
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/fasttree/SG17-135.clean.fullcore.tree
+    jobid: 80
+    wildcards: output_prefix=HC5-4181, reference=SG17-135
+    threads: 32
+
+fasttree -gtr -nt /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snp_sites/SG17-135.clean.fullcore.aln > /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/fasttree/SG17-135.clean.fullcore.tree
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/89835887
+[Fri Jun 19 10:47:29 2020]
+Finished job 80.
+85 of 86 steps (99%) done
+
+[Fri Jun 19 10:47:29 2020]
+localrule all:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB5376AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB7197AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB9822AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BA8052AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB0088AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB4431AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_IB1406AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB2131AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_EB2895AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB1790AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_HB6699AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_NB6620AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB9243AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_IB9302AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB6441AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_SA9246AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB9086AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_KB2744AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB2899AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_HB2219AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_KA0676AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB9988AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB7261AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_KA4888AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_RA1599AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB5379AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_SA1344AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB2598AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB9820AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_EB4088AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_EB8845AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_JB6580AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB3127AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_AB8884AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_AB7534AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB3497AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB5468AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_GB0225AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BA7932AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_OA4072AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB0053AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB4524AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_XA3156AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_KB6210AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB1324AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_FB5769AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_AB7634AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_AB7542AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB4937AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_IB6801AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_IB7996AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_KA0984AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_WA9926AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB1915AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_RA1578AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB5050AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_HB2224AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB2970AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_FB8051AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_EB1026AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_KA5244AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_MB7965AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB9562AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB2967AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_XA1299AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB7027AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB1424AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_OA4067AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB2372AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB2669AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_EB6812AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_SA1324AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB9389AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_CB5243AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_KA1119AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_BB8135AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_NA2865AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_JB9521AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snippyout/SG17-135/SAL_WA2841AA_AS.out, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/fasttree/SG17-135.clean.fullcore.tree, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/HC5-4181/snp_dists/SG17-135.pairwise_snps.csv
+    jobid: 0
+
+[Fri Jun 19 10:47:29 2020]
+Finished job 0.
+86 of 86 steps (100%) done
+Complete log: /data/malcummi/pipelord/snplord/.snakemake/log/2020-06-19T103916.997942.snakemake.log
