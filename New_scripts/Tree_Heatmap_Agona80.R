@@ -19,7 +19,7 @@ path_to_repo <-
 #Changes working directory
 setwd(path_to_repo)
 
-path_to_tree <- "analysis/snp_outputs/"
+path_to_tree <- "analysis/snp_outputs/HC5-4181/HC5-4181_SG17-135.clean.fullcore.tree"
 
 path_to_abricate <- "analysis/abricate/abricate.txt"
 
@@ -31,6 +31,19 @@ path_to_pais <- "/Users/maxcummins/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/
 
 #Changes working directory
 setwd(path_to_repo)
+
+
+#Read in the tree file
+tree <-
+        read.tree(file = path_to_tree)
+
+
+
+#trim the names of the assemblies in the tree tip labels
+tree$tip.label <- gsub("\\..*", "", tree$tip.label)
+
+#reassign strain SG17-135's assembly barcode to its strain name (tree tip label)
+tree$tip.label <- gsub("Reference", "SG17-135", tree$tip.label)
 
 #Read in the abricate genotype data sheet (small number of rows for colname reassignment)
 df <- read_delim(
@@ -70,6 +83,14 @@ df$perc_identity <- as.numeric(df$perc_identity)
 df <-
         df %>% filter(perc_coverage > 90) %>% filter(perc_identity > 90)
 
+#Trim excess characters the assembly names and reassign this to rownames
+df$name <- gsub("\\..*", "", df$name)
+
+#Replace "SAL_HC4750AA_AS" with SG17-135
+df$name <- gsub("SAL_HC4750AA_AS", "SG17-135", df$name)
+
+df <- df %>% filter(name %in% tree$tip.label)
+
 #Filter out non-virulence-associated genes
 #df <-
 #  df %>% filter(DATABASE %in% c("vfdb", "card", "plasmidfinder"))
@@ -98,22 +119,22 @@ df$GENE <- gsub("papC", "papCDEFGHJK", df$GENE)
 ####Clean gene names
 ################################################################################
 
-df$GENE <- gsub("AAC(3)-IId", "aac(3)-IId", df$GENE)
-df$GENE <- gsub("AAC(3)-IV", "aac(3)-IV", df$GENE)
-df$GENE <- gsub("AAC(3)-VIa", "aac(3)-VIa", df$GENE)
-df$GENE <- gsub("AAC(6')-Iy", "aac(6')-Iy", df$GENE)
-df$GENE <- gsub("ANT(3'')-IIa", "ant(3'')-IIa", df$GENE)
-df$GENE <- gsub("APH(3'')-Ib", "aph(3'')-Ib", df$GENE)
-df$GENE <- gsub("APH(3')-Ia", "aph(3')-Ia", df$GENE)
-df$GENE <- gsub("APH(3')-IIa", "aph(3')-IIa", df$GENE)
-df$GENE <- gsub("APH(4)-Ia", "aph(4)-Ia", df$GENE)
-df$GENE <- gsub("APH(6)-Id", "aph(6)-Id", df$GENE)
+#AMR genes
+df$GENE <- gsub("^AAC", "aac", df$GENE)
+df$GENE <- gsub("^ANT", "ant", df$GENE)
+df$GENE <- gsub("^APH","aph", df$GENE)
 df$GENE <- gsub("CMY-59", "blaCMY-59", df$GENE)
 df$GENE <- gsub("CTX-M-55", "blaCTX-M-55", df$GENE)
 df$GENE <- gsub("TEM-1", "blaTEM-1", df$GENE)
 df$GENE <- gsub("TEM-150", "blaTEM-150", df$GENE)
 df$GENE <- gsub("FosA7", "fosA7", df$GENE)
 df$GENE <- gsub("QnrS1", "qnrS1", df$GENE)
+
+#Plasmid genes
+df$GENE <- gsub("_Gamma_1", "(Gamma)", df$GENE)
+df$GENE <- gsub("_1_Alpha", "(Alpha)", df$GENE)
+df$GENE <- gsub("_1.*","",df$GENE)
+
 
 ################################################################################
 ####Remove unwanted AMR genes (not considered actual AMR genes by most)
@@ -125,10 +146,6 @@ df <- df %>% filter(GENE != "sdiA")
 
 ################################################################################
 ################################################################################
-
-
-
-
 
 
 #Prepend the database name to the gene name so we can identify specific databases later
@@ -170,16 +187,6 @@ colnames(df3) <-
                " (",
                round(sums / nrow(df3) * 100),
                "%)")
-
-#Read in the tree file
-tree <-
-        read.tree(file = path_to_tree)
-
-#trim the names of the assemblies in the tree tip labels
-tree$tip.label <- gsub("\\..*", "", tree$tip.label)
-
-#reassign strain SG17-135's assembly barcode to its strain name (tree tip label)
-tree$tip.label <- gsub("Reference", "SG17-135", tree$tip.label)
 
 #reassign strain SG17-135's assembly barcode to its strain name (data frame with genotypic data)
 rownames(df3) <- gsub("SAL_HC4750AA_AS", "SG17-135", rownames(df3))
@@ -224,6 +231,25 @@ pais_df$perc_identity <- as.numeric(pais_df$perc_identity)
 pais_df <-
         pais_df %>% filter(perc_coverage > 50) %>% filter(perc_identity > 90)
 
+#Trim excess characters the assembly names and reassign this to rownames
+pais_df$name <- gsub("\\..*", "", pais_df$name)
+
+#Replace "SAL_HC4750AA_AS" with SG17-135
+pais_df$name <- gsub("SAL_HC4750AA_AS", "SG17-135", pais_df$name)
+
+pais_df <- pais_df %>% filter(name %in% tree$tip.label)
+
+################################################################################
+####Clean column names
+################################################################################
+
+#PAI_genes
+pais_df$GENE <- gsub("_NC_00319","",pais_df$GENE)
+pais_df$GENE <- gsub("_sitABCD_AF128999","",pais_df$GENE)
+
+################################################################################
+################################################################################
+
 #add DB identifier for later
 pais_df$GENE <- paste0(pais_df$DATABASE, "_", pais_df$GENE)
 
@@ -255,7 +281,7 @@ colSums(pais_df3) -> sums
 #reassign Colnames to include the number the format "gene_A n=41/82 (50%)"
 colnames(pais_df3) <-
         paste0(colnames(pais_df3),
-               " ",
+               "  ",
                sums,
                "/",
                nrow(pais_df3),
@@ -275,6 +301,12 @@ res <- df3 %>% select(starts_with("r"))
 plas <- df3 %>% select(starts_with("p"))
 vir <- df3 %>% select(starts_with("v_"))
 vir2 <- df3 %>% select(starts_with("v2"))
+
+#remove any remaining columns with no hits
+res <- res[,colSums(res) > 0]
+plas <- plas[,colSums(plas) > 0]
+vir <- vir[,colSums(vir) > 0]
+vir2 <- vir2[,colSums(vir2) > 0]
 
 #DB specific cell content changing for colorisation in the heatmap later
 res[res == 1] <- "R"
@@ -364,61 +396,46 @@ df4 <- df4 %>%
                starts_with("v_"),
                starts_with("v2_"))
 
+#Remove the DB prepend from df4 column names
+colnames(df4) <- gsub("^[^_]+_", "", colnames(df4))
+
+#Remove spaces from column names for metadata - this usually causes issues
 colnames(Metadata) <- gsub(" ", "_", colnames(Metadata))
 
-tree2 <- groupClade(tree, c(207, 206))
+#Provides clade numbers to colour by.
+#If you dont know what the node labels are use the line below under "get node labels"
+#You may need to change the sizing..
+tree2 <- groupClade(tree, c(87, 86))
 
 #Generate the tree
 p <- ggtree(tree2, aes(color = group)) %<+%
         Metadata +
-        geom_tiplab(size = 1.5, align = TRUE, aes(color = HC5_or_other)) +
+        geom_tiplab(size = 1.5,
+                    align = TRUE,
+                    aes(color = HC5_or_other)
+                    ) +
         geom_tippoint(size = 1,
                       aes(color = Source_Niche),
-                      show.legend = TRUE) #+ geom_text2(size = 2, aes(subset=!isTip, label=node), hjust=-.5)
+                      show.legend = TRUE) #+
 #get node labels
-#
+#geom_text2(size = 2, aes(subset=!isTip, label=node), hjust=-.5)
+
+
 
 colval <- c(
-        'steelblue', #  'clade 1'
-        #'steelblue', #  'middle clade?'
-        'firebrick', #  'clade 2'
-        '#8d68ca', #  'Source Niche - Environment'
-        '#b6933f', #  'Source Niche - Food'
-        'black', #  'tip labels - HC4181'
-        '#609bce', #  'Source Niche - Human'
-        '#64a758', #  'Source Niche - Livestock'
-        'white', #  'Gene absent - N'
-        #'green', #  'Source Niche - ND' - removed as ND was replaced with NA
-        'gray47', #  'tip labels 2 - Other'    
-        '#80b1d3', #  'Plasmid genes - P'    
-        '#c85994', #  'Source Niche - Poultry'    
-        '#bebada', #  'AMR genes - R'    
-        '#fb8072', #  'vfdb genes - V'
-        '#cd2a18', #  'SPI genes - V2'
-        '#8d68ca' #  "Source Niche - Wild Animal"
-)
-
-colobject <- c(
-        'clade 1',
-        #'middle clade?',
-        'clade 2',
-        'Source Niche - Environment',
-        'Source Niche - Food',
-        'tip labels - HC4181',
-        'Source Niche - Human',
-        'Source Niche - Livestock',
-        'Gene absent - N',
-        #'Source Niche - ND', - removed as ND was replaced with NA
-        'tip labels 2 - Other',
-        'Plasmid genes - P',
-        'Source Niche - Poultry',
-        'AMR genes - R',
-        'vfdb genes - V',
-        'SPI genes - V2',
-        "Source details - Wild Animal"
-)
-
-colsdf <- data.frame(colobject, colval)
+        'steelblue', #  'clade 1'                       √
+        #'firebrick', # 'middle clade?' 
+        'steelblue', #  'clade 2'                       √
+        '#b6933f', #      'Source Niche - Food'           √
+        'black', #      'HC5_or_other (HC5-4181)        √
+        '#609bce', #      'Source Niche - Human'          √
+        'white', #      'Genes - 0 (N)                  √
+        '#80b1d3', #      'Plasmid Genes - 1 (P)          √       
+        '#bebada', #      'AMR genes - 1 - (R)            √ 
+        '#fb8072', #        'VFDB genes -1 - (V)'         √
+        '#cd2a18', #  'PAI genes - 1 (V2)                 √    
+        '#8d68ca' #  'Source Niche - Wild Animal'        √
+        )
 
 #Generate the heatmap
 gheatmap(
@@ -430,7 +447,7 @@ gheatmap(
         colnames_position = "top",
         #colnames = FALSE,
         colnames_angle = 90,
-        offset = 0.0125,
+        offset = 0.015,
         width = 2,
         color = 'grey'
 ) +
@@ -440,7 +457,7 @@ gheatmap(
                 values = colval,
                 na.value = 'grey'
         ) +
-        ggplot2::ylim(NA, 230)
+        ggplot2::ylim(NA, 100)
 
 #Display the heatmap
 a
