@@ -23,3 +23,17 @@ cd /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp
 for f in *; do mkdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/analysis/snp_outputs/${f}; done
 for f in *; do cp ${f}/fasttree/* /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/analysis/snp_outputs/${f}/${f}_SG17-135.clean.fullcore.tree; done
 for f in *; do cp ${f}/snp_dists/* /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/analysis/snp_outputs/${f}/${f}_SG17-135.pairwise_snps.csv; done
+
+#Abricate was rerun on a new PAI database which correctly contains SPI-2
+nohup snakemake -j --use-conda  -p > /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/logs/abricate/nohup_abricatelord_PIAs.out &
+
+#Copy PAI abricate data to github repo
+cat /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/abricateAgona_200/Salmonella_PIAs/* > /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/analysis/abricate/abricate_PAIs.txt
+
+#Run pointfinder
+source activate ~/miniconda3_old/envs/pointfinder
+cd /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_200
+for f in *.fasta; do mkdir /home/malcummi/Data/pointfinder/test/${f/\.fasta/}; /home/malcummi/Data/pointfinder/PointFinder.py -i $f -o /home/malcummi/Data/pointfinder/test/${f/\.fasta/} -p /home/malcummi/Data/pointfinder/pointfinder_db -s salmonella -m blastn -m_p /usr/local/ncbi-blast-ihpc-2.8.1+/bin/blastn; done
+cd /home/malcummi/Data/pointfinder
+cat */*_results.tsv > /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/analysis/pointfinder/pointfinder_results.txt
+
