@@ -1,211 +1,406 @@
-Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-gyrA p.S83Y	TCC -> TAC	S -> Y	Nalidixic acid,Ciprofloxacin	7492118
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-gyrA p.D87Y	GAC -> TAC	D -> Y	Nalidixic acid,Ciprofloxacin	7492118
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-gyrA p.D87Y	GAC -> TAC	D -> Y	Nalidixic acid,Ciprofloxacin	7492118
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-gyrA p.D87Y	GAC -> TAC	D -> Y	Nalidixic acid,Ciprofloxacin	7492118
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-gyrA p.S83F	TCC -> TTC	S -> F	Nalidixic acid,Ciprofloxacin	10471553
-gyrA p.D87N	GAC -> AAC	D -> N	Nalidixic acid,Ciprofloxacin	10471553
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468
-parC p.S80I	AGC -> ATC	S -> I	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-gyrA p.D87Y	GAC -> TAC	D -> Y	Nalidixic acid,Ciprofloxacin	7492118
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-gyrA p.S83F	TCC -> TTC	S -> F	Nalidixic acid,Ciprofloxacin	10471553
-gyrA p.D87N	GAC -> AAC	D -> N	Nalidixic acid,Ciprofloxacin	10471553
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468
-parC p.S80I	AGC -> ATC	S -> I	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-gyrA p.D87Y	GAC -> TAC	D -> Y	Nalidixic acid,Ciprofloxacin	7492118
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-gyrA p.S83Y	TCC -> TAC	S -> Y	Nalidixic acid,Ciprofloxacin	7492118
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-gyrA p.S83Y	TCC -> TAC	S -> Y	Nalidixic acid,Ciprofloxacin	7492118
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468Mutation	Nucleotide change	Amino acid change	Resistance	PMID
-parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+gyrA p.S83Y	TCC -> TAC	S -> Y	Nalidixic acid,Ciprofloxacin	7492118	SAL_AB5642AA_AS/SAL_blastn_results.tsv
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_AB5642AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_AB5674AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_AB5906AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_AB5909AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+gyrA p.D87Y	GAC -> TAC	D -> Y	Nalidixic acid,Ciprofloxacin	7492118	SAL_AB6160AA_AS/SAL_blastn_results.tsv
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_AB6160AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_AB7534AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_AB7542AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_AB7588AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_AB7634AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_AB8884AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_AB9321AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BA5105AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BA7932AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BA7945AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BA8052AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB0648AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB1066AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB1371AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB1424AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB1915AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB1956AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB2131AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB2593AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB2899AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB2967AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB2970AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB3127AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB4431AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB4524AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB4921AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB4937AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB5050AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+gyrA p.D87Y	GAC -> TAC	D -> Y	Nalidixic acid,Ciprofloxacin	7492118	SAL_BB5062AA_AS/SAL_blastn_results.tsv
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB5062AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB6441AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB6687AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB7027AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB7197AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB7261AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+gyrA p.D87Y	GAC -> TAC	D -> Y	Nalidixic acid,Ciprofloxacin	7492118	SAL_BB7947AA_AS/SAL_blastn_results.tsv
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB7947AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB8135AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB8331AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB9086AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB9562AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_BB9988AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CA4728AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CA4744AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CA4803AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CB0053AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CB0088AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CB1153AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CB1324AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CB1790AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CB2372AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CB2598AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CB2669AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CB3409AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CB3497AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CB5243AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CB5376AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CB5379AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CB5468AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CB6250AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CB9243AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CB9389AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CB9820AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CB9822AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+gyrA p.S83F	TCC -> TTC	S -> F	Nalidixic acid,Ciprofloxacin	10471553	SAL_CB9835AA_AS/SAL_blastn_results.tsv
+gyrA p.D87N	GAC -> AAC	D -> N	Nalidixic acid,Ciprofloxacin	10471553	SAL_CB9835AA_AS/SAL_blastn_results.tsv
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CB9835AA_AS/SAL_blastn_results.tsv
+parC p.S80I	AGC -> ATC	S -> I	Nalidixic acid,Ciprofloxacin	15388468	SAL_CB9835AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_CB9988AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_DB1444AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_EA3229AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_EB1026AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_EB1045AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_EB2895AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_EB4083AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_EB4088AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_EB5876AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_EB6812AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_EB8845AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_FA1940AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_FA2493AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_FA5706AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_FB5769AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_FB7879AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_FB8051AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_GB0225AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_GB5373AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_HB2219AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_HB2224AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_HB2237AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_HB5660AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_HB6699AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_HC4750AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_IA5065AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_IB1406AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_IB3115AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_IB6779AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_IB6801AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_IB7540AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_IB7996AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_IB9118AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_IB9302AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_JA4169AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_JB0953AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_JB1150AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+gyrA p.D87Y	GAC -> TAC	D -> Y	Nalidixic acid,Ciprofloxacin	7492118	SAL_JB4414AA_AS/SAL_blastn_results.tsv
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_JB4414AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_JB5195AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_JB5221AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_JB6580AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_JB9521AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_JB9710AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_KA0676AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_KA0984AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_KA1119AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_KA4888AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_KA5244AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_KA8881AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_KB1136AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_KB1789AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+gyrA p.S83F	TCC -> TTC	S -> F	Nalidixic acid,Ciprofloxacin	10471553	SAL_KB1826AA_AS/SAL_blastn_results.tsv
+gyrA p.D87N	GAC -> AAC	D -> N	Nalidixic acid,Ciprofloxacin	10471553	SAL_KB1826AA_AS/SAL_blastn_results.tsv
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_KB1826AA_AS/SAL_blastn_results.tsv
+parC p.S80I	AGC -> ATC	S -> I	Nalidixic acid,Ciprofloxacin	15388468	SAL_KB1826AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_KB2744AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_KB3375AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_KB3640AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_KB4026AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_KB4651AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_KB6210AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_KB6734AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_KB6773AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_KB6830AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_KB8607AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_KB8676AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_KB9523AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+gyrA p.D87Y	GAC -> TAC	D -> Y	Nalidixic acid,Ciprofloxacin	7492118	SAL_LA4572AA_AS/SAL_blastn_results.tsv
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_LA4572AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_LA7782AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_LA7787AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_LB4034AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_LB7623AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_LB8076AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_MA3067AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_MB2521AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_MB5439AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_MB7066AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_MB7965AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_NA2865AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_NA5728AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_NA8627AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_NB4129AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_NB6620AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_OA4067AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_OA4072AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_OB6949AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_PA3767AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_PB5476AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_PB8418AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_QA4878AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_QA5436AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_RA1578AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_RA1599AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_SA1324AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_SA1344AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_SA2453AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_SA9173AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_SA9246AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_SA9330AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_TA1544AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_TA1967AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_TA2587AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_TA4227AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_TA6324AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+gyrA p.S83Y	TCC -> TAC	S -> Y	Nalidixic acid,Ciprofloxacin	7492118	SAL_TA7615AA_AS/SAL_blastn_results.tsv
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_TA7615AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_UA4237AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_UA4307AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_UA6621AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_UA7988AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_UA7989AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_VA1155AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_VA4537AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_WA2841AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+gyrA p.S83Y	TCC -> TAC	S -> Y	Nalidixic acid,Ciprofloxacin	7492118	SAL_WA5013AA_AS/SAL_blastn_results.tsv
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_WA5013AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_WA5463AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_WA5465AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_WA6251AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_WA9926AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_XA1299AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_XA1733AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_XA1782AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_XA3156AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_XA3268AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_YA6600AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_YA6602AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_YA6631AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_YA6663AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_YA7748AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_YA9385AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_ZA0287AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_ZA5298AA_AS/SAL_blastn_results.tsv
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_ZA8731AA_AS/SAL_blastn_results.tsv
