@@ -34,6 +34,18 @@ cat /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/abr
 source activate ~/miniconda3_old/envs/pointfinder
 cd /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_200
 for f in *.fasta; do mkdir /home/malcummi/Data/pointfinder/test/${f/\.fasta/}; /home/malcummi/Data/pointfinder/PointFinder.py -i $f -o /home/malcummi/Data/pointfinder/test/${f/\.fasta/} -p /home/malcummi/Data/pointfinder/pointfinder_db -s salmonella -m blastn -m_p /usr/local/ncbi-blast-ihpc-2.8.1+/bin/blastn; done
-cd /home/malcummi/Data/pointfinder
-cat */*_results.tsv > /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/analysis/pointfinder/pointfinder_results.txt
+cd /home/malcummi/Data/pointfinder/test
+for f in */*.tsv; do awk 'NR == 1 {print $0 "\tname_file"; next;}{print $0 "\t" FILENAME;}' $f; done > /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/analysis/pointfinder/pointfinder_results_tmp.txt
+cd /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/analysis/pointfinder/
+awk 'FNR==1 { header = $0; print } $0 != header' pointfinder_results_tmp.txt > pointfinder_results.txt
+rm pointfinder_results_tmp.txt
+
+#PAI data inconsitent with SPIfinder. Instead, CT18 was submitted to SPI finder and a database of the sequences detected within it was downloaded and made into a abricate DB.
+#Abricate snakemake was rerun:
+nohup snakemake -j --use-conda  -p > /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/logs/abricate/nohup_abricatelord_PIA_CT18.out &
+cat /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/abricateAgona_200/SPIs_1-10_12_CT18/* > /home/malcummi/Data/Manuscripts/Salmonella_AMR/SG17-135/analysis/abricate/abricate_PAIs_CT18.txt
+
+#Collect other non SPI islands from the PAI database
+grep "C6" abricate_PAIs.txt >> abricate_PAIs_CT18.txt
+grep "CS54" abricate_PAIs.txt >> abricate_PAIs_CT18.txt
 
