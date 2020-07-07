@@ -18,31 +18,31 @@ DOI: **To be added post publication**
 |supplemental_material|Supplementary material for the manuscripts|
 
 ## analysis
-# abricate
+### abricate
 Contains abricate output, concatenated from each resulting output file:
 * abricate.txt - Contains abricate data on plasmid, virulence and AMR gene carriage
 * abricate_PAIs.txt - Contains abricate data on Salmonella Pathogenicity island (SPI) and pathogenicity associated island (PAI) carriage
 
-# snp_outputs
+### snp_outputs
 Contains output of snplord pipeline
 * Agona195 - Contains snp matrix and phylogenetic tree for large subset of Agona genomes (n=195)
 * Agona80 - Contains snp matrix and phylogenetic tree for small subset of Agona genomes closely related to SG17-135 (HC5:4181 strains) (n=80)
 
-# pointfinder
+### pointfinder
 Contains output of pointfinder analysis
 * pointfinder_results.txt - lists AMR associated SNPs associated with particular genomes from the Agona195 subset
 
 ## scripts
-# Figure 1.R
+### Figure 1.R
 This script is used to generate Figure 1, as well as Supplementary Table 1 which combines Metadata and Genotypic data of samples
 
-# Figure_2.R
+### Figure_2.R
 This script is used to generate Figure 2, as well as Supplementary Table 4 which combines lists the co-association of AMR genes and IncX scaffolds
 
-# Random_subset_IncX.R
+### Random_subset_IncX.R
 This script is used to (pseudo)randomly select 10 IncX-positive strains from the Agona80 subset for analysis using BRIG
 
-# SPI-analysis.R
+### SPI-analysis.R
 This script is used to classify strains as SPI/PAI positive or negative based on >=60% (discontiguous) coverage and >=95% nucleotide identity for a given genetic element
 
 
