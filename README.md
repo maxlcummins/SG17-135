@@ -9,11 +9,19 @@ Please see the scripts above for the generation of specific Figures. Note that t
 
 |Filename|File Contents|
 |--------|------|
-|abricate_HC5-4181.txt|A tab delimited file containing the abricate output for the strains of HC5-4181|
-|Figure_2.R| A script used to generate Figure 2|
-|Figure_4.R| A script used to generate Figure 4|
-|Random_Subset_IncX.R| A script used to identify a random subset of 10 IncX *repA* gene positive strains from HC5-4181 to be analysed using BRIG|
-|SG17-135.clean.fullcore.tree|A SNP tree used in the generation of Figures 2 and 4|
+|analysis|Contains output of bioinformatic analysis tools|
+|assemblies|Contains of genome assemblies|
+|fasta_dbs|Contains nucleotide databases uses in abricate|
+|figures|Contains final figures of manuscript|
+|flags|Contains flag images used in generation of figures|
+|logs|Contains logs generated during bioinformatic analyses|
+|metadata|Contains metadata on samples under analysis|
+|scripts|Contains scripts used for post processing of data and data visualisation|
+|supplemental_material|Contains supplementary material for the manuscripts|
+
+## Scripts
+
+
 
 
 
