@@ -7,17 +7,32 @@ Please see the scripts above for the generation of specific Figures. Note that t
 
 ## Contents
 
-|Filename|File Contents|
+|Directory|Contents|
 |--------|------|
-|analysis|Contains output of bioinformatic analysis tools|
-|assemblies|Contains of genome assemblies|
-|fasta_dbs|Contains nucleotide databases uses in abricate|
-|figures|Contains final figures of manuscript|
-|flags|Contains flag images used in generation of figures|
-|logs|Contains logs generated during bioinformatic analyses|
-|metadata|Contains metadata on samples under analysis|
-|scripts|Contains scripts used for post processing of data and data visualisation|
-|supplemental_material|Contains supplementary material for the manuscripts|
+|analysis|Output of bioinformatic analysis tools|
+|assemblies|Genome assemblies from Enterobase|
+|fasta_dbs|Nucleotide databases uses in abricate|
+|figures|Final figures of manuscript|
+|flags|Flag images used in generation of figures|
+|logs|Logs generated during bioinformatic analyses|
+|metadata|Metadata on samples under analysis|
+|scripts|Scripts used for post processing of data and data visualisation|
+|supplemental_material|Supplementary material for the manuscripts|
+
+## Analysis
+# abricate
+Contains abricate output, concatenated from each resulting output file:
+* abricate.txt - Contains abricate data on plasmid, virulence and AMR gene carriage
+* abricate_PAIs.txt - Contains abricate data on SPI carriage
+
+# snp_outputs
+Contains output of snplord pipeline
+* Agona195 - Contains snp matrix and phylogenetic tree for large subset of Agona genomes (n=195)
+* Agona80 - Contains snp matrix and phylogenetic tree for small subset of Agona genomes closely related to SG17-135 (HC5:4181 strains) (n=80)
+
+# pointfinder
+Contains output of pointfinder analysis
+* pointfinder_results.txt - lists AMR associated SNPs associated with particular genomes from the Agona195 subset
 
 ## Scripts
 
