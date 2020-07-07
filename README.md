@@ -3,8 +3,6 @@ This is a repository containing scripts for the generation of figures within a p
 
 DOI: **To be added post publication**
 
-Please see the scripts above for the generation of specific Figures. Note that the grey bars on Figures 2 and 4 were added manually using photoshop.
-
 ## Contents
 
 |Directory|Contents|
@@ -19,11 +17,11 @@ Please see the scripts above for the generation of specific Figures. Note that t
 |scripts|Scripts used for post processing of data and data visualisation|
 |supplemental_material|Supplementary material for the manuscripts|
 
-## Analysis
+## analysis
 # abricate
 Contains abricate output, concatenated from each resulting output file:
 * abricate.txt - Contains abricate data on plasmid, virulence and AMR gene carriage
-* abricate_PAIs.txt - Contains abricate data on SPI carriage
+* abricate_PAIs.txt - Contains abricate data on Salmonella Pathogenicity island (SPI) and pathogenicity associated island (PAI) carriage
 
 # snp_outputs
 Contains output of snplord pipeline
@@ -34,8 +32,18 @@ Contains output of snplord pipeline
 Contains output of pointfinder analysis
 * pointfinder_results.txt - lists AMR associated SNPs associated with particular genomes from the Agona195 subset
 
-## Scripts
+## scripts
+# Figure 1.R
+This script is used to generate Figure 1, as well as Supplementary Table 1 which combines Metadata and Genotypic data of samples
 
+# Figure_2.R
+This script is used to generate Figure 2, as well as Supplementary Table 4 which combines lists the co-association of AMR genes and IncX scaffolds
+
+# Random_subset_IncX.R
+This script is used to (pseudo)randomly select 10 IncX-positive strains from the Agona80 subset for analysis using BRIG
+
+# SPI-analysis.R
+This script is used to classify strains as SPI/PAI positive or negative based on >=60% (discontiguous) coverage and >=95% nucleotide identity for a given genetic element
 
 
 
