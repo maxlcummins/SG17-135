@@ -1,6 +1,5 @@
 library(tidytree)
 library(ggtree)
-library(pheatmap)
 library(magrittr)
 library(dplyr)
 library(readr)
@@ -475,6 +474,8 @@ gheatmap(
 
 dev.off()
 
+
+
 df_by_scaff <- df %>% group_by(name, SEQUENCE) %>% dplyr::summarise(same_scaff=paste(unique(GENE), collapse=" "))
 
 inc_by_scaff <- df_by_scaff %>% filter(grepl("Inc", same_scaff)) 
@@ -483,29 +484,29 @@ inc_by_scaff$Inc <- gsub(".* p_", "p_", inc_by_scaff$same_scaff)
 
 spl <-strsplit(as.character(inc_by_scaff$same_scaff), " ")
 genes <- data.frame(name = inc_by_scaff$name,
-                        SEQUENCE = inc_by_scaff$SEQUENCE,
-                        inc = inc_by_scaff$Inc,
-                        gene1 = sapply(spl, "[", 1),
-                        gene2 = sapply(spl, "[", 2),
-                        gene3 = sapply(spl, "[", 3),
-                        gene4= sapply(spl, "[", 4),
-                        gene5 = sapply(spl, "[", 5),
-                        gene6 = sapply(spl, "[", 6),
-                        gene7 = sapply(spl, "[", 7),
-                        gene8= sapply(spl, "[", 8),
-                        gene9 = sapply(spl, "[", 9),
-                        gene10 = sapply(spl, "[", 10),
-                        gene11 = sapply(spl, "[", 11),
-                        gene12= sapply(spl, "[", 12),
-                        gene13 = sapply(spl, "[", 13),
-                        gene14 = sapply(spl, "[", 14),
-                        gene15 = sapply(spl, "[", 15),
-                        gene16 = sapply(spl, "[", 16),
-                        gene17 = sapply(spl, "[", 17),
-                        gene18 = sapply(spl, "[", 18),
-                        gene19 = sapply(spl, "[", 19),
-                        gene20 = sapply(spl, "[", 20),
-                        gene21 = sapply(spl, "[", 21))
+                    SEQUENCE = inc_by_scaff$SEQUENCE,
+                    inc = inc_by_scaff$Inc,
+                    gene1 = sapply(spl, "[", 1),
+                    gene2 = sapply(spl, "[", 2),
+                    gene3 = sapply(spl, "[", 3),
+                    gene4= sapply(spl, "[", 4),
+                    gene5 = sapply(spl, "[", 5),
+                    gene6 = sapply(spl, "[", 6),
+                    gene7 = sapply(spl, "[", 7),
+                    gene8= sapply(spl, "[", 8),
+                    gene9 = sapply(spl, "[", 9),
+                    gene10 = sapply(spl, "[", 10),
+                    gene11 = sapply(spl, "[", 11),
+                    gene12= sapply(spl, "[", 12),
+                    gene13 = sapply(spl, "[", 13),
+                    gene14 = sapply(spl, "[", 14),
+                    gene15 = sapply(spl, "[", 15),
+                    gene16 = sapply(spl, "[", 16),
+                    gene17 = sapply(spl, "[", 17),
+                    gene18 = sapply(spl, "[", 18),
+                    gene19 = sapply(spl, "[", 19),
+                    gene20 = sapply(spl, "[", 20),
+                    gene21 = sapply(spl, "[", 21))
 
 genes <- melt(genes, id=1:3, value.name = "gene", na.rm = TRUE)
 
@@ -515,11 +516,5 @@ genes <- dcast(data = genes, name + inc ~ gene, length, drop = TRUE)
 
 IncX1 <- genes %>% filter(inc == "p_IncX1", p_IncX1 == 1)
 
-IncX1_df <- IncX1[,3:ncol(IncX1)]
-
-IncX1_df <- IncX1_df[,colSums(IncX1_df) > 0]
-
-rownames(IncX1_df) <- IncX1$name
-
-pheatmap(IncX1_df)
+#write_delim(IncX1, "./supplementary_material/Table S4 - IncX gene associations.txt", delim = "\t")
 

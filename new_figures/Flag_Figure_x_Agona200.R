@@ -415,14 +415,16 @@ Metadata$Flag <- gsub("Northern Ireland", "https://raw.githubusercontent.com/max
 tree2 <- groupClade(tree, c(264, 263))
 
 #Generate the tree
-p2 <- ggtree(tree2) %<+%
+p2 <- ggtree(tree2, layout = "circular") %<+%
         Metadata +
         geom_tippoint(size = 1, 
                       aes(color = Source_Niche, shape = HC5_or_other),
                       show.legend = TRUE) +
-        geom_tiplab(size = 0.7, align = TRUE, aes(color = HC5_or_other), offset = 0.004) +
-        geom_tiplab(aes(image = Flag), geom="image", size = 0.0075, hjust = 0.5, align = FALSE, offset = 0.002
+        geom_tiplab2(size = 0.7, align = TRUE, aes(color = HC5_or_other), offset = 0.004) +
+        geom_tiplab2(aes(image = Flag), geom="image", size = 0.0075, hjust = 0.5, align = FALSE, offset = 0.002
         )  + geom_treescale(x = 0.1, y = -2.25, offset = -3, fontsize = 2) 
+
+p2 <- flip(p2, 263, 375)
 #get node labels
 #geom_text2(size = 2, aes(subset=!isTip, label=node), hjust=-.5)
 
@@ -475,7 +477,7 @@ colobject <- c(
 
 colsdf <- data.frame(colobject, colval)
 
-pdf(file = "new_figures/Flag_Figure_x_Agona200.pdf", paper = "a4")
+#pdf(file = "new_figures/Flag_Figure_x_Agona200.pdf", paper = "a4")
 
 #Generate the heatmap
 gheatmap(
@@ -501,3 +503,17 @@ gheatmap(
 
 
 dev.off()
+
+df4_clean <- df4
+
+df4_clean$working_name <- rownames(df4)
+
+df4_clean[df4_clean == 'V'] <- 1
+df4_clean[df4_clean == 'V2'] <- 1
+df4_clean[df4_clean == 'R'] <- 1
+df4_clean[df4_clean == 'P'] <- 1
+df4_clean[df4_clean == 'N'] <- 0
+
+Supp_data <- left_join(Metadata, df4_clean)
+
+#write_delim(Supp_data, "./supplementary_material/Supplementary Table 1 - Metadata Genotype and Accessions.txt", delim = "\t")

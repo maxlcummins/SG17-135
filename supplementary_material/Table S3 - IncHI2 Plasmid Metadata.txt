@@ -1,0 +1,13 @@
+NCBI Accession No.	Strain Name	Strain Source	Host Species	Country of origin	Plasmid size (bp)	Year of isolation
+MF083142	D36-1	Unknown	Citrobacter freundii	China	188310	2017*
+CP030940	AMSHJX01	Giant panda faeces	E. coli	China; Shanghai	257394	2018*
+MG014720	A74	Duck	E. coli	China	322966	2007
+MH128771	803DBmcr	Human	E. coli	China	230365	2017
+CP011062	Sanji	Pheasant duodenum	E. coli	China	255368	2011
+CP026492	HS13-1	Human faeces	E. coli	China;Shenzhen	264344	2017
+CP039861	PNCS014880	Human	Salmonella enterica	Canada	245375	2016
+CP039170	Sal-5364	Human faeces	Salmonella enterica serovar Goldcoast	Taiwan	278377	2018
+CP037959	R18.0877	Human faeces	Salmonella enterica serovar Goldcoast	Taiwan	278374	2018
+CP033347	CFSA1096	Food	Salmonella enterica	China; Hubei	297348	2015
+						
+* - Collection date not listed - instead inferred from available metadata						
