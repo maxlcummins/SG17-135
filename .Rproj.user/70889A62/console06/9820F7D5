@@ -1,8 +1,3544 @@
+
+[11:04:40] Creating reference folder: reference
+[11:04:40] Extracting FASTA and GFF from reference.
+[11:04:40] Running: fasta_generate_regions.py reference/ref.fa.fai 349241 > reference/ref.txt 2>> snps.log
+[11:04:40] Running: freebayes-parallel reference/ref.txt 8 -p 2 -P 0 -C 10 --min-repeat-entropy 1.5 --strict-vcf -q 13 -m 60 --min-coverage 10 -F 0.05  -f reference/ref.fa snps.bam > snps.raw.vcf 2>> snps.log
+[11:04:40] Running: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snippy-vcf_extract_subs snps.filt.vcf > snps.subs.vcf 2>> snps.log
+[11:04:40] Wrote 3 sequences to ref.fa
+[11:04:40] Wrote 0 features to ref.gff
+[11:04:40] Shredding /data/malcummi/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_JB9521AA_AS.fasta into pseudo-reads
+[11:04:40] Running: bcftools convert -Oz -o snps.vcf.gz snps.vcf 2>> snps.log
+[11:04:41] Running: bcftools index -f snps.vcf.gz 2>> snps.log
+[11:04:41] Running: bcftools consensus -f reference/ref.fa -o snps.consensus.fa snps.vcf.gz 2>> snps.log
+[11:04:41] Running: bcftools convert -Oz -o snps.subs.vcf.gz snps.subs.vcf 2>> snps.log
+[11:04:41] Running: bcftools index -f snps.subs.vcf.gz 2>> snps.log
+[11:04:41] Running: bcftools consensus -f reference/ref.fa -o snps.consensus.subs.fa snps.subs.vcf.gz 2>> snps.log
+[11:04:41] Running: rm -f snps.subs.vcf.gz snps.subs.vcf.gz.csi snps.subs.vcf.gz.tbi 2>> snps.log
+[11:04:41] Running: rm -f fake_reads\.fq 2>> snps.log
+[11:04:41] Generating reference aligned/masked FASTA relative to reference: snps.aligned.fa
+[11:04:42] Marked 382 heterozygous sites with 'n'
+[11:04:42] Creating extra output files: BED GFF CSV TXT HTML
+[11:04:42] Identified 666 variants.
+[11:04:42] Result folder: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_UA4307AA_AS.out
+[11:04:42] Result files:
+[11:04:42] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_UA4307AA_AS.out/snps.aligned.fa
+[11:04:42] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_UA4307AA_AS.out/snps.bam
+[11:04:42] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_UA4307AA_AS.out/snps.bam.bai
+[11:04:42] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_UA4307AA_AS.out/snps.bed
+[11:04:42] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_UA4307AA_AS.out/snps.consensus.fa
+[11:04:42] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_UA4307AA_AS.out/snps.consensus.subs.fa
+[11:04:42] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_UA4307AA_AS.out/snps.csv
+[11:04:42] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_UA4307AA_AS.out/snps.filt.vcf
+[11:04:42] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_UA4307AA_AS.out/snps.gff
+[11:04:42] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_UA4307AA_AS.out/snps.html
+[11:04:42] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_UA4307AA_AS.out/snps.log
+[11:04:42] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_UA4307AA_AS.out/snps.raw.vcf
+[11:04:42] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_UA4307AA_AS.out/snps.subs.vcf
+[11:04:42] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_UA4307AA_AS.out/snps.tab
+[11:04:42] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_UA4307AA_AS.out/snps.txt
+[11:04:42] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_UA4307AA_AS.out/snps.vcf
+[11:04:42] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_UA4307AA_AS.out/snps.vcf.gz
+[11:04:42] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_UA4307AA_AS.out/snps.vcf.gz.csi
+[11:04:42] Walltime used: 19 seconds
+[11:04:42] May the SNPs be with you.
+[11:04:42] Done.
+[Fri Jun 19 11:04:42 2020]
+Finished job 123.
+44 of 201 steps (22%) done
+
+[Fri Jun 19 11:04:42 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_JB0953AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_JB0953AA_AS.out
+    jobid: 75
+    wildcards: output_prefix=Agona_195, reference=SG17-135, sample=SAL_JB0953AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_JB0953AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_JB0953AA_AS.fasta
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[11:04:42] This is snippy 4.4.3
+[11:04:42] Written by Torsten Seemann
+[11:04:42] Obtained from https://github.com/tseemann/snippy
+[11:04:42] Detected operating system: linux
+[11:04:42] Enabling bundled linux tools.
+[11:04:42] Found bwa - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/bwa
+[11:04:42] Found bcftools - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/bcftools
+[11:04:42] Found samtools - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/samtools
+[11:04:42] Found java - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/java
+[11:04:42] Found snpEff - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snpEff
+[11:04:42] Found samclip - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/samclip
+[11:04:42] Found seqtk - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/seqtk
+[11:04:42] Found parallel - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/parallel
+[11:04:42] Found freebayes - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/freebayes
+[11:04:42] Found freebayes-parallel - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/freebayes-parallel
+[11:04:42] Found fasta_generate_regions.py - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/fasta_generate_regions.py
+[11:04:42] Found vcfstreamsort - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vcfstreamsort
+[11:04:42] Found vcfuniq - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vcfuniq
+[11:04:42] Found vcffirstheader - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vcffirstheader
+[11:04:42] Found gzip - /usr/bin/gzip
+[11:04:42] Found vt - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vt
+[11:04:42] Found snippy-vcf_to_tab - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snippy-vcf_to_tab
+[11:04:42] Found snippy-vcf_report - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snippy-vcf_report
+[11:04:42] Checking version: samtools --version is >= 1.7 - ok, have 1.9
+[11:04:42] Checking version: bcftools --version is >= 1.7 - ok, have 1.9
+[11:04:42] Checking version: freebayes --version is >= 1.1 - ok, have 1.3
+[11:04:42] Marked 0 heterozygous sites with 'n'
+[11:04:43] Checking version: java -version is >= 1.8 - ok, have 1.8
+[11:04:43] Creating extra output files: BED GFF CSV TXT HTML
+[11:04:43] Identified 1823 variants.
+[11:04:43] Result folder: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_NB4129AA_AS.out
+[11:04:43] Result files:
+[11:04:43] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_NB4129AA_AS.out/snps.aligned.fa
+[11:04:43] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_NB4129AA_AS.out/snps.bam
+[11:04:43] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_NB4129AA_AS.out/snps.bam.bai
+[11:04:43] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_NB4129AA_AS.out/snps.bed
+[11:04:43] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_NB4129AA_AS.out/snps.consensus.fa
+[11:04:43] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_NB4129AA_AS.out/snps.consensus.subs.fa
+[11:04:43] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_NB4129AA_AS.out/snps.csv
+[11:04:43] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_NB4129AA_AS.out/snps.filt.vcf
+[11:04:43] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_NB4129AA_AS.out/snps.gff
+[11:04:43] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_NB4129AA_AS.out/snps.html
+[11:04:43] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_NB4129AA_AS.out/snps.log
+[11:04:43] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_NB4129AA_AS.out/snps.raw.vcf
+[11:04:43] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_NB4129AA_AS.out/snps.subs.vcf
+[11:04:43] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_NB4129AA_AS.out/snps.tab
+[11:04:43] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_NB4129AA_AS.out/snps.txt
+[11:04:43] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_NB4129AA_AS.out/snps.vcf
+[11:04:43] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_NB4129AA_AS.out/snps.vcf.gz
+[11:04:43] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_NB4129AA_AS.out/snps.vcf.gz.csi
+[11:04:43] Walltime used: 20 seconds
+[11:04:43] Have a suggestion? Tell me at https://github.com/tseemann/snippy/issues
+[11:04:43] Done.
+[Fri Jun 19 11:04:43 2020]
+Finished job 76.
+45 of 201 steps (22%) done
+
+[Fri Jun 19 11:04:43 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_AB5642AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_AB5642AA_AS.out
+    jobid: 13
+    wildcards: output_prefix=Agona_195, reference=SG17-135, sample=SAL_AB5642AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_AB5642AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_AB5642AA_AS.fasta
+[11:04:43] Checking version: snpEff -version is >= 4.3 - ok, have 4.3
+[11:04:43] Checking version: bwa is >= 7.12 - ok, have 7.17
+[11:04:43] Using reference: /data/malcummi/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa
+[11:04:43] Treating reference as 'fasta' format.
+[11:04:43] Will use 8 CPU cores.
+[11:04:43] Using read file: /data/malcummi/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_JB0953AA_AS.fasta
+[11:04:43] Creating folder: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_JB0953AA_AS.out
+[11:04:43] Changing working directory: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_JB0953AA_AS.out
+[11:04:43] Creating reference folder: reference
+[11:04:43] Running: bcftools view --include 'FMT/GT="1/1" && QUAL>=100 && FMT/DP>=10 && (FMT/AO)/(FMT/DP)>=0' snps.raw.vcf  | vt normalize -r reference/ref.fa - | bcftools annotate --remove '^INFO/TYPE,^INFO/DP,^INFO/RO,^INFO/AO,^INFO/AB,^FORMAT/GT,^FORMAT/DP,^FORMAT/RO,^FORMAT/AO,^FORMAT/QR,^FORMAT/QA,^FORMAT/GL' > snps.filt.vcf 2>> snps.log
+[11:04:43] Extracting FASTA and GFF from reference.
+normalize v0.5
+
+options:     input VCF file                                  -
+         [o] output VCF file                                 -
+         [w] sorting window size                             10000
+         [n] no fail on reference inconsistency for non SNPs false
+         [q] quiet                                           false
+         [d] debug                                           false
+         [r] reference FASTA file                            reference/ref.fa
+
+
+stats: biallelic
+          no. left trimmed                      : 0
+          no. right trimmed                     : 23
+          no. left and right trimmed            : 1
+          no. right trimmed and left aligned    : 0
+          no. left aligned                      : 0
+
+       total no. biallelic normalized           : 24
+
+       multiallelic
+          no. left trimmed                      : 0
+          no. right trimmed                     : 0
+          no. left and right trimmed            : 0
+          no. right trimmed and left aligned    : 0
+          no. left aligned                      : 0
+
+       total no. multiallelic normalized        : 0
+
+       total no. variants normalized            : 24
+       total no. variants observed              : 467
+       total no. reference observed             : 0
+
+Time elapsed: 0.01s
+
+[11:04:43] Running: cp snps.filt.vcf snps.vcf 2>> snps.log
+[11:04:43] Running: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snippy-vcf_to_tab --gff reference/ref.gff --ref reference/ref.fa --vcf snps.vcf > snps.tab 2>> snps.log
+[11:04:43] Wrote 3 sequences to ref.fa
+[11:04:43] Wrote 0 features to ref.gff
+[11:04:43] Shredding /data/malcummi/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_JB0953AA_AS.fasta into pseudo-reads
+[11:04:43] Running: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snippy-vcf_extract_subs snps.filt.vcf > snps.subs.vcf 2>> snps.log
+[11:04:43] Running: bcftools convert -Oz -o snps.vcf.gz snps.vcf 2>> snps.log
+[11:04:43] Running: bcftools index -f snps.vcf.gz 2>> snps.log
+[11:04:43] Running: bcftools consensus -f reference/ref.fa -o snps.consensus.fa snps.vcf.gz 2>> snps.log
+[11:04:43] Running: bcftools convert -Oz -o snps.subs.vcf.gz snps.subs.vcf 2>> snps.log
+[11:04:43] Running: bcftools index -f snps.subs.vcf.gz 2>> snps.log
+[11:04:43] Running: bcftools consensus -f reference/ref.fa -o snps.consensus.subs.fa snps.subs.vcf.gz 2>> snps.log
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[11:04:43] Running: rm -f snps.subs.vcf.gz snps.subs.vcf.gz.csi snps.subs.vcf.gz.tbi 2>> snps.log
+[11:04:43] Running: rm -f fake_reads\.fq 2>> snps.log
+[11:04:43] Wrote 394794 fake 250bp reads (20x, stride 25bp) to fake_reads.fq
+[11:04:43] Freebayes will process 15 chunks of 349241 bp, 8 chunks at a time.
+[11:04:43] Using BAM RG (Read Group) ID: SAL_JB9521AA_AS.out
+[11:04:43] Running: samtools faidx reference/ref.fa 2>> snps.log
+[11:04:43] Running: bwa index reference/ref.fa 2>> snps.log
+[11:04:43] Generating reference aligned/masked FASTA relative to reference: snps.aligned.fa
+[11:04:43] This is snippy 4.4.3
+[11:04:43] Written by Torsten Seemann
+[11:04:43] Obtained from https://github.com/tseemann/snippy
+[11:04:43] Detected operating system: linux
+[11:04:43] Enabling bundled linux tools.
+[11:04:43] Found bwa - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/bwa
+[11:04:43] Found bcftools - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/bcftools
+[11:04:43] Found samtools - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/samtools
+[11:04:43] Found java - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/java
+[11:04:43] Found snpEff - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snpEff
+[11:04:43] Found samclip - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/samclip
+[11:04:43] Found seqtk - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/seqtk
+[11:04:43] Found parallel - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/parallel
+[11:04:43] Found freebayes - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/freebayes
+[11:04:43] Found freebayes-parallel - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/freebayes-parallel
+[11:04:43] Found fasta_generate_regions.py - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/fasta_generate_regions.py
+[11:04:43] Found vcfstreamsort - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vcfstreamsort
+[11:04:43] Found vcfuniq - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vcfuniq
+[11:04:43] Found vcffirstheader - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vcffirstheader
+[11:04:43] Found gzip - /usr/bin/gzip
+[11:04:43] Found vt - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vt
+[11:04:43] Found snippy-vcf_to_tab - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snippy-vcf_to_tab
+[11:04:43] Found snippy-vcf_report - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snippy-vcf_report
+[11:04:43] Checking version: samtools --version is >= 1.7 - ok, have 1.9
+[11:04:44] Checking version: bcftools --version is >= 1.7 - ok, have 1.9
+[11:04:44] Checking version: freebayes --version is >= 1.1 - ok, have 1.3
+[11:04:44] Running: bcftools view --include 'FMT/GT="1/1" && QUAL>=100 && FMT/DP>=10 && (FMT/AO)/(FMT/DP)>=0' snps.raw.vcf  | vt normalize -r reference/ref.fa - | bcftools annotate --remove '^INFO/TYPE,^INFO/DP,^INFO/RO,^INFO/AO,^INFO/AB,^FORMAT/GT,^FORMAT/DP,^FORMAT/RO,^FORMAT/AO,^FORMAT/QR,^FORMAT/QA,^FORMAT/GL' > snps.filt.vcf 2>> snps.log
+normalize v0.5
+
+options:     input VCF file                                  -
+         [o] output VCF file                                 -
+         [w] sorting window size                             10000
+         [n] no fail on reference inconsistency for non SNPs false
+         [q] quiet                                           false
+         [d] debug                                           false
+         [r] reference FASTA file                            reference/ref.fa
+
+
+stats: biallelic
+          no. left trimmed                      : 1
+          no. right trimmed                     : 23
+          no. left and right trimmed            : 1
+          no. right trimmed and left aligned    : 0
+          no. left aligned                      : 0
+
+       total no. biallelic normalized           : 25
+
+       multiallelic
+          no. left trimmed                      : 0
+          no. right trimmed                     : 0
+          no. left and right trimmed            : 0
+          no. right trimmed and left aligned    : 0
+          no. left aligned                      : 0
+
+       total no. multiallelic normalized        : 0
+
+       total no. variants normalized            : 25
+       total no. variants observed              : 490
+       total no. reference observed             : 0
+
+Time elapsed: 0.01s
+
+[11:04:44] Checking version: java -version is >= 1.8 - ok, have 1.8
+[11:04:44] Running: cp snps.filt.vcf snps.vcf 2>> snps.log
+[11:04:44] Running: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snippy-vcf_to_tab --gff reference/ref.gff --ref reference/ref.fa --vcf snps.vcf > snps.tab 2>> snps.log
+[11:04:44] Checking version: snpEff -version is >= 4.3 - ok, have 4.3
+[11:04:44] Checking version: bwa is >= 7.12 - ok, have 7.17
+[11:04:44] Using reference: /data/malcummi/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa
+[11:04:44] Treating reference as 'fasta' format.
+[11:04:44] Will use 8 CPU cores.
+[11:04:44] Using read file: /data/malcummi/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_AB5642AA_AS.fasta
+[11:04:44] Creating folder: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_AB5642AA_AS.out
+[11:04:44] Changing working directory: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_AB5642AA_AS.out
+[11:04:44] Creating reference folder: reference
+[11:04:44] Extracting FASTA and GFF from reference.
+[11:04:44] Running: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snippy-vcf_extract_subs snps.filt.vcf > snps.subs.vcf 2>> snps.log
+[11:04:44] Wrote 3 sequences to ref.fa
+[11:04:44] Wrote 0 features to ref.gff
+[11:04:44] Shredding /data/malcummi/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_AB5642AA_AS.fasta into pseudo-reads
+[11:04:44] Running: bcftools convert -Oz -o snps.vcf.gz snps.vcf 2>> snps.log
+[11:04:44] Running: bcftools index -f snps.vcf.gz 2>> snps.log
+[11:04:44] Running: bcftools consensus -f reference/ref.fa -o snps.consensus.fa snps.vcf.gz 2>> snps.log
+[11:04:44] Running: bcftools convert -Oz -o snps.subs.vcf.gz snps.subs.vcf 2>> snps.log
+[11:04:44] Running: bcftools index -f snps.subs.vcf.gz 2>> snps.log
+[11:04:44] Running: bcftools consensus -f reference/ref.fa -o snps.consensus.subs.fa snps.subs.vcf.gz 2>> snps.log
+[11:04:44] Marked 0 heterozygous sites with 'n'
+[11:04:44] Running: rm -f snps.subs.vcf.gz snps.subs.vcf.gz.csi snps.subs.vcf.gz.tbi 2>> snps.log
+[11:04:44] Creating extra output files: BED GFF CSV TXT HTML
+[11:04:44] Identified 30 variants.
+[11:04:44] Running: rm -f fake_reads\.fq 2>> snps.log
+[11:04:44] Result folder: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB1790AA_AS.out
+[11:04:44] Result files:
+[11:04:44] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB1790AA_AS.out/snps.aligned.fa
+[11:04:44] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB1790AA_AS.out/snps.bam
+[11:04:44] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB1790AA_AS.out/snps.bam.bai
+[11:04:44] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB1790AA_AS.out/snps.bed
+[11:04:44] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB1790AA_AS.out/snps.consensus.fa
+[11:04:44] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB1790AA_AS.out/snps.consensus.subs.fa
+[11:04:44] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB1790AA_AS.out/snps.csv
+[11:04:44] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB1790AA_AS.out/snps.filt.vcf
+[11:04:44] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB1790AA_AS.out/snps.gff
+[11:04:44] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB1790AA_AS.out/snps.html
+[11:04:44] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB1790AA_AS.out/snps.log
+[11:04:44] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB1790AA_AS.out/snps.raw.vcf
+[11:04:44] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB1790AA_AS.out/snps.subs.vcf
+[11:04:44] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB1790AA_AS.out/snps.tab
+[11:04:44] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB1790AA_AS.out/snps.txt
+[11:04:44] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB1790AA_AS.out/snps.vcf
+[11:04:44] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB1790AA_AS.out/snps.vcf.gz
+[11:04:44] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB1790AA_AS.out/snps.vcf.gz.csi
+[11:04:44] Walltime used: 19 seconds
+[11:04:44] May the SNPs be with you.
+[11:04:44] Done.
+[Fri Jun 19 11:04:44 2020]
+Finished job 35.
+46 of 201 steps (23%) done
+
+[Fri Jun 19 11:04:44 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_BB2967AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_BB2967AA_AS.out
+    jobid: 152
+    wildcards: output_prefix=Agona_195, reference=SG17-135, sample=SAL_BB2967AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_BB2967AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_BB2967AA_AS.fasta
+[11:04:44] Generating reference aligned/masked FASTA relative to reference: snps.aligned.fa
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[11:04:45] This is snippy 4.4.3
+[11:04:45] Written by Torsten Seemann
+[11:04:45] Obtained from https://github.com/tseemann/snippy
+[11:04:45] Detected operating system: linux
+[11:04:45] Enabling bundled linux tools.
+[11:04:45] Found bwa - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/bwa
+[11:04:45] Found bcftools - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/bcftools
+[11:04:45] Found samtools - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/samtools
+[11:04:45] Found java - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/java
+[11:04:45] Found snpEff - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snpEff
+[11:04:45] Found samclip - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/samclip
+[11:04:45] Found seqtk - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/seqtk
+[11:04:45] Found parallel - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/parallel
+[11:04:45] Found freebayes - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/freebayes
+[11:04:45] Found freebayes-parallel - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/freebayes-parallel
+[11:04:45] Found fasta_generate_regions.py - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/fasta_generate_regions.py
+[11:04:45] Found vcfstreamsort - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vcfstreamsort
+[11:04:45] Found vcfuniq - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vcfuniq
+[11:04:45] Found vcffirstheader - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vcffirstheader
+[11:04:45] Found gzip - /usr/bin/gzip
+[11:04:45] Found vt - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vt
+[11:04:45] Found snippy-vcf_to_tab - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snippy-vcf_to_tab
+[11:04:45] Found snippy-vcf_report - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snippy-vcf_report
+[11:04:45] Checking version: samtools --version is >= 1.7 - ok, have 1.9
+[11:04:45] Checking version: bcftools --version is >= 1.7 - ok, have 1.9
+[11:04:45] Checking version: freebayes --version is >= 1.1 - ok, have 1.3
+[11:04:45] Marked 0 heterozygous sites with 'n'
+[11:04:45] Checking version: java -version is >= 1.8 - ok, have 1.8
+[11:04:45] Running: mkdir -p reference/genomes && cp -f reference/ref.fa reference/genomes/ref.fa 2>> snps.log
+[11:04:45] Creating extra output files: BED GFF CSV TXT HTML
+[11:04:45] Identified 260 variants.
+[11:04:45] Result folder: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_MB2521AA_AS.out
+[11:04:45] Result files:
+[11:04:45] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_MB2521AA_AS.out/snps.aligned.fa
+[11:04:45] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_MB2521AA_AS.out/snps.bam
+[11:04:45] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_MB2521AA_AS.out/snps.bam.bai
+[11:04:45] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_MB2521AA_AS.out/snps.bed
+[11:04:45] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_MB2521AA_AS.out/snps.consensus.fa
+[11:04:45] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_MB2521AA_AS.out/snps.consensus.subs.fa
+[11:04:45] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_MB2521AA_AS.out/snps.csv
+[11:04:45] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_MB2521AA_AS.out/snps.filt.vcf
+[11:04:45] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_MB2521AA_AS.out/snps.gff
+[11:04:45] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_MB2521AA_AS.out/snps.html
+[11:04:45] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_MB2521AA_AS.out/snps.log
+[11:04:45] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_MB2521AA_AS.out/snps.raw.vcf
+[11:04:45] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_MB2521AA_AS.out/snps.subs.vcf
+[11:04:45] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_MB2521AA_AS.out/snps.tab
+[11:04:45] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_MB2521AA_AS.out/snps.txt
+[11:04:45] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_MB2521AA_AS.out/snps.vcf
+[11:04:45] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_MB2521AA_AS.out/snps.vcf.gz
+[11:04:45] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_MB2521AA_AS.out/snps.vcf.gz.csi
+[11:04:45] Walltime used: 19 seconds
+[11:04:45] May the SNPs be with you.
+[11:04:45] Done.
+[11:04:45] Running: ln -sf reference/ref.fa . 2>> snps.log
+[Fri Jun 19 11:04:45 2020]
+Finished job 130.
+47 of 201 steps (23%) done
+[11:04:45] Running: ln -sf reference/ref.fa.fai . 2>> snps.log
+
+[Fri Jun 19 11:04:45 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_CB9243AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB9243AA_AS.out
+    jobid: 40
+    wildcards: output_prefix=Agona_195, reference=SG17-135, sample=SAL_CB9243AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB9243AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_CB9243AA_AS.fasta
+[11:04:45] Running: mkdir -p reference/ref && gzip -c reference/ref.gff > reference/ref/genes.gff.gz 2>> snps.log
+[11:04:45] Running: bwa mem  -Y -M -R '@RG\tID:SAL_JB9521AA_AS.out\tSM:SAL_JB9521AA_AS.out' -t 8 reference/ref.fa fake_reads.fq | samclip --max 10 --ref reference/ref.fa.fai | samtools sort -n -l 0 -T /tmp --threads 8 -m 500M | samtools fixmate -m - - | samtools sort -l 0 -T /tmp --threads 8 -m 500M | samtools markdup -T /tmp -r -s - - > snps.bam 2>> snps.log
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[11:04:45] Checking version: snpEff -version is >= 4.3 - ok, have 4.3
+[11:04:45] Checking version: bwa is >= 7.12 - ok, have 7.17
+[11:04:45] Using reference: /data/malcummi/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa
+[samclip] samclip 0.2 by Torsten Seemann (@torstenseemann)
+[samclip] Loading: reference/ref.fa.fai
+[samclip] Found 3 sequences in reference/ref.fa.fai
+[11:04:45] Treating reference as 'fasta' format.
+[11:04:45] Will use 8 CPU cores.
+[11:04:45] Using read file: /data/malcummi/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_BB2967AA_AS.fasta
+[11:04:45] Creating folder: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_BB2967AA_AS.out
+[11:04:45] Changing working directory: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_BB2967AA_AS.out
+[11:04:45] Creating reference folder: reference
+[11:04:45] Extracting FASTA and GFF from reference.
+[11:04:45] Wrote 3 sequences to ref.fa
+[11:04:45] Wrote 0 features to ref.gff
+[11:04:45] Shredding /data/malcummi/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_BB2967AA_AS.fasta into pseudo-reads
+[M::process] read 320196 sequences (80000406 bp)...
+[M::process] read 74598 sequences (18601214 bp)...
+[11:04:46] Wrote 398246 fake 250bp reads (20x, stride 25bp) to fake_reads.fq
+[11:04:46] Freebayes will process 15 chunks of 349241 bp, 8 chunks at a time.
+[11:04:46] Using BAM RG (Read Group) ID: SAL_JB0953AA_AS.out
+[11:04:46] Running: samtools faidx reference/ref.fa 2>> snps.log
+[11:04:46] Running: bwa index reference/ref.fa 2>> snps.log
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[11:04:46] This is snippy 4.4.3
+[11:04:46] Written by Torsten Seemann
+[11:04:46] Obtained from https://github.com/tseemann/snippy
+[11:04:46] Detected operating system: linux
+[11:04:46] Enabling bundled linux tools.
+[11:04:46] Found bwa - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/bwa
+[11:04:46] Found bcftools - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/bcftools
+[11:04:46] Found samtools - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/samtools
+[11:04:46] Found java - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/java
+[11:04:46] Found snpEff - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snpEff
+[11:04:46] Found samclip - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/samclip
+[11:04:46] Found seqtk - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/seqtk
+[11:04:46] Found parallel - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/parallel
+[11:04:46] Found freebayes - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/freebayes
+[11:04:46] Found freebayes-parallel - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/freebayes-parallel
+[11:04:46] Found fasta_generate_regions.py - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/fasta_generate_regions.py
+[11:04:46] Found vcfstreamsort - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vcfstreamsort
+[11:04:46] Found vcfuniq - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vcfuniq
+[11:04:46] Found vcffirstheader - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vcffirstheader
+[11:04:46] Found gzip - /usr/bin/gzip
+[11:04:46] Found vt - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vt
+[11:04:46] Found snippy-vcf_to_tab - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snippy-vcf_to_tab
+[11:04:46] Found snippy-vcf_report - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snippy-vcf_report
+[11:04:46] Checking version: samtools --version is >= 1.7 - ok, have 1.9
+[11:04:46] Checking version: bcftools --version is >= 1.7 - ok, have 1.9
+[11:04:46] Checking version: freebayes --version is >= 1.1 - ok, have 1.3
+[11:04:46] Checking version: java -version is >= 1.8 - ok, have 1.8
+[11:04:46] Checking version: snpEff -version is >= 4.3 - ok, have 4.3
+[11:04:46] Checking version: bwa is >= 7.12 - ok, have 7.17
+[11:04:46] Using reference: /data/malcummi/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa
+[11:04:46] Treating reference as 'fasta' format.
+[11:04:46] Will use 8 CPU cores.
+[11:04:46] Using read file: /data/malcummi/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_CB9243AA_AS.fasta
+[11:04:46] Creating folder: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB9243AA_AS.out
+[11:04:46] Changing working directory: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB9243AA_AS.out
+[11:04:46] Creating reference folder: reference
+[11:04:46] Extracting FASTA and GFF from reference.
+[11:04:46] Wrote 3 sequences to ref.fa
+[11:04:46] Wrote 0 features to ref.gff
+[11:04:46] Shredding /data/malcummi/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_CB9243AA_AS.fasta into pseudo-reads
+[11:04:47] Wrote 394490 fake 250bp reads (20x, stride 25bp) to fake_reads.fq
+[11:04:47] Freebayes will process 15 chunks of 349241 bp, 8 chunks at a time.
+[11:04:47] Using BAM RG (Read Group) ID: SAL_AB5642AA_AS.out
+[11:04:47] Running: samtools faidx reference/ref.fa 2>> snps.log
+[11:04:47] Running: bwa index reference/ref.fa 2>> snps.log
+[11:04:47] Marked 0 heterozygous sites with 'n'
+[11:04:47] Running: mkdir -p reference/genomes && cp -f reference/ref.fa reference/genomes/ref.fa 2>> snps.log
+[11:04:47] Running: ln -sf reference/ref.fa . 2>> snps.log
+[11:04:47] Running: ln -sf reference/ref.fa.fai . 2>> snps.log
+[11:04:47] Running: mkdir -p reference/ref && gzip -c reference/ref.gff > reference/ref/genes.gff.gz 2>> snps.log
+[11:04:47] Creating extra output files: BED GFF CSV TXT HTML
+[11:04:47] Running: bwa mem  -Y -M -R '@RG\tID:SAL_JB0953AA_AS.out\tSM:SAL_JB0953AA_AS.out' -t 8 reference/ref.fa fake_reads.fq | samclip --max 10 --ref reference/ref.fa.fai | samtools sort -n -l 0 -T /tmp --threads 8 -m 500M | samtools fixmate -m - - | samtools sort -l 0 -T /tmp --threads 8 -m 500M | samtools markdup -T /tmp -r -s - - > snps.bam 2>> snps.log
+[11:04:47] Identified 467 variants.
+[11:04:47] Result folder: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_KB1826AA_AS.out
+[11:04:47] Result files:
+[11:04:47] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_KB1826AA_AS.out/snps.aligned.fa
+[11:04:47] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_KB1826AA_AS.out/snps.bam
+[11:04:47] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_KB1826AA_AS.out/snps.bam.bai
+[11:04:47] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_KB1826AA_AS.out/snps.bed
+[11:04:47] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_KB1826AA_AS.out/snps.consensus.fa
+[11:04:47] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_KB1826AA_AS.out/snps.consensus.subs.fa
+[11:04:47] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_KB1826AA_AS.out/snps.csv
+[11:04:47] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_KB1826AA_AS.out/snps.filt.vcf
+[11:04:47] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_KB1826AA_AS.out/snps.gff
+[11:04:47] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_KB1826AA_AS.out/snps.html
+[11:04:47] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_KB1826AA_AS.out/snps.log
+[11:04:47] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_KB1826AA_AS.out/snps.raw.vcf
+[11:04:47] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_KB1826AA_AS.out/snps.subs.vcf
+[11:04:47] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_KB1826AA_AS.out/snps.tab
+[11:04:47] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_KB1826AA_AS.out/snps.txt
+[11:04:47] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_KB1826AA_AS.out/snps.vcf
+[11:04:47] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_KB1826AA_AS.out/snps.vcf.gz
+[11:04:47] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_KB1826AA_AS.out/snps.vcf.gz.csi
+[11:04:47] Walltime used: 19 seconds
+[11:04:47] Did you know? Snippy is a combination of SNP, Skippy, and snappy.
+[11:04:47] Done.
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[Fri Jun 19 11:04:47 2020]
+Finished job 98.
+48 of 201 steps (24%) done
+
+[Fri Jun 19 11:04:47 2020]
+[samclip] samclip 0.2 by Torsten Seemann (@torstenseemann)
+[samclip] Loading: reference/ref.fa.fai
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_BB6441AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_BB6441AA_AS.out
+    jobid: 42
+    wildcards: output_prefix=Agona_195, reference=SG17-135, sample=SAL_BB6441AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_BB6441AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_BB6441AA_AS.fasta
+[samclip] Found 3 sequences in reference/ref.fa.fai
+[M::process] read 320008 sequences (80000424 bp)...
+[M::mem_process_seqs] Processed 320196 reads in 18.270 CPU sec, 2.519 real sec
+[M::process] read 78238 sequences (19559500 bp)...
+[11:04:48] Wrote 394170 fake 250bp reads (20x, stride 25bp) to fake_reads.fq
+[11:04:48] Freebayes will process 15 chunks of 349241 bp, 8 chunks at a time.
+[11:04:48] Using BAM RG (Read Group) ID: SAL_BB2967AA_AS.out
+[11:04:48] Running: samtools faidx reference/ref.fa 2>> snps.log
+[11:04:48] Running: bwa index reference/ref.fa 2>> snps.log
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[samclip] Processed 100000 records...
+[11:04:48] This is snippy 4.4.3
+[11:04:48] Written by Torsten Seemann
+[11:04:48] Obtained from https://github.com/tseemann/snippy
+[11:04:48] Detected operating system: linux
+[11:04:48] Enabling bundled linux tools.
+[11:04:48] Found bwa - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/bwa
+[11:04:48] Found bcftools - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/bcftools
+[11:04:48] Found samtools - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/samtools
+[11:04:48] Found java - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/java
+[11:04:48] Found snpEff - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snpEff
+[11:04:48] Found samclip - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/samclip
+[11:04:48] Found seqtk - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/seqtk
+[11:04:48] Found parallel - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/parallel
+[11:04:48] Marked 0 heterozygous sites with 'n'
+[11:04:48] Found freebayes - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/freebayes
+[11:04:48] Found freebayes-parallel - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/freebayes-parallel
+[11:04:48] Found fasta_generate_regions.py - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/fasta_generate_regions.py
+[11:04:48] Found vcfstreamsort - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vcfstreamsort
+[11:04:48] Found vcfuniq - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vcfuniq
+[11:04:48] Found vcffirstheader - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vcffirstheader
+[11:04:48] Found gzip - /usr/bin/gzip
+[11:04:48] Found vt - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vt
+[11:04:48] Found snippy-vcf_to_tab - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snippy-vcf_to_tab
+[11:04:48] Found snippy-vcf_report - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snippy-vcf_report
+[11:04:48] Checking version: samtools --version is >= 1.7 - ok, have 1.9
+[11:04:48] Checking version: bcftools --version is >= 1.7 - ok, have 1.9
+[11:04:48] Checking version: freebayes --version is >= 1.1 - ok, have 1.3
+[samclip] Processed 200000 records...
+[11:04:48] Creating extra output files: BED GFF CSV TXT HTML
+[11:04:48] Identified 490 variants.
+[11:04:48] Result folder: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB9835AA_AS.out
+[11:04:48] Result files:
+[11:04:48] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB9835AA_AS.out/snps.aligned.fa
+[11:04:48] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB9835AA_AS.out/snps.bam
+[11:04:48] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB9835AA_AS.out/snps.bam.bai
+[11:04:48] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB9835AA_AS.out/snps.bed
+[11:04:48] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB9835AA_AS.out/snps.consensus.fa
+[11:04:48] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB9835AA_AS.out/snps.consensus.subs.fa
+[11:04:48] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB9835AA_AS.out/snps.csv
+[11:04:48] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB9835AA_AS.out/snps.filt.vcf
+[11:04:48] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB9835AA_AS.out/snps.gff
+[11:04:48] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB9835AA_AS.out/snps.html
+[11:04:48] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB9835AA_AS.out/snps.log
+[11:04:48] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB9835AA_AS.out/snps.raw.vcf
+[11:04:48] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB9835AA_AS.out/snps.subs.vcf
+[11:04:48] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB9835AA_AS.out/snps.tab
+[11:04:48] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB9835AA_AS.out/snps.txt
+[11:04:48] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB9835AA_AS.out/snps.vcf
+[11:04:48] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB9835AA_AS.out/snps.vcf.gz
+[11:04:48] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_CB9835AA_AS.out/snps.vcf.gz.csi
+[11:04:48] Walltime used: 19 seconds
+[11:04:48] May the SNPs be with you.
+[11:04:48] Done.
+[M::mem_process_seqs] Processed 74598 reads in 5.054 CPU sec, 0.587 real sec
+[Fri Jun 19 11:04:48 2020]
+Finished job 68.
+49 of 201 steps (24%) done
+
+[Fri Jun 19 11:04:48 2020]
+rule snippy_run:
+    input: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa, /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_XA1299AA_AS.fasta
+    output: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_XA1299AA_AS.out
+    jobid: 156
+    wildcards: output_prefix=Agona_195, reference=SG17-135, sample=SAL_XA1299AA_AS
+    threads: 5
+
+snippy --outdir /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_XA1299AA_AS.out --ref /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa --ctgs /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_XA1299AA_AS.fasta
+[11:04:48] Checking version: java -version is >= 1.8 - ok, have 1.8
+[11:04:49] Running: mkdir -p reference/genomes && cp -f reference/ref.fa reference/genomes/ref.fa 2>> snps.log
+[11:04:49] Checking version: snpEff -version is >= 4.3 - ok, have 4.3
+[11:04:49] Checking version: bwa is >= 7.12 - ok, have 7.17
+[11:04:49] Using reference: /data/malcummi/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa
+[11:04:49] Treating reference as 'fasta' format.
+[11:04:49] Will use 8 CPU cores.
+[11:04:49] Using read file: /data/malcummi/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_BB6441AA_AS.fasta
+[11:04:49] Creating folder: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_BB6441AA_AS.out
+[11:04:49] Changing working directory: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_BB6441AA_AS.out
+[11:04:49] Creating reference folder: reference
+[11:04:49] Extracting FASTA and GFF from reference.
+[11:04:49] Running: ln -sf reference/ref.fa . 2>> snps.log
+[11:04:49] Running: ln -sf reference/ref.fa.fai . 2>> snps.log
+[11:04:49] Running: mkdir -p reference/ref && gzip -c reference/ref.gff > reference/ref/genes.gff.gz 2>> snps.log
+[11:04:49] Running: bwa mem  -Y -M -R '@RG\tID:SAL_AB5642AA_AS.out\tSM:SAL_AB5642AA_AS.out' -t 8 reference/ref.fa fake_reads.fq | samclip --max 10 --ref reference/ref.fa.fai | samtools sort -n -l 0 -T /tmp --threads 8 -m 500M | samtools fixmate -m - - | samtools sort -l 0 -T /tmp --threads 8 -m 500M | samtools markdup -T /tmp -r -s - - > snps.bam 2>> snps.log
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[samclip] samclip 0.2 by Torsten Seemann (@torstenseemann)
+[samclip] Loading: reference/ref.fa.fai
+[samclip] Found 3 sequences in reference/ref.fa.fai
+[samclip] Processed 300000 records...
+[11:04:49] Wrote 3 sequences to ref.fa
+[11:04:49] Wrote 0 features to ref.gff
+[11:04:49] Shredding /data/malcummi/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_BB6441AA_AS.fasta into pseudo-reads
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -Y -M -R @RG\tID:SAL_JB9521AA_AS.out\tSM:SAL_JB9521AA_AS.out -t 8 reference/ref.fa fake_reads.fq
+[main] Real time: 3.994 sec; CPU: 23.864 sec
+[samclip] Total SAM records 395069, removed 883, allowed 95, passed 394186
+[samclip] Header contained 5 lines
+[samclip] Done.
+[M::process] read 320160 sequences (80000364 bp)...
+[11:04:49] Wrote 393608 fake 250bp reads (20x, stride 25bp) to fake_reads.fq
+[11:04:49] Freebayes will process 15 chunks of 349241 bp, 8 chunks at a time.
+[11:04:49] Using BAM RG (Read Group) ID: SAL_CB9243AA_AS.out
+[11:04:49] Running: samtools faidx reference/ref.fa 2>> snps.log
+[bam_sort_core] merging from 0 files and 8 in-memory blocks...
+[11:04:49] Running: bwa index reference/ref.fa 2>> snps.log
+[M::process] read 74330 sequences (18582500 bp)...
+Activating conda environment: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609
+[11:04:49] This is snippy 4.4.3
+[11:04:49] Written by Torsten Seemann
+[11:04:49] Obtained from https://github.com/tseemann/snippy
+[11:04:49] Detected operating system: linux
+[11:04:49] Enabling bundled linux tools.
+[11:04:49] Found bwa - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/bwa
+[11:04:49] Found bcftools - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/bcftools
+[11:04:49] Found samtools - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/samtools
+[11:04:49] Found java - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/java
+[11:04:49] Found snpEff - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snpEff
+[11:04:49] Found samclip - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/samclip
+[11:04:49] Found seqtk - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/seqtk
+[11:04:49] Found parallel - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/parallel
+[11:04:49] Found freebayes - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/freebayes
+[11:04:49] Found freebayes-parallel - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/freebayes-parallel
+[11:04:49] Found fasta_generate_regions.py - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/fasta_generate_regions.py
+[11:04:49] Found vcfstreamsort - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vcfstreamsort
+[11:04:49] Found vcfuniq - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vcfuniq
+[11:04:49] Found vcffirstheader - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vcffirstheader
+[11:04:49] Found gzip - /usr/bin/gzip
+[11:04:49] Found vt - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/vt
+[11:04:49] Found snippy-vcf_to_tab - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snippy-vcf_to_tab
+[11:04:49] Found snippy-vcf_report - /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snippy-vcf_report
+[11:04:49] Checking version: samtools --version is >= 1.7 - ok, have 1.9
+[11:04:49] Checking version: bcftools --version is >= 1.7 - ok, have 1.9
+[11:04:49] Checking version: freebayes --version is >= 1.1 - ok, have 1.3
+[11:04:50] Checking version: java -version is >= 1.8 - ok, have 1.8
+[11:04:50] Checking version: snpEff -version is >= 4.3 - ok, have 4.3
+[11:04:50] Checking version: bwa is >= 7.12 - ok, have 7.17
+[11:04:50] Using reference: /data/malcummi/Manuscripts/Salmonella_AMR/Agona_assemblies/data/refs/SG17-135.fa
+[11:04:50] Treating reference as 'fasta' format.
+[11:04:50] Will use 8 CPU cores.
+[11:04:50] Using read file: /data/malcummi/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_XA1299AA_AS.fasta
+[11:04:50] Creating folder: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_XA1299AA_AS.out
+[11:04:50] Changing working directory: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_XA1299AA_AS.out
+[11:04:50] Creating reference folder: reference
+[11:04:50] Extracting FASTA and GFF from reference.
+[11:04:50] Wrote 3 sequences to ref.fa
+[11:04:50] Wrote 0 features to ref.gff
+[11:04:50] Shredding /data/malcummi/Manuscripts/Salmonella_AMR/Agona_assemblies/Agona_no_ref/SAL_XA1299AA_AS.fasta into pseudo-reads
+[11:04:50] Running: mkdir -p reference/genomes && cp -f reference/ref.fa reference/genomes/ref.fa 2>> snps.log
+[11:04:50] Running: ln -sf reference/ref.fa . 2>> snps.log
+[11:04:50] Running: ln -sf reference/ref.fa.fai . 2>> snps.log
+[11:04:50] Running: mkdir -p reference/ref && gzip -c reference/ref.gff > reference/ref/genes.gff.gz 2>> snps.log
+[11:04:50] Running: bwa mem  -Y -M -R '@RG\tID:SAL_BB2967AA_AS.out\tSM:SAL_BB2967AA_AS.out' -t 8 reference/ref.fa fake_reads.fq | samclip --max 10 --ref reference/ref.fa.fai | samtools sort -n -l 0 -T /tmp --threads 8 -m 500M | samtools fixmate -m - - | samtools sort -l 0 -T /tmp --threads 8 -m 500M | samtools markdup -T /tmp -r -s - - > snps.bam 2>> snps.log
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[samclip] samclip 0.2 by Torsten Seemann (@torstenseemann)
+[samclip] Loading: reference/ref.fa.fai
+[samclip] Found 3 sequences in reference/ref.fa.fai
+[bam_sort_core] merging from 0 files and 8 in-memory blocks...
+[M::mem_process_seqs] Processed 320008 reads in 18.507 CPU sec, 2.429 real sec
+[M::process] read 320016 sequences (80000230 bp)...
+[M::process] read 74154 sequences (18463210 bp)...
+[samclip] Processed 100000 records...
+[samclip] Processed 200000 records...
+[M::mem_process_seqs] Processed 78238 reads in 5.410 CPU sec, 0.623 real sec
+[11:04:51] Running: mkdir -p reference/genomes && cp -f reference/ref.fa reference/genomes/ref.fa 2>> snps.log
+[11:04:51] Running: ln -sf reference/ref.fa . 2>> snps.log
+[11:04:51] Running: ln -sf reference/ref.fa.fai . 2>> snps.log
+[11:04:51] Running: mkdir -p reference/ref && gzip -c reference/ref.gff > reference/ref/genes.gff.gz 2>> snps.log
+[11:04:51] Running: bwa mem  -Y -M -R '@RG\tID:SAL_CB9243AA_AS.out\tSM:SAL_CB9243AA_AS.out' -t 8 reference/ref.fa fake_reads.fq | samclip --max 10 --ref reference/ref.fa.fai | samtools sort -n -l 0 -T /tmp --threads 8 -m 500M | samtools fixmate -m - - | samtools sort -l 0 -T /tmp --threads 8 -m 500M | samtools markdup -T /tmp -r -s - - > snps.bam 2>> snps.log
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[samclip] samclip 0.2 by Torsten Seemann (@torstenseemann)
+[samclip] Loading: reference/ref.fa.fai
+[samclip] Found 3 sequences in reference/ref.fa.fai
+[11:04:51] Running: samtools index snps.bam 2>> snps.log
+[samclip] Processed 300000 records...
+[11:04:51] Running: fasta_generate_regions.py reference/ref.fa.fai 349241 > reference/ref.txt 2>> snps.log
+[11:04:51] Running: freebayes-parallel reference/ref.txt 8 -p 2 -P 0 -C 10 --min-repeat-entropy 1.5 --strict-vcf -q 13 -m 60 --min-coverage 10 -F 0.05  -f reference/ref.fa snps.bam > snps.raw.vcf 2>> snps.log
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -Y -M -R @RG\tID:SAL_JB0953AA_AS.out\tSM:SAL_JB0953AA_AS.out -t 8 reference/ref.fa fake_reads.fq
+[main] Real time: 3.835 sec; CPU: 24.418 sec
+[samclip] Total SAM records 398486, removed 1292, allowed 243, passed 397194
+[samclip] Header contained 5 lines
+[samclip] Done.
+[M::process] read 320140 sequences (80000152 bp)...
+[bam_sort_core] merging from 0 files and 8 in-memory blocks...
+[M::process] read 73468 sequences (18367000 bp)...
+[11:04:52] Wrote 394306 fake 250bp reads (20x, stride 25bp) to fake_reads.fq
+[M::mem_process_seqs] Processed 320160 reads in 18.415 CPU sec, 2.610 real sec
+[11:04:52] Freebayes will process 15 chunks of 349241 bp, 8 chunks at a time.
+[11:04:52] Using BAM RG (Read Group) ID: SAL_BB6441AA_AS.out
+[11:04:52] Running: samtools faidx reference/ref.fa 2>> snps.log
+[11:04:52] Running: bwa index reference/ref.fa 2>> snps.log
+[samclip] Processed 100000 records...
+[M::mem_process_seqs] Processed 74330 reads in 4.414 CPU sec, 0.532 real sec
+[samclip] Processed 200000 records...
+[bam_sort_core] merging from 0 files and 8 in-memory blocks...
+[samclip] Processed 300000 records...
+[11:04:53] Wrote 397540 fake 250bp reads (20x, stride 25bp) to fake_reads.fq
+[11:04:53] Freebayes will process 15 chunks of 349241 bp, 8 chunks at a time.
+[11:04:53] Using BAM RG (Read Group) ID: SAL_XA1299AA_AS.out
+[11:04:53] Running: samtools faidx reference/ref.fa 2>> snps.log
+[11:04:53] Running: bwa index reference/ref.fa 2>> snps.log
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -Y -M -R @RG\tID:SAL_AB5642AA_AS.out\tSM:SAL_AB5642AA_AS.out -t 8 reference/ref.fa fake_reads.fq
+[main] Real time: 4.154 sec; CPU: 23.428 sec
+[samclip] Total SAM records 394735, removed 1211, allowed 74, passed 393524
+[samclip] Header contained 5 lines
+[samclip] Done.
+[M::mem_process_seqs] Processed 320016 reads in 16.650 CPU sec, 2.595 real sec
+[bam_sort_core] merging from 0 files and 8 in-memory blocks...
+[samclip] Processed 100000 records...
+[11:04:53] Running: samtools index snps.bam 2>> snps.log
+[samclip] Processed 200000 records...
+[M::mem_process_seqs] Processed 74154 reads in 4.794 CPU sec, 0.561 real sec
+[11:04:53] Running: fasta_generate_regions.py reference/ref.fa.fai 349241 > reference/ref.txt 2>> snps.log
+[11:04:53] Running: freebayes-parallel reference/ref.txt 8 -p 2 -P 0 -C 10 --min-repeat-entropy 1.5 --strict-vcf -q 13 -m 60 --min-coverage 10 -F 0.05  -f reference/ref.fa snps.bam > snps.raw.vcf 2>> snps.log
+[M::mem_process_seqs] Processed 320140 reads in 16.519 CPU sec, 2.199 real sec
+[11:04:54] Running: mkdir -p reference/genomes && cp -f reference/ref.fa reference/genomes/ref.fa 2>> snps.log
+[11:04:54] Running: ln -sf reference/ref.fa . 2>> snps.log
+[11:04:54] Running: ln -sf reference/ref.fa.fai . 2>> snps.log
+[11:04:54] Running: mkdir -p reference/ref && gzip -c reference/ref.gff > reference/ref/genes.gff.gz 2>> snps.log
+[11:04:54] Running: bwa mem  -Y -M -R '@RG\tID:SAL_BB6441AA_AS.out\tSM:SAL_BB6441AA_AS.out' -t 8 reference/ref.fa fake_reads.fq | samclip --max 10 --ref reference/ref.fa.fai | samtools sort -n -l 0 -T /tmp --threads 8 -m 500M | samtools fixmate -m - - | samtools sort -l 0 -T /tmp --threads 8 -m 500M | samtools markdup -T /tmp -r -s - - > snps.bam 2>> snps.log
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[samclip] samclip 0.2 by Torsten Seemann (@torstenseemann)
+[samclip] Loading: reference/ref.fa.fai
+[samclip] Found 3 sequences in reference/ref.fa.fai
+[samclip] Processed 300000 records...
+[samclip] Processed 100000 records...
+[bam_sort_core] merging from 0 files and 8 in-memory blocks...
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -Y -M[samclip] Total SAM records 394473, removed 1082, allowed 98, passed 393391
+ -R @RG\tID:SAL_BB2967AA_AS.out\tSM:SAL_BB2967AA_AS.out -t[samclip] Header contained 5 lines
+ 8[samclip] Done.
+ reference/ref.fa fake_reads.fq
+[main] Real time: 4.024 sec; CPU: 21.970 sec
+[M::mem_process_seqs] Processed 73468 reads in 3.947 CPU sec, 0.465 real sec
+[M::process] read 320138 sequences (80000338 bp)...
+[bam_sort_core] merging from 0 files and 8 in-memory blocks...
+[samclip] Processed 200000 records...
+[M::process] read 74168 sequences (18517842 bp)...
+[11:04:54] Running: bcftools view --include 'FMT/GT="1/1" && QUAL>=100 && FMT/DP>=10 && (FMT/AO)/(FMT/DP)>=0' snps.raw.vcf  | vt normalize -r reference/ref.fa - | bcftools annotate --remove '^INFO/TYPE,^INFO/DP,^INFO/RO,^INFO/AO,^INFO/AB,^FORMAT/GT,^FORMAT/DP,^FORMAT/RO,^FORMAT/AO,^FORMAT/QR,^FORMAT/QA,^FORMAT/GL' > snps.filt.vcf 2>> snps.log
+normalize v0.5
+
+options:     input VCF file                                  -
+         [o] output VCF file                                 -
+         [w] sorting window size                             10000
+         [n] no fail on reference inconsistency for non SNPs false
+         [q] quiet                                           false
+         [d] debug                                           false
+         [r] reference FASTA file                            reference/ref.fa
+
+
+stats: biallelic
+          no. left trimmed                      : 0
+          no. right trimmed                     : 5
+          no. left and right trimmed            : 0
+          no. right trimmed and left aligned    : 0
+          no. left aligned                      : 0
+
+       total no. biallelic normalized           : 5
+
+       multiallelic
+          no. left trimmed                      : 0
+          no. right trimmed                     : 0
+          no. left and right trimmed            : 0
+          no. right trimmed and left aligned    : 0
+          no. left aligned                      : 0
+
+       total no. multiallelic normalized        : 0
+
+       total no. variants normalized            : 5
+       total no. variants observed              : 64
+       total no. reference observed             : 0
+
+Time elapsed: 0.00s
+
+[11:04:54] Running: cp snps.filt.vcf snps.vcf 2>> snps.log
+[11:04:54] Running: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snippy-vcf_to_tab --gff reference/ref.gff --ref reference/ref.fa --vcf snps.vcf > snps.tab 2>> snps.log
+[samclip] Processed 300000 records...
+[11:04:54] Running: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snippy-vcf_extract_subs snps.filt.vcf > snps.subs.vcf 2>> snps.log
+[11:04:54] Running: bcftools convert -Oz -o snps.vcf.gz snps.vcf 2>> snps.log
+[11:04:54] Running: bcftools index -f snps.vcf.gz 2>> snps.log
+[11:04:54] Running: bcftools consensus -f reference/ref.fa -o snps.consensus.fa snps.vcf.gz 2>> snps.log
+[11:04:54] Running: bcftools convert -Oz -o snps.subs.vcf.gz snps.subs.vcf 2>> snps.log
+[11:04:54] Running: mkdir -p reference/genomes && cp -f reference/ref.fa reference/genomes/ref.fa 2>> snps.log
+[11:04:54] Running: bcftools index -f snps.subs.vcf.gz 2>> snps.log
+[11:04:54] Running: ln -sf reference/ref.fa . 2>> snps.log
+[11:04:54] Running: bcftools consensus -f reference/ref.fa -o snps.consensus.subs.fa snps.subs.vcf.gz 2>> snps.log
+[11:04:54] Running: ln -sf reference/ref.fa.fai . 2>> snps.log
+[11:04:54] Running: mkdir -p reference/ref && gzip -c reference/ref.gff > reference/ref/genes.gff.gz 2>> snps.log
+[11:04:55] Running: bwa mem  -Y -M -R '@RG\tID:SAL_XA1299AA_AS.out\tSM:SAL_XA1299AA_AS.out' -t 8 reference/ref.fa fake_reads.fq | samclip --max 10 --ref reference/ref.fa.fai | samtools sort -n -l 0 -T /tmp --threads 8 -m 500M | samtools fixmate -m - - | samtools sort -l 0 -T /tmp --threads 8 -m 500M | samtools markdup -T /tmp -r -s - - > snps.bam 2>> snps.log
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[samclip] samclip 0.2 by Torsten Seemann (@torstenseemann)
+[samclip] Loading: reference/ref.fa.fai
+[samclip] Found 3 sequences in reference/ref.fa.fai
+[11:04:55] Running: rm -f snps.subs.vcf.gz snps.subs.vcf.gz.csi snps.subs.vcf.gz.tbi 2>> snps.log
+[11:04:55] Running: rm -f fake_reads\.fq 2>> snps.log
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -Y -M -R @RG\tID:SAL_CB9243AA_AS.out\tSM:SAL_CB9243AA_AS.out -t 8 reference/ref.fa fake_reads.fq
+[main] Real time: 3.601 sec; CPU: 21.000 sec
+[samclip] Total SAM records 393980, removed 1071, allowed 135, passed 392909
+[samclip] Header contained 5 lines
+[samclip] Done.
+[bam_sort_core] merging from 0 files and 8 in-memory blocks...
+[11:04:55] Generating reference aligned/masked FASTA relative to reference: snps.aligned.fa
+[11:04:55] Running: samtools index snps.bam 2>> snps.log
+[M::process] read 320158 sequences (80000292 bp)...
+[11:04:55] Running: fasta_generate_regions.py reference/ref.fa.fai 349241 > reference/ref.txt 2>> snps.log
+[M::process] read 77382 sequences (19326182 bp)...
+[bam_sort_core] merging from 0 files and 8 in-memory blocks...
+[11:04:55] Running: freebayes-parallel reference/ref.txt 8 -p 2 -P 0 -C 10 --min-repeat-entropy 1.5 --strict-vcf -q 13 -m 60 --min-coverage 10 -F 0.05  -f reference/ref.fa snps.bam > snps.raw.vcf 2>> snps.log
+[bam_sort_core] merging from 0 files and 8 in-memory blocks...
+[11:04:56] Running: samtools index snps.bam 2>> snps.log
+[11:04:56] Running: fasta_generate_regions.py reference/ref.fa.fai 349241 > reference/ref.txt 2>> snps.log
+[11:04:56] Running: freebayes-parallel reference/ref.txt 8 -p 2 -P 0 -C 10 --min-repeat-entropy 1.5 --strict-vcf -q 13 -m 60 --min-coverage 10 -F 0.05  -f reference/ref.fa snps.bam > snps.raw.vcf 2>> snps.log
+[M::mem_process_seqs] Processed 320138 reads in 17.309 CPU sec, 2.675 real sec
+[11:04:57] Running: samtools index snps.bam 2>> snps.log
+[11:04:57] Running: bcftools view --include 'FMT/GT="1/1" && QUAL>=100 && FMT/DP>=10 && (FMT/AO)/(FMT/DP)>=0' snps.raw.vcf  | vt normalize -r reference/ref.fa - | bcftools annotate --remove '^INFO/TYPE,^INFO/DP,^INFO/RO,^INFO/AO,^INFO/AB,^FORMAT/GT,^FORMAT/DP,^FORMAT/RO,^FORMAT/AO,^FORMAT/QR,^FORMAT/QA,^FORMAT/GL' > snps.filt.vcf 2>> snps.log
+normalize v0.5
+
+options:     input VCF file                                  -
+         [o] output VCF file                                 -
+         [w] sorting window size                             10000
+         [n] no fail on reference inconsistency for non SNPs false
+         [q] quiet                                           false
+         [d] debug                                           false
+         [r] reference FASTA file                            reference/ref.fa
+
+
+stats: biallelic
+          no. left trimmed                      : 2
+          no. right trimmed                     : 17
+          no. left and right trimmed            : 2
+          no. right trimmed and left aligned    : 0
+          no. left aligned                      : 0
+
+       total no. biallelic normalized           : 21
+
+       multiallelic
+          no. left trimmed                      : 0
+          no. right trimmed                     : 0
+          no. left and right trimmed            : 0
+          no. right trimmed and left aligned    : 0
+          no. left aligned                      : 0
+
+       total no. multiallelic normalized        : 0
+
+       total no. variants normalized            : 21
+       total no. variants observed              : 1797
+       total no. reference observed             : 0
+
+Time elapsed: 0.02s
+
+[11:04:57] Running: cp snps.filt.vcf snps.vcf 2>> snps.log
+[11:04:57] Running: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snippy-vcf_to_tab --gff reference/ref.gff --ref reference/ref.fa --vcf snps.vcf > snps.tab 2>> snps.log
+[11:04:57] Running: fasta_generate_regions.py reference/ref.fa.fai 349241 > reference/ref.txt 2>> snps.log
+[11:04:57] Running: freebayes-parallel reference/ref.txt 8 -p 2 -P 0 -C 10 --min-repeat-entropy 1.5 --strict-vcf -q 13 -m 60 --min-coverage 10 -F 0.05  -f reference/ref.fa snps.bam > snps.raw.vcf 2>> snps.log
+[samclip] Processed 100000 records...
+[11:04:57] Running: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snippy-vcf_extract_subs snps.filt.vcf > snps.subs.vcf 2>> snps.log
+[11:04:57] Running: bcftools convert -Oz -o snps.vcf.gz snps.vcf 2>> snps.log
+[11:04:57] Running: bcftools index -f snps.vcf.gz 2>> snps.log
+[11:04:57] Running: bcftools consensus -f reference/ref.fa -o snps.consensus.fa snps.vcf.gz 2>> snps.log
+[11:04:57] Running: bcftools convert -Oz -o snps.subs.vcf.gz snps.subs.vcf 2>> snps.log
+[11:04:57] Running: bcftools index -f snps.subs.vcf.gz 2>> snps.log
+[11:04:57] Running: bcftools consensus -f reference/ref.fa -o snps.consensus.subs.fa snps.subs.vcf.gz 2>> snps.log
+[11:04:57] Running: rm -f snps.subs.vcf.gz snps.subs.vcf.gz.csi snps.subs.vcf.gz.tbi 2>> snps.log
+[M::mem_process_seqs] Processed 74168 reads in 5.080 CPU sec, 0.620 real sec
+[11:04:57] Running: rm -f fake_reads\.fq 2>> snps.log
+[samclip] Processed 200000 records...
+[11:04:57] Generating reference aligned/masked FASTA relative to reference: snps.aligned.fa
+[samclip] Processed 300000 records...
+[M::mem_process_seqs] Processed 320158 reads in 17.414 CPU sec, 2.794 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -Y -M -R @RG\tID:SAL_BB6441AA_AS.out\tSM:SAL_BB6441AA_AS.out -t 8 reference/ref.fa fake_reads.fq
+[main] Real time: 4.298 sec; CPU: 22.959 sec
+[samclip] Total SAM records 394628, removed 1210, allowed 135, passed 393418
+[samclip] Header contained 5 lines
+[samclip] Done.
+[bam_sort_core] merging from 0 files and 8 in-memory blocks...
+[11:04:58] Running: bcftools view --include 'FMT/GT="1/1" && QUAL>=100 && FMT/DP>=10 && (FMT/AO)/(FMT/DP)>=0' snps.raw.vcf  | vt normalize -r reference/ref.fa - | bcftools annotate --remove '^INFO/TYPE,^INFO/DP,^INFO/RO,^INFO/AO,^INFO/AB,^FORMAT/GT,^FORMAT/DP,^FORMAT/RO,^FORMAT/AO,^FORMAT/QR,^FORMAT/QA,^FORMAT/GL' > snps.filt.vcf 2>> snps.log
+normalize v0.5
+
+options:     input VCF file                                  -
+         [o] output VCF file                                 -
+         [w] sorting window size                             10000
+         [n] no fail on reference inconsistency for non SNPs false
+         [q] quiet                                           false
+         [d] debug                                           false
+         [r] reference FASTA file                            reference/ref.fa
+
+
+stats: biallelic
+          no. left trimmed                      : 0
+          no. right trimmed                     : 9
+          no. left and right trimmed            : 0
+          no. right trimmed and left aligned    : 0
+          no. left aligned                      : 0
+
+       total no. biallelic normalized           : 9
+
+       multiallelic
+          no. left trimmed                      : 0
+          no. right trimmed                     : 0
+          no. left and right trimmed            : 0
+          no. right trimmed and left aligned    : 0
+          no. left aligned                      : 0
+
+       total no. multiallelic normalized        : 0
+
+       total no. variants normalized            : 9
+       total no. variants observed              : 163
+       total no. reference observed             : 0
+
+Time elapsed: 0.00s
+
+[11:04:58] Running: cp snps.filt.vcf snps.vcf 2>> snps.log
+[11:04:58] Running: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snippy-vcf_to_tab --gff reference/ref.gff --ref reference/ref.fa --vcf snps.vcf > snps.tab 2>> snps.log
+[samclip] Processed 100000 records...
+[11:04:58] Running: /data/malcummi/pipelord/snplord/.snakemake/conda/88bf0609/bin/snippy-vcf_extract_subs snps.filt.vcf > snps.subs.vcf 2>> snps.log
+[11:04:58] Running: bcftools convert -Oz -o snps.vcf.gz snps.vcf 2>> snps.log
+[11:04:58] Running: bcftools index -f snps.vcf.gz 2>> snps.log
+[11:04:58] Running: bcftools consensus -f reference/ref.fa -o snps.consensus.fa snps.vcf.gz 2>> snps.log
+[11:04:58] Running: bcftools convert -Oz -o snps.subs.vcf.gz snps.subs.vcf 2>> snps.log
+[M::mem_process_seqs] Processed 77382 reads in 5.481 CPU sec, 0.654 real sec
+[11:04:58] Running: bcftools index -f snps.subs.vcf.gz 2>> snps.log
+[11:04:58] Running: bcftools consensus -f reference/ref.fa -o snps.consensus.subs.fa snps.subs.vcf.gz 2>> snps.log
+[samclip] Processed 200000 records...
+[11:04:58] Running: rm -f snps.subs.vcf.gz snps.subs.vcf.gz.csi snps.subs.vcf.gz.tbi 2>> snps.log
+[11:04:58] Running: rm -f fake_reads\.fq 2>> snps.log
+[11:04:59] Generating reference aligned/masked FASTA relative to reference: snps.aligned.fa
+[samclip] Processed 300000 records...
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -Y -M -R @RG\tID:SAL_XA1299AA_AS.out\tSM:SAL_XA1299AA_AS.out -t 8 reference/ref.fa fake_reads.fq
+[main] Real time: 4.356 sec; CPU: 23.449 sec
+[samclip] Total SAM records 398069, removed 1650, allowed 237, passed 396419
+[samclip] Header contained 5 lines
+[samclip] Done.
+[bam_sort_core] merging from 0 files and 8 in-memory blocks...
+[bam_sort_core] merging from 0 files and 8 in-memory blocks...
+[11:04:59] Marked 0 heterozygous sites with 'n'
+[11:04:59] Creating extra output files: BED GFF CSV TXT HTML
+[11:04:59] Identified 64 variants.
+[11:04:59] Result folder: /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_JB9521AA_AS.out
+[11:04:59] Result files:
+[11:04:59] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_JB9521AA_AS.out/snps.aligned.fa
+[11:04:59] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assemblies/analysis/snp/Agona_195/snippyout/SG17-135/SAL_JB9521AA_AS.out/snps.bam
+[11:04:59] * /home/malcummi/Data/Manuscripts/Salmonella_AMR/Agona_assem^C
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/logs/snplord(base) MacBook-Air-82:snplord maxcummins$ cat nohup_Agona195.out[Kcd[K[Kls
+nohup_Agona195.out	nohup_Agona80.out	nohup_Agona_200.out	nohup_pt_2.out		nohup_snplord.out
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/logs/snplord(base) MacBook-Air-82:snplord maxcummins$ head nohup_[K[K[K[K[K[K[K[K[K[K[Kcd ..[K[K[K[K[Kpwd
+/Users/maxcummins/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/logs/snplord
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/logs/snplord(base) MacBook-Air-82:snplord maxcummins$ cd ../../analysis/
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis(base) MacBook-Air-82:analysis maxcummins$ ls
+PAIs_present_absent.csv	abricate		abricate.txt		pointfinder		snp_outputs
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis(base) MacBook-Air-82:analysis maxcummins$ c [Kd snp_outputs/
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis/snp_outputs(base) MacBook-Air-82:snp_outputs maxcummins$ ls
+Agona_195			HC5-4181			SG17-135.pairwise_snps.csv
+Agona_200			SG17-135.clean.fullcore.tree	location_SNP_data.log
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis/snp_outputs(base) MacBook-Air-82:snp_outputs maxcummins$ cd Agona_
+bash: cd: Agona_: No such file or directory
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis/snp_outputs(base) MacBook-Air-82:snp_outputs maxcummins$ cd Agona_195/
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis/snp_outputs/Agona_195(base) MacBook-Air-82:Agona_195 maxcummins$ ls
+Agona_195_SG17-135.clean.fullcore.tree	Agona_195_SG17-135.pairwise_snps.csv
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis/snp_outputs/Agona_195(base) MacBook-Air-82:Agona_195 maxcummins$ head Agona_195_SG17-135.
+head: Agona_195_SG17-135.: No such file or directory
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis/snp_outputs/Agona_195(base) MacBook-Air-82:Agona_195 maxcummins$ head Agona_195_SG17-135.f[Kclean.fullcore.tree 
+(((SAL_BB7197AA_AS.out:0.0,SAL_BB8135AA_AS.out:0.0):0.000845511,(SAL_BB2967AA_AS.out:0.004258278,(SAL_FB8051AA_AS.out:0.000000005,SAL_IB7996AA_AS.out:0.000842948)0.873:0.001685890)0.856:0.001696042)0.924:0.000000005,((((SAL_BB3127AA_AS.out:0.0,SAL_KB2744AA_AS.out:0.0):0.000844672,((SAL_BB9562AA_AS.out:0.000000005,SAL_KB6210AA_AS.out:0.000844080)0.914:0.000844673,SAL_CB0053AA_AS.out:0.004232421)0.086:0.000000005)0.957:0.002539016,SAL_EB2895AA_AS.out:0.001691127)0.464:0.000000005,SAL_KA0984AA_AS.out:0.000845511)0.873:0.000000005,((((SAL_GB0225AA_AS.out:0.000000005,(SAL_EB6812AA_AS.out:0.000845795,SAL_JB9521AA_AS.out:0.003388197)0.352:0.000000005)0.977:0.002540880,(SAL_HB2219AA_AS.out:0.001690798,(SAL_SA1344AA_AS.out:0.000000005,((SAL_MB7965AA_AS.out:0.003382236,SAL_BB4524AA_AS.out:0.000845835)0.951:0.000000005,((SAL_AB8884AA_AS.out:0.000845988,(((((SAL_CB9822AA_AS.out:0.001690620,((SAL_BB2899AA_AS.out:0.000000005,(SAL_IB9302AA_AS.out:0.003379752,SAL_BB1915AA_AS.out:0.001689160)0.972:0.000000005)0.954:0.000000005,SAL_CB9820AA_AS.out:0.001687526)0.956:0.001689532)0.268:0.000000005,(((SAL_AB7634AA_AS.out:0.003391226,(SAL_CB1790AA_AS.out:0.001692981,SAL_NB6620AA_AS.out:0.002536044)0.747:0.000845977)0.906:0.000000005,SAL_KA5244AA_AS.out:0.000000005)0.922:0.000000005,(Reference:0.001688851,((SAL_OA4067AA_AS.out:0.000843328,SAL_OA4072AA_AS.out:0.000000005)0.842:0.000843918,(((SAL_CB5243AA_AS.out:0.0,SAL_FB5769AA_AS.out:0.0,SAL_NA2865AA_AS.out:0.0,SAL_XA1299AA_AS.out:0.0):0.000000005,((SAL_CB2598AA_AS.out:0.001688015,SAL_KA4888AA_AS.out:0.001689043)0.937:0.000000005,(SAL_BB1424AA_AS.out:0.002532232,(SAL_BB2131AA_AS.out:0.002535963,(SAL_BB2970AA_AS.out:0.0,SAL_CB1324AA_AS.out:0.0):0.000000005)0.910:0.000843899)0.901:0.000000005)0.000:0.000000005)0.884:0.000000005,SAL_WA9926AA_AS.out:0.000844200)0.779:0.000000005)0.946:0.001689398)0.830:0.000000005)0.897:0.000844714)0.927:0.000000006,SAL_KA0676AA_AS.out:0.000000005)0.929:0.000000005,((SAL_CB5379AA_AS.out:0.0,SAL_EB1026AA_AS.out:0.0):0.000000005,(SAL_HB6699AA_AS.out:0.002536484,(SAL_EB8845AA_AS.out:0.000844109,(SAL_HB2224AA_AS.out:0.000000005,((SAL_CB2669AA_AS.out:0.000000005,SAL_JB6580AA_AS.out:0.000844521)0.888:0.000844614,(SAL_CB5468AA_AS.out:0.002537161,SAL_CB9243AA_AS.out:0.002543329)0.940:0.002544777)0.919:0.000000005)0.886:0.000000006)0.913:0.000844726)0.880:0.000000005)0.924:0.000845284)0.922:0.000845541,SAL_KA1119AA_AS.out:0.001690722)0.631:0.000000005)0.596:0.000000005,(SAL_AB7534AA_AS.out:0.000845541,((SAL_BB9086AA_AS.out:0.0,SAL_EB4088AA_AS.out:0.0):0.002543533,SAL_SA9246AA_AS.out:0.001684068)0.933:0.002544013)0.930:0.000000005)0.000:0.000000006)0.000:0.000000005)0.956:0.000000005)0.949:0.001692784)0.979:0.000000005,((SAL_BB7261AA_AS.out:0.000000005,((SAL_CB0088AA_AS.out:0.000841708,SAL_XA3156AA_AS.out:0.000000005)0.998:0.005926576,SAL_BB6441AA_AS.out:0.002535045)0.903:0.000000005)0.926:0.000845492,(SAL_CB2372AA_AS.out:0.000845153,(SAL_BB4431AA_AS.out:0.001691032,(SAL_RA1578AA_AS.out:0.0,SAL_RA1599AA_AS.out:0.0):0.000844919)0.638:0.000000006)0.844:0.000845512)0.896:0.000000005)1.000:0.000000006,(SAL_BA8052AA_AS.out:0.000846082,((((SAL_CB3497AA_AS.out:0.001693722,((SAL_BB5062AA_AS.out:0.006807896,((SAL_AB6160AA_AS.out:0.0,SAL_JB4414AA_AS.out:0.0):0.000836715,SAL_BB7947AA_AS.out:0.002533084)0.936:0.003365057)0.994:0.006875789,(SAL_YA6663AA_AS.out:0.007707891,(SAL_BB6687AA_AS.out:0.016337357,((SAL_JB5221AA_AS.out:0.006060304,(SAL_SA9330AA_AS.out:0.000841945,(SAL_AB5906AA_AS.out:0.000842245,(SAL_AB5909AA_AS.out:0.000841565,SAL_HB5660AA_AS.out:0.002525863)0.964:0.003376913)0.517:0.000000005)1.000:0.018065746)0.841:0.001651389,((((SAL_AB5642AA_AS.out:0.016297542,SAL_MA3067AA_AS.out:0.009448138)0.159:0.000000006,((SAL_CB9988AA_AS.out:0.010275563,SAL_KB8676AA_AS.out:0.005132031)0.911:0.002559953,(SAL_XA3268AA_AS.out:0.017244699,(SAL_IB9118AA_AS.out:0.011275732,((SAL_CB1153AA_AS.out:0.000812393,((SAL_ZA5298AA_AS.out:0.006518227,((SAL_EB1045AA_AS.out:0.001607394,SAL_MB7066AA_AS.out:0.005697003)0.963:0.003269006,(SAL_JB9710AA_AS.out:0.001622791,SAL_IB7540AA_AS.out:0.003247203)0.444:0.000000005)0.775:0.000807542)0.761:0.000817592,SAL_TA1544AA_AS.out:0.007331756)0.408:0.000000005)1.000:0.016100234,(SAL_PB5476AA_AS.out:0.019187769,(SAL_AB7588AA_AS.out:0.000000005,SAL_AB9321AA_AS.out:0.004078710)0.987:0.006622997)0.859:0.002881271)1.000:0.046110771)1.000:0.023934720)0.373:0.000000005)0.807:0.000852633)0.924:0.000000005,(((SAL_KB4026AA_AS.out:0.011995689,((SAL_KB6773AA_AS.out:0.021597553,((SAL_QA4878AA_AS.out:0.017009105,((SAL_UA4307AA_AS.out:0.003348428,(SAL_TA2587AA_AS.out:0.000832587,SAL_TA4227AA_AS.out:0.000000005)0.923:0.002506006)0.806:0.000834520,(SAL_KA8881AA_AS.out:0.005865468,SAL_QA5436AA_AS.out:0.004182952)0.574:0.000000005)0.999:0.009278333)0.741:0.000834739,((SAL_NA8627AA_AS.out:0.003369253,(SAL_BB0648AA_AS.out:0.001672592,SAL_BB1371AA_AS.out:0.004206999)0.956:0.004215158)0.999:0.012782732,SAL_WA6251AA_AS.out:0.022951895)0.858:0.000000005)0.912:0.003910829)1.000:0.033529096,(SAL_CB3409AA_AS.out:0.007753334,(SAL_TA1967AA_AS.out:0.002542815,(SAL_SA9173AA_AS.out:0.001696293,(SAL_CB6250AA_AS.out:0.000000005,(SAL_KB3640AA_AS.out:0.005968246,SAL_EB4083AA_AS.out:0.001694770)0.937:0.000000005)0.979:0.000000006)0.919:0.002548211)0.769:0.000781791)0.996:0.009528964)0.836:0.001668024)0.659:0.000000006,(SAL_XA1733AA_AS.out:0.010318963,SAL_XA1782AA_AS.out:0.008597398)0.737:0.000807948)0.000:0.000000005,((SAL_FA2493AA_AS.out:0.005973887,(SAL_LB8076AA_AS.out:0.002544834,SAL_MB2521AA_AS.out:0.000000005)0.993:0.007684530)0.996:0.010337783,SAL_BB1066AA_AS.out:0.006839760)1.000:0.000000006)0.000:0.000000005)0.920:0.000000005,(((SAL_CB9835AA_AS.out:0.001640860,SAL_KB1826AA_AS.out:0.001690912)1.000:0.028504645,(SAL_CA4728AA_AS.out:0.005071121,SAL_LA4572AA_AS.out:0.008453930)0.993:0.009316108)0.999:0.018419367,((SAL_IB6779AA_AS.out:0.034781264,(((SAL_GB5373AA_AS.out:0.0,SAL_HB2237AA_AS.out:0.0):0.008459471,SAL_KB3375AA_AS.out:0.006837121)1.000:0.024539374,((SAL_JB1150AA_AS.out:0.031326012,((SAL_BB8331AA_AS.out:0.0,SAL_KB1789AA_AS.out:0.0):0.022480466,(SAL_AB5674AA_AS.out:0.037436635,SAL_YA6631AA_AS.out:0.018082991)0.277:0.000000006)0.813:0.000856223)0.652:0.000000005,((SAL_KB4651AA_AS.out:0.016450672,SAL_VA1155AA_AS.out:0.012950000)1.000:0.027554121,((SAL_KB8607AA_AS.out:0.002550180,(SAL_BA5105AA_AS.out:0.001693632,SAL_IB3115AA_AS.out:0.003391931)0.854:0.001693115)0.962:0.005138773,(((SAL_UA6621AA_AS.out:0.0,SAL_UA7988AA_AS.out:0.0,SAL_UA7989AA_AS.out:0.0):0.009374221,SAL_VA4537AA_AS.out:0.002509942)0.977:0.004285399,((((((SAL_FA1940AA_AS.out:0.001681412,SAL_KB1136AA_AS.out:0.005931028)1.000:0.013686009,(SAL_YA6600AA_AS.out:0.003370821,SAL_YA6602AA_AS.out:0.003378444)1.000:0.013702595)0.947:0.000000005,((((SAL_LB4034AA_AS.out:0.005068504,SAL_YA7748AA_AS.out:0.000844166)0.899:0.001686431,(SAL_NB4129AA_AS.out:0.008436527,(SAL_PA3767AA_AS.out:0.002526892,(SAL_OB6949AA_AS.out:0.003365048,SAL_YA9385AA_AS.out:0.003368140)0.710:0.000000005)0.881:0.000841658)0.726:0.000000005)0.782:0.000000006,(SAL_PB8418AA_AS.out:0.010153453,SAL_SA2453AA_AS.out:0.003372412)0.868:0.001687560)1.000:0.011047112,SAL_BA7945AA_AS.out:0.011042980)0.992:0.000000005)0.985:0.002545321,SAL_CA4803AA_AS.out:0.030372407)0.233:0.000000006,(SAL_CA4744AA_AS.out:0.011093546,(SAL_EB5876AA_AS.out:0.009366350,(SAL_BB4921AA_AS.out:0.004228769,(SAL_EA3229AA_AS.out:0.0,SAL_IA5065AA_AS.out:0.0):0.004231566)0.955:0.004233588)0.989:0.006004022)0.744:0.000829372)0.904:0.000000005,((SAL_NA5728AA_AS.out:0.016272035,SAL_ZA0287AA_AS.out:0.009405209)0.990:0.006845574,((SAL_TA6324AA_AS.out:0.000000005,(SAL_JB0953AA_AS.out:0.000838829,(SAL_UA4237AA_AS.out:0.000000005,(SAL_KB6830AA_AS.out:0.003367062,SAL_MB5439AA_AS.out:0.000834947)0.901:0.001687690)0.964:0.003366896)0.811:0.000842854)1.000:0.015407754,((SAL_FB7879AA_AS.out:0.006770663,SAL_WA5463AA_AS.out:0.001665745)1.000:0.014590648,(((SAL_TA7615AA_AS.out:0.007653768,SAL_WA5013AA_AS.out:0.005102408)0.961:0.005099308,(SAL_LA7787AA_AS.out:0.006778276,(SAL_WA5465AA_AS.out:0.006794648,SAL_BB2593AA_AS.out:0.002533963)0.218:0.000000005)0.949:0.002538375)0.851:0.000000005,((SAL_LA7782AA_AS.out:0.003362718,SAL_ZA8731AA_AS.out:0.007621099)0.981:0.005113570,SAL_FA5706AA_AS.out:0.004238126)0.163:0.000000005)0.739:0.000804342)1.000:0.012011036)0.747:0.000845066)0.927:0.000000005)0.994:0.000000006)0.963:0.005121618)1.000:0.021793081)0.974:0.000000005)0.985:0.006113893)0.755:0.000720203)0.990:0.006976372,((SAL_DB1444AA_AS.out:0.0,SAL_KB9523AA_AS.out:0.0):0.017156416,(SAL_JB5195AA_AS.out:0.027802844,SAL_KB6734AA_AS.out:0.014555970)0.074:0.000000005)0.995:0.006017716)0.755:0.000828733)0.769:0.000855163)0.905:0.001706737)0.771:0.000864622)0.749:0.000832754)0.981:0.006027301)0.917:0.002533394)0.934:0.000000005,(SAL_BB1956AA_AS.out:0.005089696,SAL_JA4169AA_AS.out:0.004238021)0.994:0.000000005)0.950:0.000000006,SAL_AB7542AA_AS.out:0.003390055)0.889:0.001693685,((SAL_IB6801AA_AS.out:0.002535173,SAL_BB9988AA_AS.out:0.002534984)0.853:0.000000005,((((SAL_BB4937AA_AS.out:0.000842283,((SAL_BB5050AA_AS.out:0.0,SAL_CB9389AA_AS.out:0.0):0.000000005,SAL_IB1406AA_AS.out:0.003376759)0.983:0.004232808)0.768:0.000846696,SAL_SA1324AA_AS.out:0.000844309)0.887:0.000000005,SAL_BA7932AA_AS.out:0.000000005)0.000:0.000000005,(SAL_BB7027AA_AS.out:0.001688760,(SAL_CB5376AA_AS.out:0.001690710,SAL_WA2841AA_AS.out:0.000000005)0.945:0.001689399)0.956:0.000000005)0.655:0.000000005)0.912:0.001691203)0.925:0.000000005)0.921:0.000000005)0.000:0.000000005);
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis/snp_outputs/Agona_195(base) MacBook-Air-82:Agona_195 maxcummins$ [K(base) MacBook-Air-82:Agona_195 maxcummins$ ls
+Agona_195_SG17-135.clean.fullcore.tree	Agona_195_SG17-135.pairwise_snps.csv
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis/snp_outputs/Agona_195(base) MacBook-Air-82:Agona_195 maxcummins$ cd ..
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis/snp_outputs(base) MacBook-Air-82:snp_outputs maxcummins$ ls
+Agona_195		Agona_200		HC5-4181		location_SNP_data.log
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis/snp_outputs(base) MacBook-Air-82:snp_outputs maxcummins$ cd ..
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis(base) MacBook-Air-82:analysis maxcummins$ l
+bash: l: command not found
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis(base) MacBook-Air-82:analysis maxcummins$ s[Kls
+PAIs_present_absent.csv	abricate		pointfinder		snp_outputs
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis(base) MacBook-Air-82:analysis maxcummins$ cd ..
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ ls
+README.md			figures				new_figures
+SG17-135.Rproj			flags				old
+analysis			logs				scripts
+assemblies			majestic_gull_dot_jpeg.png
+fasta_dbs			metadata
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ mkdir S[Ksupplementary_material
+ls
 ]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135[?1034h(base) MacBook-Air-82:SG17-135 maxcummins$ ls
-Figure_2.R			README.md			Supplementary Table 2.txt
-Figure_4.R			Random_subset_IncX.R		abricate_HC5-4181.txt
-HC5-4181_subset_metadata.txt	SG17-135.Rproj			majestic_gull_dot_jpeg.png
-New_scripts			SG17-135.clean.fullcore.tree
-]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ c[Kpwd
-/Users/maxcummins/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135
+README.md			figures				new_figures
+SG17-135.Rproj			flags				old
+analysis			logs				scripts
+assemblies			majestic_gull_dot_jpeg.png	supplementary_material
+fasta_dbs			metadata
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ cd scripts/
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/scripts(base) MacBook-Air-82:scripts maxcummins$ ls
+Figure 1.R		Random_subset_IncX.R	SPI-analysis.R		Same_scaff.R
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/scripts(base) MacBook-Air-82:scripts maxcummins$ cat sa[K[KSame_scaff.R 
+df %>% group_by(name, SEQUENCE) %>% dplyr::summarise(same_scaff=paste(unique(GENE), collapse=" ")) %>% View()
+df %>% group_by(name, SEQUENCE) %>% dplyr::summarise(same_scaff=paste(unique(GENE), collapse=" ")) %>% View()
+df_by_scaff <- df %>% group_by(name, SEQUENCE) %>% dplyr::summarise(same_scaff=paste(unique(GENE), collapse=" "))
+df_by_scaff %>% filter(grepl("IncX", same_scaff))
+df_by_scaff %>% filter(grepl("IncX", same_scaff)) %>% unique(.$same_scaff)
+df_by_scaff %>% filter(grepl("IncX", same_scaff)) %>% unique(same_scaff
+)
+IncX_scaffs <- df_by_scaff %>% filter(grepl("IncX", same_scaff))
+unique(IncX_scaffs$same_scaff)
+View(IncX_scaffs)
+table(IncX_scaffs$same_scaff)
+table(IncX_scaffs$same_scaff) %>% View()
+df_by_scaff <- df %>% group_by(name, SEQUENCE) %>% dplyr::summarise(same_scaff=paste(sort(unique(GENE)), collapse=" "))
+IncX_scaffs <- df_by_scaff %>% filter(grepl("IncX", same_scaff))
+table(IncX_scaffs$same_scaff) %>% View()
+IncX_scaffs <- df_by_scaff %>% filter(grepl("IncX", same_scaff)) %>% filter(grepl("qnrS1", same_scaff))  filter(grepl("tet", same_scaff))
+IncX_scaffs <- df_by_scaff %>% filter(grepl("IncX", same_scaff)) %>% filter(grepl("qnrS1", same_scaff)) %>% filter(grepl("tet", same_scaff))
+View(IncX_scaffs)
+df_by_scaff <- df %>% group_by(name, SEQUENCE) %>% dplyr::summarise(same_scaff=paste(sort(unique(GENE)), collapse=" "))
+IncX_scaffs <- df_by_scaff %>% filter(grepl("IncX", same_scaff))
+IncX_scaffs  %>% filter(grepl("qnrS1", same_scaff)) %>% filter(grepl("tet", same_scaff))
+table(IncX_scaffs$same_scaff) %>% as.data.frame() %>% filter(grepl("qnrS1", same_scaff)) %>% filter(grepl("tet", same_scaff))
+table(IncX_scaffs$same_scaff) %>% as.data.frame()
+unique_IncX_scaffs <- table(IncX_scaffs$same_scaff) %>% as.data.frame()
+unique_IncX_scaffs %>%filter(grepl("qnrS1", same_scaff)) %>% filter(grepl("tet", same_scaff))
+unique_IncX_scaffs %>%filter(grepl("qnrS1", Var1)) %>% filter(grepl("tet", Var1))
+33 + 4 + 17 + 5 + 2 + 2 + 1 + 1
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/scripts(base) MacBook-Air-82:scripts maxcummins$ ls
+Figure 1.R		Random_subset_IncX.R	Same_scaff.R
+Figure_2.R		SPI-analysis.R
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/scripts(base) MacBook-Air-82:scripts maxcummins$ cd ..
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ ls
+README.md			figures				new_figures
+SG17-135.Rproj			flags				old
+analysis			logs				scripts
+assemblies			majestic_gull_dot_jpeg.png	supplementary_material
+fasta_dbs			metadata
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ git add[K[K[Kstatus
+On branch resubmission
+Your branch is up to date with 'origin/resubmission'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rhistory[m
+	[31mmodified:   .Rproj.user/70889A62/console06/9820F7D5[m
+	[31mmodified:   .Rproj.user/70889A62/console06/9820F7D5.env[m
+	[31mmodified:   .Rproj.user/70889A62/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/70889A62/pcs/files-pane.pper[m
+	[31mmodified:   .Rproj.user/70889A62/pcs/source-pane.pper[m
+	[31mmodified:   .Rproj.user/70889A62/pcs/windowlayoutstate.pper[m
+	[31mmodified:   .Rproj.user/70889A62/pcs/workbench-pane.pper[m
+	[31mmodified:   .Rproj.user/70889A62/sources/prop/6D16E871[m
+	[31mmodified:   .Rproj.user/70889A62/sources/prop/INDEX[m
+	[31mdeleted:    .Rproj.user/70889A62/sources/s-EF4FF86D/98DF547B[m
+	[31mdeleted:    .Rproj.user/70889A62/sources/s-EF4FF86D/98DF547B-contents[m
+	[31mdeleted:    .Rproj.user/70889A62/sources/s-EF4FF86D/lock_file[m
+	[31mmodified:   .Rproj.user/shared/notebooks/paths[m
+	[31mmodified:   .gitignore[m
+	[31mmodified:   new_figures/Figure_y_flags_Agona80.R[m
+	[31mmodified:   new_figures/Flag_Figure_x_Agona200.R[m
+	[31mmodified:   new_figures/Flag_Figure_x_Agona200.pdf[m
+	[31mmodified:   new_figures/Flag_Figure_x_Agona80.pdf[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.RData[m
+	[31mfigures/[m
+	[31mmetadata/Supplementary Table 1 - Metadata and Accessions[m
+	[31mnew_figures/Figure 1.pdf[m
+	[31mnew_figures/Supplementary Figure 1.pdf[m
+	[31mnew_figures/new_circ_f1.pdf[m
+	[31mold/Same_scaff.R[m
+	[31mscripts/Figure 1.R[m
+	[31mscripts/Figure_2.R[m
+	[31msupplementary_material/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ git add *
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ git commit -m "updated scripts and figures"
+[resubmission f906683] updated scripts and figures
+ 19 files changed, 1510 insertions(+), 36 deletions(-)
+ create mode 100644 figures/final_figures/Figure_1.pdf
+ create mode 100644 figures/final_figures/Figure_2.pdf
+ create mode 100644 figures/final_figures/Figure_3.png
+ create mode 100644 figures/final_figures/Figure_4.png
+ create mode 100644 metadata/Supplementary Table 1 - Metadata and Accessions
+ create mode 100644 new_figures/Figure 1.pdf
+ create mode 100644 new_figures/Supplementary Figure 1.pdf
+ create mode 100644 new_figures/new_circ_f1.pdf
+ create mode 100644 old/Same_scaff.R
+ create mode 100644 scripts/Figure 1.R
+ create mode 100644 scripts/Figure_2.R
+ create mode 100644 supplementary_material/Table S1- Metadata Genotype and Accessions.txt
+ create mode 100644 supplementary_material/Table S2 - SNP matrix.csv
+ create mode 100644 supplementary_material/Table S3 - IncHI2 Plasmid Metadata.txt
+ create mode 100644 supplementary_material/Table S4 - IncX gene associations.txt
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ git push
+Enumerating objects: 33, done.
+Counting objects:   3% (1/33)   Counting objects:   6% (2/33)   Counting objects:   9% (3/33)   Counting objects:  12% (4/33)   Counting objects:  15% (5/33)   Counting objects:  18% (6/33)   Counting objects:  21% (7/33)   Counting objects:  24% (8/33)   Counting objects:  27% (9/33)   Counting objects:  30% (10/33)   Counting objects:  33% (11/33)   Counting objects:  36% (12/33)   Counting objects:  39% (13/33)   Counting objects:  42% (14/33)   Counting objects:  45% (15/33)   Counting objects:  48% (16/33)   Counting objects:  51% (17/33)   Counting objects:  54% (18/33)   Counting objects:  57% (19/33)   Counting objects:  60% (20/33)   Counting objects:  63% (21/33)   Counting objects:  66% (22/33)   Counting objects:  69% (23/33)   Counting objects:  72% (24/33)   Counting objects:  75% (25/33)   Counting objects:  78% (26/33)   Counting objects:  81% (27/33)   Counting objects:  84% (28/33)   Counting objects:  87% (29/33)   Counting objects:  90% (30/33)   Counting objects:  93% (31/33)   Counting objects:  96% (32/33)   Counting objects: 100% (33/33)   Counting objects: 100% (33/33), done.
+Delta compression using up to 4 threads
+Compressing objects:   4% (1/23)   Compressing objects:   8% (2/23)   Compressing objects:  13% (3/23)   Compressing objects:  17% (4/23)   Compressing objects:  21% (5/23)   Compressing objects:  26% (6/23)   Compressing objects:  30% (7/23)   Compressing objects:  34% (8/23)   Compressing objects:  39% (9/23)   Compressing objects:  43% (10/23)   Compressing objects:  47% (11/23)   Compressing objects:  52% (12/23)   Compressing objects:  56% (13/23)   Compressing objects:  60% (14/23)   Compressing objects:  65% (15/23)   Compressing objects:  69% (16/23)   Compressing objects:  73% (17/23)   Compressing objects:  78% (18/23)   Compressing objects:  82% (19/23)   Compressing objects:  86% (20/23)   Compressing objects:  91% (21/23)   Compressing objects:  95% (22/23)   Compressing objects: 100% (23/23)   Compressing objects: 100% (23/23), done.
+Writing objects:   4% (1/24)   Writing objects:   8% (2/24)   Writing objects:  12% (3/24)   Writing objects:  16% (4/24)   Writing objects:  16% (4/24), 1.09 MiB | 742.00 KiB/s   Writing objects:  16% (4/24), 2.58 MiB | 827.00 KiB/s   Writing objects:  20% (5/24), 3.58 MiB | 989.00 KiB/s   Writing objects:  20% (5/24), 6.52 MiB | 1.24 MiB/s   Writing objects:  25% (6/24), 6.52 MiB | 1.24 MiB/s   Writing objects:  25% (6/24), 7.09 MiB | 1.23 MiB/s   Writing objects:  25% (6/24), 9.20 MiB | 1.35 MiB/s   Writing objects:  25% (6/24), 10.52 MiB | 1.64 MiB/s   Writing objects:  29% (7/24), 10.95 MiB | 1.52 MiB/s   Writing objects:  33% (8/24), 10.95 MiB | 1.52 MiB/s   Writing objects:  37% (9/24), 10.95 MiB | 1.52 MiB/s   Writing objects:  41% (10/24), 10.95 MiB | 1.52 MiB/s   Writing objects:  50% (12/24), 11.73 MiB | 1.26 MiB/s   Writing objects:  54% (13/24), 11.73 MiB | 1.26 MiB/s   Writing objects:  62% (15/24), 11.73 MiB | 1.26 MiB/s   Writing objects:  62% (15/24), 12.04 MiB | 1.12 MiB/s   Writing objects:  62% (15/24), 13.29 MiB | 1020.00 KiB/s   Writing objects:  66% (16/24), 13.29 MiB | 1020.00 KiB/s   Writing objects:  70% (17/24), 13.29 MiB | 1020.00 KiB/s   Writing objects:  75% (18/24), 13.29 MiB | 1020.00 KiB/s   Writing objects:  79% (19/24), 13.29 MiB | 1020.00 KiB/s   Writing objects:  83% (20/24), 13.29 MiB | 1020.00 KiB/s   Writing objects:  87% (21/24), 13.29 MiB | 1020.00 KiB/s   Writing objects:  91% (22/24), 13.29 MiB | 1020.00 KiB/s   Writing objects:  95% (23/24), 13.29 MiB | 1020.00 KiB/s   Writing objects: 100% (24/24), 13.29 MiB | 1020.00 KiB/s   Writing objects: 100% (24/24), 13.36 MiB | 1.16 MiB/s, done.
+Total 24 (delta 10), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/10)[Kremote: Resolving deltas:  20% (2/10)[Kremote: Resolving deltas:  30% (3/10)[Kremote: Resolving deltas:  40% (4/10)[Kremote: Resolving deltas:  50% (5/10)[Kremote: Resolving deltas:  60% (6/10)[Kremote: Resolving deltas:  70% (7/10)[Kremote: Resolving deltas:  80% (8/10)[Kremote: Resolving deltas:  90% (9/10)[Kremote: Resolving deltas: 100% (10/10)[Kremote: Resolving deltas: 100% (10/10), completed with 6 local objects.[K
+To https://github.com/maxlcummins/SG17-135.git
+   88cb28f..f906683  resubmission -> resubmission
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ l,[K[Kcd Sam[K[K[K[K[Kd scripts
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/scripts(base) MacBook-Air-82:scripts maxcummins$ ls
+Figure 1.R		Random_subset_IncX.R	Same_scaff.R
+Figure_2.R		SPI-analysis.R
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/scripts(base) MacBook-Air-82:scripts maxcummins$ mv Same_scaff.R ../old/
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/scripts(base) MacBook-Air-82:scripts maxcummins$ ls
+Figure 1.R		Figure_2.R		Random_subset_IncX.R	SPI-analysis.R
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/scripts(base) MacBook-Air-82:scripts maxcummins$ cd ..
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ ls[K\[K[Kgit status
+On branch resubmission
+Your branch is up to date with 'origin/resubmission'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rhistory[m
+	[31mmodified:   .Rproj.user/70889A62/console06/9820F7D5[m
+	[31mmodified:   .Rproj.user/70889A62/console06/9820F7D5.env[m
+	[31mmodified:   .Rproj.user/70889A62/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/70889A62/pcs/files-pane.pper[m
+	[31mmodified:   .Rproj.user/70889A62/pcs/source-pane.pper[m
+	[31mmodified:   .Rproj.user/70889A62/pcs/windowlayoutstate.pper[m
+	[31mmodified:   .Rproj.user/70889A62/pcs/workbench-pane.pper[m
+	[31mmodified:   .Rproj.user/70889A62/sources/prop/6D16E871[m
+	[31mmodified:   .Rproj.user/70889A62/sources/prop/INDEX[m
+	[31mdeleted:    .Rproj.user/70889A62/sources/s-EF4FF86D/98DF547B[m
+	[31mdeleted:    .Rproj.user/70889A62/sources/s-EF4FF86D/98DF547B-contents[m
+	[31mdeleted:    .Rproj.user/70889A62/sources/s-EF4FF86D/lock_file[m
+	[31mmodified:   .Rproj.user/shared/notebooks/paths[m
+	[31mmodified:   .gitignore[m
+	[31mdeleted:    scripts/Same_scaff.R[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.RData[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ git pus[K[K[Kcommit -m "mak[K[K[Kremove" old[K[K[K[K[K old scripts"
+On branch resubmission
+Your branch is up to date with 'origin/resubmission'.
+
+Changes not staged for commit:
+	[31mmodified:   .Rhistory[m
+	[31mmodified:   .Rproj.user/70889A62/console06/9820F7D5[m
+	[31mmodified:   .Rproj.user/70889A62/console06/9820F7D5.env[m
+	[31mmodified:   .Rproj.user/70889A62/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/70889A62/pcs/files-pane.pper[m
+	[31mmodified:   .Rproj.user/70889A62/pcs/source-pane.pper[m
+	[31mmodified:   .Rproj.user/70889A62/pcs/windowlayoutstate.pper[m
+	[31mmodified:   .Rproj.user/70889A62/pcs/workbench-pane.pper[m
+	[31mmodified:   .Rproj.user/70889A62/sources/prop/6D16E871[m
+	[31mmodified:   .Rproj.user/70889A62/sources/prop/INDEX[m
+	[31mdeleted:    .Rproj.user/70889A62/sources/s-EF4FF86D/98DF547B[m
+	[31mdeleted:    .Rproj.user/70889A62/sources/s-EF4FF86D/98DF547B-contents[m
+	[31mdeleted:    .Rproj.user/70889A62/sources/s-EF4FF86D/lock_file[m
+	[31mmodified:   .Rproj.user/shared/notebooks/paths[m
+	[31mmodified:   .gitignore[m
+	[31mdeleted:    scripts/Same_scaff.R[m
+
+Untracked files:
+	[31m.RData[m
+
+no changes added to commit
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ git commit -m "remove old scripts"status[K[5Pcd ..git statuscommit -m "remove old scripts"[Kgit rm scripts/Same_sc[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+.DS_Store                   .gitignore                  fasta_dbs/                  metadata/
+.RData                      README.md                   figures/                    new_figures/
+.Rhistory                   SG17-135.Rproj              flags/                      old/
+.Rproj.user/                analysis/                   logs/                       scripts/
+.git/                       assemblies/                 majestic_gull_dot_jpeg.png  supplementary_material/
+(base) MacBook-Air-82:SG17-135 maxcummins$ git rm 
+.DS_Store                   .gitignore                  fasta_dbs/                  metadata/
+.RData                      README.md                   figures/                    new_figures/
+.Rhistory                   SG17-135.Rproj              flags/                      old/
+.Rproj.user/                analysis/                   logs/                       scripts/
+.git/                       assemblies/                 majestic_gull_dot_jpeg.png  supplementary_material/
+(base) MacBook-Air-82:SG17-135 maxcummins$ git rm old/
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ git [K[K[K[Kgit add *
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ git commit -m '[K"move old scripts"
+[resubmission 6221972] move old scripts
+ 1 file changed, 27 deletions(-)
+ delete mode 100644 scripts/Same_scaff.R
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ git puis[K[Ksh
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)   Counting objects:  40% (2/5)   Counting objects:  60% (3/5)   Counting objects:  80% (4/5)   Counting objects: 100% (5/5)   Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 285 bytes | 285.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/maxlcummins/SG17-135.git
+   f906683..6221972  resubmission -> resubmission
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ ls
+README.md			figures				new_figures
+SG17-135.Rproj			flags				old
+analysis			logs				scripts
+assemblies			majestic_gull_dot_jpeg.png	supplementary_material
+fasta_dbs			metadata
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ ll [K
+bash: ll: command not found
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ ls -l
+total 888
+-rw-r--r--@  1 maxcummins  staff    2619 19 Jun 12:36 README.md
+-rw-r--r--@  1 maxcummins  staff     205  6 Jul 12:58 SG17-135.Rproj
+drwxr-xr-x@  7 maxcummins  staff     224  1 Jul 16:44 analysis
+drwxr-xr-x@  7 maxcummins  staff     224  1 Jul 16:44 assemblies
+drwxr-xr-x@  9 maxcummins  staff     288  1 Jul 16:44 fasta_dbs
+drwxr-xr-x@  5 maxcummins  staff     160  5 Jul 11:29 figures
+drwxr-xr-x@ 15 maxcummins  staff     480 25 Jun 11:45 flags
+drwxr-xr-x@  7 maxcummins  staff     224 30 Jun 11:32 logs
+-rw-r--r--@  1 maxcummins  staff  445942 19 Jun 12:36 majestic_gull_dot_jpeg.png
+drwxr-xr-x@  8 maxcummins  staff     256  2 Jul 14:40 metadata
+drwxr-xr-x@ 18 maxcummins  staff     576  3 Jul 14:46 new_figures
+drwxr-xr-x@ 13 maxcummins  staff     416  7 Jul 10:06 old
+drwxr-xr-x@  7 maxcummins  staff     224  7 Jul 10:06 scripts
+drwxr-xr-x@  7 maxcummins  staff     224  6 Jul 13:04 supplementary_material
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ ls A[Kanalysis
+PAIs_present_absent.csv	abricate		pointfinder		snp_outputs
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ mv P[Kan[K[K[K[K[Kcd analysis
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis(base) MacBook-Air-82:analysis maxcummins$ ls abricate/
+abricate.txt			abricate_PAIs_CT18.txt
+abricate_PAIs.txt		abricate_files_location.log
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis(base) MacBook-Air-82:analysis maxcummins$ mv PIAs[K[K[KAIs_present_absent.csv abricate
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis(base) MacBook-Air-82:analysis maxcummins$ ls
+abricate	pointfinder	snp_outputs
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis(base) MacBook-Air-82:analysis maxcummins$ ls abricate
+PAIs_present_absent.csv		abricate_PAIs.txt		abricate_files_location.log
+abricate.txt			abricate_PAIs_CT18.txt
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis(base) MacBook-Air-82:analysis maxcummins$ ls[K[Kls
+abricate	pointfinder	snp_outputs
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis(base) MacBook-Air-82:analysis maxcummins$ ls snp_
+ls: snp_: No such file or directory
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis(base) MacBook-Air-82:analysis maxcummins$ ls snp_outputs/
+Agona_195		Agona_200		HC5-4181		location_SNP_data.log
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis(base) MacBook-Air-82:analysis maxcummins$ rm -rf snp_outputs/AGO[Kg[K[Kgona_200/
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis(base) MacBook-Air-82:analysis maxcummins$ ls
+abricate	pointfinder	snp_outputs
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis(base) MacBook-Air-82:analysis maxcummins$ mv S[Ksnp_outputs/HC5-4181/ snp_outputs/Agona80
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis(base) MacBook-Air-82:analysis maxcummins$ s[Kls
+abricate	pointfinder	snp_outputs
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis(base) MacBook-Air-82:analysis maxcummins$ cd pointfinder/
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis/pointfinder(base) MacBook-Air-82:pointfinder maxcummins$ ;s
+bash: syntax error near unexpected token `;'
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis/pointfinder(base) MacBook-Air-82:pointfinder maxcummins$ ls
+pointfinder_results.txt
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis/pointfinder(base) MacBook-Air-82:pointfinder maxcummins$ head p[Kpointfinder_results.txt 
+Mutation	Nucleotide change	Amino acid change	Resistance	PMID	name_file
+gyrA p.S83Y	TCC -> TAC	S -> Y	Nalidixic acid,Ciprofloxacin	7492118	SAL_AB5642AA_AS/SAL_blastn_results.tsv
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_AB5642AA_AS/SAL_blastn_results.tsv
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_AB5674AA_AS/SAL_blastn_results.tsv
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_AB5906AA_AS/SAL_blastn_results.tsv
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_AB5909AA_AS/SAL_blastn_results.tsv
+gyrA p.D87Y	GAC -> TAC	D -> Y	Nalidixic acid,Ciprofloxacin	7492118	SAL_AB6160AA_AS/SAL_blastn_results.tsv
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_AB6160AA_AS/SAL_blastn_results.tsv
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_AB7534AA_AS/SAL_blastn_results.tsv
+parC p.T57S	ACC -> AGC	T -> S	Nalidixic acid,Ciprofloxacin	15388468	SAL_AB7542AA_AS/SAL_blastn_results.tsv
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis/pointfinder(base) MacBook-Air-82:pointfinder maxcummins$ cd ../scr[K[K[K[K[K[Kscr
+bash: cd: scr: No such file or directory
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/analysis/pointfinder(base) MacBook-Air-82:pointfinder maxcummins$ l[Kls[K[Kcd ../../scripts/
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/scripts(base) MacBook-Air-82:scripts maxcummins$ ls
+Figure 1.R		Figure_2.R		Random_subset_IncX.R	SPI-analysis.R
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/scripts(base) MacBook-Air-82:scripts maxcummins$ mv Figure\[K\ 1.R Figure_1.r[KR
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/scripts(base) MacBook-Air-82:scripts maxcummins$ ls
+Figure_1.R		Figure_2.R		Random_subset_IncX.R	SPI-analysis.R
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135/scripts(base) MacBook-Air-82:scripts maxcummins$ cd ..
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ ls
+README.md			figures				new_figures
+SG17-135.Rproj			flags				old
+analysis			logs				scripts
+assemblies			majestic_gull_dot_jpeg.png	supplementary_material
+fasta_dbs			metadata
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ tree
+.
+|____.Rhistory
+|____majestic_gull_dot_jpeg.png
+|____.DS_Store
+|____flags
+| |____Ghana.png
+| |____UAE.png
+| |____Scotland.png
+| |____USA.png
+| |____Australia.jpg
+| |____United_Kindgom.png
+| |____Germany.png
+| |____Denmark.jpg
+| |____Northern_Ireland.jpg
+| |____Vietnam.png
+| |____Ireland.png
+| |____Ireland.jpg
+| |____Mexico.png
+|____analysis
+| |____.DS_Store
+| |____pointfinder
+| | |____pointfinder_results.txt
+| |____abricate
+| | |____PAIs_present_absent.csv
+| | |____abricate.txt
+| | |____abricate_files_location.log
+| | |____abricate_PAIs_CT18.txt
+| | |____abricate_PAIs.txt
+| |____snp_outputs
+| | |____.DS_Store
+| | |____location_SNP_data.log
+| | |____Agona80
+| | | |____HC5-4181_SG17-135.pairwise_snps.csv
+| | | |____HC5-4181_SG17-135.clean.fullcore.tree
+| | |____Agona_195
+| | | |____Agona_195_SG17-135.clean.fullcore.tree
+| | | |____Agona_195_SG17-135.pairwise_snps.csv
+|____SG17-135.Rproj
+|____supplementary_material
+| |____.DS_Store
+| |____Table S4 - IncX gene associations.txt
+| |____Table S2 - SNP matrix.csv
+| |____Table S3 - IncHI2 Plasmid Metadata.txt
+| |____Table S1- Metadata Genotype and Accessions.txt
+|____old
+| |____HC5-4181_subset_metadata.txt
+| |____Figure_2.R
+| |____Same_scaff.R
+| |____abricate_HC5-4181.txt
+| |____SG17-135.clean.fullcore.tree
+| |____Random_subset_IncX.R
+| |____abricate.txt
+| |____old_scripts
+| | |____Figure_y_flags_Agona80.R
+| | |____Same_scaff.R
+| | |____Random_subset_IncX.R
+| | |____Tree_Heatmap_Agona195.R
+| | |____Tree_heatmap_Agona200_final.R
+| | |____Tree_Heatmap_Agona80.R
+| | |____SPI-analysis.R
+| | |____Flag_Figure_x_Agona200.R
+| |____Figure_4.R
+| |____New_scripts
+| | |____Tree_Heatmap_Agona195.R
+| | |____Tree_Heatmap_Agona80.R
+| |____Supplementary Table 2.txt
+|____fasta_dbs
+| |____ISfinder_Feb_2020
+| | |____sequences.fasta
+| |____card
+| | |____sequences.fasta
+| |____EC_custom_Feb_2020
+| | |____sequences.fasta
+| |____plasmidfinder
+| | |____sequences.fasta
+| |____vfdb
+| | |____sequences.fasta
+| |____SPIs_1-10_12_CT18
+| | |____sequences.fasta
+| |____Salmonella_PIAs
+| | |____sequences.fasta
+|____assemblies
+| |____SG17-135.fa
+| |____Agona195
+| | |____SAL_FB8051AA_AS.fasta
+| | |____SG17-135.fa
+| | |____SAL_AB5642AA_AS.fasta
+| | |____SAL_SA1324AA_AS.fasta
+| | |____SAL_BB3127AA_AS.fasta
+| | |____SAL_OA4067AA_AS.fasta
+| | |____SAL_ZA0287AA_AS.fasta
+| | |____SAL_ZA5298AA_AS.fasta
+| | |____SAL_TA6324AA_AS.fasta
+| | |____SAL_WA9926AA_AS.fasta
+| | |____SAL_BB9562AA_AS.fasta
+| | |____SAL_XA3156AA_AS.fasta
+| | |____SAL_SA9173AA_AS.fasta
+| | |____SAL_AB8884AA_AS.fasta
+| | |____SAL_CB9243AA_AS.fasta
+| | |____SAL_YA7748AA_AS.fasta
+| | |____SAL_BA5105AA_AS.fasta
+| | |____SAL_BB1956AA_AS.fasta
+| | |____SAL_AB7542AA_AS.fasta
+| | |____SAL_BB8331AA_AS.fasta
+| | |____SAL_KB8607AA_AS.fasta
+| | |____SAL_MB7066AA_AS.fasta
+| | |____SAL_EB4088AA_AS.fasta
+| | |____SAL_JB6580AA_AS.fasta
+| | |____SAL_CB0053AA_AS.fasta
+| | |____SAL_EB8845AA_AS.fasta
+| | |____SAL_BB4937AA_AS.fasta
+| | |____SAL_BB4524AA_AS.fasta
+| | |____SAL_TA4227AA_AS.fasta
+| | |____SAL_FB5769AA_AS.fasta
+| | |____SAL_OB6949AA_AS.fasta
+| | |____SAL_EB6812AA_AS.fasta
+| | |____SAL_BB0648AA_AS.fasta
+| | |____SAL_HB6699AA_AS.fasta
+| | |____SAL_JA4169AA_AS.fasta
+| | |____SAL_BB7027AA_AS.fasta
+| | |____SAL_KB1789AA_AS.fasta
+| | |____SAL_KA0984AA_AS.fasta
+| | |____SAL_KB2744AA_AS.fasta
+| | |____SAL_TA1967AA_AS.fasta
+| | |____SAL_HB2224AA_AS.fasta
+| | |____SAL_UA7988AA_AS.fasta
+| | |____SAL_NB6620AA_AS.fasta
+| | |____SAL_YA6602AA_AS.fasta
+| | |____SAL_KB6773AA_AS.fasta
+| | |____SAL_QA5436AA_AS.fasta
+| | |____SAL_BA8052AA_AS.fasta
+| | |____SAL_AB7534AA_AS.fasta
+| | |____SAL_BB2970AA_AS.fasta
+| | |____SAL_CB1790AA_AS.fasta
+| | |____SAL_LB4034AA_AS.fasta
+| | |____SAL_KB8676AA_AS.fasta
+| | |____SAL_BB5062AA_AS.fasta
+| | |____SAL_EA3229AA_AS.fasta
+| | |____SAL_XA3268AA_AS.fasta
+| | |____SAL_GB0225AA_AS.fasta
+| | |____SAL_VA1155AA_AS.fasta
+| | |____SAL_FA5706AA_AS.fasta
+| | |____SAL_WA6251AA_AS.fasta
+| | |____SAL_CB0088AA_AS.fasta
+| | |____SAL_SA1344AA_AS.fasta
+| | |____SAL_ZA8731AA_AS.fasta
+| | |____SAL_HB2219AA_AS.fasta
+| | |____SAL_MB7965AA_AS.fasta
+| | |____SAL_JB9521AA_AS.fasta
+| | |____SAL_LA7782AA_AS.fasta
+| | |____SAL_CB3497AA_AS.fasta
+| | |____SAL_BA7932AA_AS.fasta
+| | |____SAL_KA1119AA_AS.fasta
+| | |____SAL_KB4651AA_AS.fasta
+| | |____SAL_LB8076AA_AS.fasta
+| | |____SAL_WA5013AA_AS.fasta
+| | |____SAL_AB7588AA_AS.fasta
+| | |____SAL_TA1544AA_AS.fasta
+| | |____SAL_NA5728AA_AS.fasta
+| | |____SAL_CB9835AA_AS.fasta
+| | |____SAL_KB9523AA_AS.fasta
+| | |____SAL_BB2593AA_AS.fasta
+| | |____SAL_BB8135AA_AS.fasta
+| | |____SAL_NA2865AA_AS.fasta
+| | |____SAL_XA1299AA_AS.fasta
+| | |____SAL_CA4728AA_AS.fasta
+| | |____SAL_YA6600AA_AS.fasta
+| | |____SAL_GB5373AA_AS.fasta
+| | |____SAL_PB8418AA_AS.fasta
+| | |____SAL_WA5463AA_AS.fasta
+| | |____SAL_CB9389AA_AS.fasta
+| | |____SAL_NA8627AA_AS.fasta
+| | |____SAL_EB1026AA_AS.fasta
+| | |____SAL_JB5195AA_AS.fasta
+| | |____SAL_CB2372AA_AS.fasta
+| | |____SAL_IB7996AA_AS.fasta
+| | |____SAL_JB4414AA_AS.fasta
+| | |____SAL_KB6210AA_AS.fasta
+| | |____SAL_MB5439AA_AS.fasta
+| | |____SAL_VA4537AA_AS.fasta
+| | |____SAL_NB4129AA_AS.fasta
+| | |____SAL_BB1915AA_AS.fasta
+| | |____SAL_HB2237AA_AS.fasta
+| | |____SAL_KB3640AA_AS.fasta
+| | |____SAL_JB1150AA_AS.fasta
+| | |____SAL_BB2899AA_AS.fasta
+| | |____SAL_JB9710AA_AS.fasta
+| | |____SAL_BB5050AA_AS.fasta
+| | |____SAL_BB4921AA_AS.fasta
+| | |____SAL_LA7787AA_AS.fasta
+| | |____SAL_IB7540AA_AS.fasta
+| | |____SAL_CB5468AA_AS.fasta
+| | |____SAL_AB5906AA_AS.fasta
+| | |____SAL_YA9385AA_AS.fasta
+| | |____SAL_XA1733AA_AS.fasta
+| | |____SAL_KB1136AA_AS.fasta
+| | |____SAL_BB2131AA_AS.fasta
+| | |____SAL_KB1826AA_AS.fasta
+| | |____SAL_OA4072AA_AS.fasta
+| | |____SAL_UA7989AA_AS.fasta
+| | |____SAL_WA2841AA_AS.fasta
+| | |____SAL_RA1599AA_AS.fasta
+| | |____SAL_IB6779AA_AS.fasta
+| | |____SAL_BB6687AA_AS.fasta
+| | |____SAL_SA9246AA_AS.fasta
+| | |____SAL_SA9330AA_AS.fasta
+| | |____SAL_FA2493AA_AS.fasta
+| | |____SAL_PB5476AA_AS.fasta
+| | |____SAL_BB7261AA_AS.fasta
+| | |____SAL_UA4307AA_AS.fasta
+| | |____SAL_BB6441AA_AS.fasta
+| | |____SAL_CB9822AA_AS.fasta
+| | |____SAL_CA4744AA_AS.fasta
+| | |____SAL_CB5379AA_AS.fasta
+| | |____SAL_KA8881AA_AS.fasta
+| | |____SAL_BB9086AA_AS.fasta
+| | |____SAL_CB5243AA_AS.fasta
+| | |____SAL_TA2587AA_AS.fasta
+| | |____SAL_AB5674AA_AS.fasta
+| | |____SAL_KA0676AA_AS.fasta
+| | |____SAL_FA1940AA_AS.fasta
+| | |____SAL_WA5465AA_AS.fasta
+| | |____SAL_UA6621AA_AS.fasta
+| | |____SAL_KA5244AA_AS.fasta
+| | |____SAL_CB1324AA_AS.fasta
+| | |____SAL_CB9988AA_AS.fasta
+| | |____SAL_KA4888AA_AS.fasta
+| | |____SAL_IB3115AA_AS.fasta
+| | |____SAL_CB3409AA_AS.fasta
+| | |____SAL_BB4431AA_AS.fasta
+| | |____SAL_YA6631AA_AS.fasta
+| | |____SAL_AB6160AA_AS.fasta
+| | |____SAL_SA2453AA_AS.fasta
+| | |____SAL_UA4237AA_AS.fasta
+| | |____SAL_IB6801AA_AS.fasta
+| | |____SAL_DB1444AA_AS.fasta
+| | |____SAL_CB5376AA_AS.fasta
+| | |____SAL_YA6663AA_AS.fasta
+| | |____SAL_LA4572AA_AS.fasta
+| | |____SAL_CB6250AA_AS.fasta
+| | |____SAL_EB5876AA_AS.fasta
+| | |____SAL_RA1578AA_AS.fasta
+| | |____SAL_CB2598AA_AS.fasta
+| | |____SAL_HB5660AA_AS.fasta
+| | |____SAL_EB1045AA_AS.fasta
+| | |____SAL_KB6830AA_AS.fasta
+| | |____SAL_BB1371AA_AS.fasta
+| | |____SAL_BB1424AA_AS.fasta
+| | |____SAL_CB9820AA_AS.fasta
+| | |____SAL_BB9988AA_AS.fasta
+| | |____SAL_IB9118AA_AS.fasta
+| | |____SAL_EB4083AA_AS.fasta
+| | |____SAL_IB1406AA_AS.fasta
+| | |____SAL_TA7615AA_AS.fasta
+| | |____SAL_BB7947AA_AS.fasta
+| | |____SAL_BB7197AA_AS.fasta
+| | |____SAL_BB1066AA_AS.fasta
+| | |____SAL_KB3375AA_AS.fasta
+| | |____SAL_PA3767AA_AS.fasta
+| | |____SAL_CB1153AA_AS.fasta
+| | |____SAL_BA7945AA_AS.fasta
+| | |____SAL_AB5909AA_AS.fasta
+| | |____SAL_KB6734AA_AS.fasta
+| | |____SAL_IB9302AA_AS.fasta
+| | |____SAL_JB5221AA_AS.fasta
+| | |____SAL_MB2521AA_AS.fasta
+| | |____SAL_FB7879AA_AS.fasta
+| | |____SAL_AB9321AA_AS.fasta
+| | |____SAL_JB0953AA_AS.fasta
+| | |____SAL_XA1782AA_AS.fasta
+| | |____SAL_KB4026AA_AS.fasta
+| | |____SAL_CA4803AA_AS.fasta
+| | |____SAL_MA3067AA_AS.fasta
+| | |____SAL_AB7634AA_AS.fasta
+| | |____SAL_IA5065AA_AS.fasta
+| | |____SAL_CB2669AA_AS.fasta
+| | |____SAL_BB2967AA_AS.fasta
+| | |____SAL_QA4878AA_AS.fasta
+| | |____SAL_EB2895AA_AS.fasta
+| |____Agona80_noref
+| | |____SAL_FB8051AA_AS.fasta
+| | |____SAL_SA1324AA_AS.fasta
+| | |____SAL_BB3127AA_AS.fasta
+| | |____SAL_OA4067AA_AS.fasta
+| | |____SAL_WA9926AA_AS.fasta
+| | |____SAL_BB9562AA_AS.fasta
+| | |____SAL_XA3156AA_AS.fasta
+| | |____SAL_AB8884AA_AS.fasta
+| | |____SAL_CB9243AA_AS.fasta
+| | |____SAL_AB7542AA_AS.fasta
+| | |____SAL_EB4088AA_AS.fasta
+| | |____SAL_JB6580AA_AS.fasta
+| | |____SAL_CB0053AA_AS.fasta
+| | |____SAL_EB8845AA_AS.fasta
+| | |____SAL_BB4937AA_AS.fasta
+| | |____SAL_BB4524AA_AS.fasta
+| | |____SAL_FB5769AA_AS.fasta
+| | |____SAL_EB6812AA_AS.fasta
+| | |____SAL_HB6699AA_AS.fasta
+| | |____SAL_BB7027AA_AS.fasta
+| | |____SAL_KA0984AA_AS.fasta
+| | |____SAL_KB2744AA_AS.fasta
+| | |____SAL_HB2224AA_AS.fasta
+| | |____SAL_NB6620AA_AS.fasta
+| | |____SAL_BA8052AA_AS.fasta
+| | |____SAL_AB7534AA_AS.fasta
+| | |____SAL_BB2970AA_AS.fasta
+| | |____SAL_CB1790AA_AS.fasta
+| | |____SAL_GB0225AA_AS.fasta
+| | |____SAL_CB0088AA_AS.fasta
+| | |____SAL_SA1344AA_AS.fasta
+| | |____SAL_HB2219AA_AS.fasta
+| | |____SAL_MB7965AA_AS.fasta
+| | |____SAL_JB9521AA_AS.fasta
+| | |____SAL_CB3497AA_AS.fasta
+| | |____SAL_BA7932AA_AS.fasta
+| | |____SAL_KA1119AA_AS.fasta
+| | |____SAL_BB8135AA_AS.fasta
+| | |____SAL_NA2865AA_AS.fasta
+| | |____SAL_XA1299AA_AS.fasta
+| | |____SAL_CB9389AA_AS.fasta
+| | |____SAL_EB1026AA_AS.fasta
+| | |____SAL_CB2372AA_AS.fasta
+| | |____SAL_IB7996AA_AS.fasta
+| | |____SAL_KB6210AA_AS.fasta
+| | |____SAL_BB1915AA_AS.fasta
+| | |____SAL_BB2899AA_AS.fasta
+| | |____SAL_BB5050AA_AS.fasta
+| | |____SAL_CB5468AA_AS.fasta
+| | |____SAL_BB2131AA_AS.fasta
+| | |____SAL_OA4072AA_AS.fasta
+| | |____SAL_WA2841AA_AS.fasta
+| | |____SAL_RA1599AA_AS.fasta
+| | |____SAL_SA9246AA_AS.fasta
+| | |____SAL_BB7261AA_AS.fasta
+| | |____SAL_BB6441AA_AS.fasta
+| | |____SAL_CB9822AA_AS.fasta
+| | |____SAL_CB5379AA_AS.fasta
+| | |____SAL_BB9086AA_AS.fasta
+| | |____SAL_CB5243AA_AS.fasta
+| | |____SAL_KA0676AA_AS.fasta
+| | |____SAL_KA5244AA_AS.fasta
+| | |____SAL_CB1324AA_AS.fasta
+| | |____SAL_KA4888AA_AS.fasta
+| | |____SAL_BB4431AA_AS.fasta
+| | |____SAL_IB6801AA_AS.fasta
+| | |____SAL_CB5376AA_AS.fasta
+| | |____SAL_RA1578AA_AS.fasta
+| | |____SAL_CB2598AA_AS.fasta
+| | |____SAL_BB1424AA_AS.fasta
+| | |____SAL_CB9820AA_AS.fasta
+| | |____SAL_BB9988AA_AS.fasta
+| | |____SAL_IB1406AA_AS.fasta
+| | |____SAL_BB7197AA_AS.fasta
+| | |____SAL_IB9302AA_AS.fasta
+| | |____SAL_AB7634AA_AS.fasta
+| | |____SAL_CB2669AA_AS.fasta
+| | |____SAL_BB2967AA_AS.fasta
+| | |____SAL_EB2895AA_AS.fasta
+| |____Agona80
+| | |____SAL_FB8051AA_AS.fasta
+| | |____SG17-135.fa
+| | |____SAL_SA1324AA_AS.fasta
+| | |____SAL_BB3127AA_AS.fasta
+| | |____SAL_OA4067AA_AS.fasta
+| | |____SAL_WA9926AA_AS.fasta
+| | |____SAL_BB9562AA_AS.fasta
+| | |____SAL_XA3156AA_AS.fasta
+| | |____SAL_AB8884AA_AS.fasta
+| | |____SAL_CB9243AA_AS.fasta
+| | |____SAL_AB7542AA_AS.fasta
+| | |____SAL_EB4088AA_AS.fasta
+| | |____SAL_JB6580AA_AS.fasta
+| | |____SAL_CB0053AA_AS.fasta
+| | |____SAL_EB8845AA_AS.fasta
+| | |____SAL_BB4937AA_AS.fasta
+| | |____SAL_BB4524AA_AS.fasta
+| | |____SAL_FB5769AA_AS.fasta
+| | |____SAL_EB6812AA_AS.fasta
+| | |____SAL_HB6699AA_AS.fasta
+| | |____SAL_BB7027AA_AS.fasta
+| | |____SAL_KA0984AA_AS.fasta
+| | |____SAL_KB2744AA_AS.fasta
+| | |____SAL_HB2224AA_AS.fasta
+| | |____SAL_NB6620AA_AS.fasta
+| | |____SAL_BA8052AA_AS.fasta
+| | |____SAL_AB7534AA_AS.fasta
+| | |____SAL_BB2970AA_AS.fasta
+| | |____SAL_CB1790AA_AS.fasta
+| | |____SAL_GB0225AA_AS.fasta
+| | |____SAL_CB0088AA_AS.fasta
+| | |____SAL_SA1344AA_AS.fasta
+| | |____SAL_HB2219AA_AS.fasta
+| | |____SAL_MB7965AA_AS.fasta
+| | |____SAL_JB9521AA_AS.fasta
+| | |____SAL_CB3497AA_AS.fasta
+| | |____SAL_BA7932AA_AS.fasta
+| | |____SAL_KA1119AA_AS.fasta
+| | |____SAL_BB8135AA_AS.fasta
+| | |____SAL_NA2865AA_AS.fasta
+| | |____SAL_XA1299AA_AS.fasta
+| | |____SAL_CB9389AA_AS.fasta
+| | |____SAL_EB1026AA_AS.fasta
+| | |____SAL_CB2372AA_AS.fasta
+| | |____SAL_IB7996AA_AS.fasta
+| | |____SAL_KB6210AA_AS.fasta
+| | |____SAL_BB1915AA_AS.fasta
+| | |____SAL_BB2899AA_AS.fasta
+| | |____SAL_BB5050AA_AS.fasta
+| | |____SAL_CB5468AA_AS.fasta
+| | |____SAL_BB2131AA_AS.fasta
+| | |____SAL_OA4072AA_AS.fasta
+| | |____SAL_WA2841AA_AS.fasta
+| | |____SAL_RA1599AA_AS.fasta
+| | |____SAL_SA9246AA_AS.fasta
+| | |____SAL_BB7261AA_AS.fasta
+| | |____SAL_BB6441AA_AS.fasta
+| | |____SAL_CB9822AA_AS.fasta
+| | |____SAL_CB5379AA_AS.fasta
+| | |____SAL_BB9086AA_AS.fasta
+| | |____SAL_CB5243AA_AS.fasta
+| | |____SAL_KA0676AA_AS.fasta
+| | |____SAL_KA5244AA_AS.fasta
+| | |____SAL_CB1324AA_AS.fasta
+| | |____SAL_KA4888AA_AS.fasta
+| | |____SAL_BB4431AA_AS.fasta
+| | |____SAL_IB6801AA_AS.fasta
+| | |____SAL_CB5376AA_AS.fasta
+| | |____SAL_RA1578AA_AS.fasta
+| | |____SAL_CB2598AA_AS.fasta
+| | |____SAL_BB1424AA_AS.fasta
+| | |____SAL_CB9820AA_AS.fasta
+| | |____SAL_BB9988AA_AS.fasta
+| | |____SAL_IB1406AA_AS.fasta
+| | |____SAL_BB7197AA_AS.fasta
+| | |____SAL_IB9302AA_AS.fasta
+| | |____SAL_AB7634AA_AS.fasta
+| | |____SAL_CB2669AA_AS.fasta
+| | |____SAL_BB2967AA_AS.fasta
+| | |____SAL_EB2895AA_AS.fasta
+| |____Agona195_noref
+| | |____SAL_FB8051AA_AS.fasta
+| | |____SAL_AB5642AA_AS.fasta
+| | |____SAL_SA1324AA_AS.fasta
+| | |____SAL_BB3127AA_AS.fasta
+| | |____SAL_OA4067AA_AS.fasta
+| | |____SAL_ZA0287AA_AS.fasta
+| | |____SAL_ZA5298AA_AS.fasta
+| | |____SAL_TA6324AA_AS.fasta
+| | |____SAL_WA9926AA_AS.fasta
+| | |____SAL_BB9562AA_AS.fasta
+| | |____SAL_XA3156AA_AS.fasta
+| | |____SAL_SA9173AA_AS.fasta
+| | |____SAL_AB8884AA_AS.fasta
+| | |____SAL_CB9243AA_AS.fasta
+| | |____SAL_YA7748AA_AS.fasta
+| | |____SAL_BA5105AA_AS.fasta
+| | |____SAL_BB1956AA_AS.fasta
+| | |____SAL_AB7542AA_AS.fasta
+| | |____SAL_BB8331AA_AS.fasta
+| | |____SAL_KB8607AA_AS.fasta
+| | |____SAL_MB7066AA_AS.fasta
+| | |____SAL_EB4088AA_AS.fasta
+| | |____SAL_JB6580AA_AS.fasta
+| | |____SAL_CB0053AA_AS.fasta
+| | |____SAL_EB8845AA_AS.fasta
+| | |____SAL_BB4937AA_AS.fasta
+| | |____SAL_BB4524AA_AS.fasta
+| | |____SAL_TA4227AA_AS.fasta
+| | |____SAL_FB5769AA_AS.fasta
+| | |____SAL_OB6949AA_AS.fasta
+| | |____SAL_EB6812AA_AS.fasta
+| | |____SAL_BB0648AA_AS.fasta
+| | |____SAL_HB6699AA_AS.fasta
+| | |____SAL_JA4169AA_AS.fasta
+| | |____SAL_BB7027AA_AS.fasta
+| | |____SAL_KB1789AA_AS.fasta
+| | |____SAL_KA0984AA_AS.fasta
+| | |____SAL_KB2744AA_AS.fasta
+| | |____SAL_TA1967AA_AS.fasta
+| | |____SAL_HB2224AA_AS.fasta
+| | |____SAL_UA7988AA_AS.fasta
+| | |____SAL_NB6620AA_AS.fasta
+| | |____SAL_YA6602AA_AS.fasta
+| | |____SAL_KB6773AA_AS.fasta
+| | |____SAL_QA5436AA_AS.fasta
+| | |____SAL_BA8052AA_AS.fasta
+| | |____SAL_AB7534AA_AS.fasta
+| | |____SAL_BB2970AA_AS.fasta
+| | |____SAL_CB1790AA_AS.fasta
+| | |____SAL_LB4034AA_AS.fasta
+| | |____SAL_KB8676AA_AS.fasta
+| | |____SAL_BB5062AA_AS.fasta
+| | |____SAL_EA3229AA_AS.fasta
+| | |____SAL_XA3268AA_AS.fasta
+| | |____SAL_GB0225AA_AS.fasta
+| | |____SAL_VA1155AA_AS.fasta
+| | |____SAL_FA5706AA_AS.fasta
+| | |____SAL_WA6251AA_AS.fasta
+| | |____SAL_CB0088AA_AS.fasta
+| | |____SAL_SA1344AA_AS.fasta
+| | |____SAL_ZA8731AA_AS.fasta
+| | |____SAL_HB2219AA_AS.fasta
+| | |____SAL_MB7965AA_AS.fasta
+| | |____SAL_JB9521AA_AS.fasta
+| | |____SAL_LA7782AA_AS.fasta
+| | |____SAL_CB3497AA_AS.fasta
+| | |____SAL_BA7932AA_AS.fasta
+| | |____SAL_KA1119AA_AS.fasta
+| | |____SAL_KB4651AA_AS.fasta
+| | |____SAL_LB8076AA_AS.fasta
+| | |____SAL_WA5013AA_AS.fasta
+| | |____SAL_AB7588AA_AS.fasta
+| | |____SAL_TA1544AA_AS.fasta
+| | |____SAL_NA5728AA_AS.fasta
+| | |____SAL_CB9835AA_AS.fasta
+| | |____SAL_KB9523AA_AS.fasta
+| | |____SAL_BB2593AA_AS.fasta
+| | |____SAL_BB8135AA_AS.fasta
+| | |____SAL_NA2865AA_AS.fasta
+| | |____SAL_XA1299AA_AS.fasta
+| | |____SAL_CA4728AA_AS.fasta
+| | |____SAL_YA6600AA_AS.fasta
+| | |____SAL_GB5373AA_AS.fasta
+| | |____SAL_PB8418AA_AS.fasta
+| | |____SAL_WA5463AA_AS.fasta
+| | |____SAL_CB9389AA_AS.fasta
+| | |____SAL_NA8627AA_AS.fasta
+| | |____SAL_EB1026AA_AS.fasta
+| | |____SAL_JB5195AA_AS.fasta
+| | |____SAL_CB2372AA_AS.fasta
+| | |____SAL_IB7996AA_AS.fasta
+| | |____SAL_JB4414AA_AS.fasta
+| | |____SAL_KB6210AA_AS.fasta
+| | |____SAL_MB5439AA_AS.fasta
+| | |____SAL_VA4537AA_AS.fasta
+| | |____SAL_NB4129AA_AS.fasta
+| | |____SAL_BB1915AA_AS.fasta
+| | |____SAL_HB2237AA_AS.fasta
+| | |____SAL_KB3640AA_AS.fasta
+| | |____SAL_JB1150AA_AS.fasta
+| | |____SAL_BB2899AA_AS.fasta
+| | |____SAL_JB9710AA_AS.fasta
+| | |____SAL_BB5050AA_AS.fasta
+| | |____SAL_BB4921AA_AS.fasta
+| | |____SAL_LA7787AA_AS.fasta
+| | |____SAL_IB7540AA_AS.fasta
+| | |____SAL_CB5468AA_AS.fasta
+| | |____SAL_AB5906AA_AS.fasta
+| | |____SAL_YA9385AA_AS.fasta
+| | |____SAL_XA1733AA_AS.fasta
+| | |____SAL_KB1136AA_AS.fasta
+| | |____SAL_BB2131AA_AS.fasta
+| | |____SAL_KB1826AA_AS.fasta
+| | |____SAL_OA4072AA_AS.fasta
+| | |____SAL_UA7989AA_AS.fasta
+| | |____SAL_WA2841AA_AS.fasta
+| | |____SAL_RA1599AA_AS.fasta
+| | |____SAL_IB6779AA_AS.fasta
+| | |____SAL_BB6687AA_AS.fasta
+| | |____SAL_SA9246AA_AS.fasta
+| | |____SAL_SA9330AA_AS.fasta
+| | |____SAL_FA2493AA_AS.fasta
+| | |____SAL_PB5476AA_AS.fasta
+| | |____SAL_BB7261AA_AS.fasta
+| | |____SAL_UA4307AA_AS.fasta
+| | |____SAL_BB6441AA_AS.fasta
+| | |____SAL_CB9822AA_AS.fasta
+| | |____SAL_CA4744AA_AS.fasta
+| | |____SAL_CB5379AA_AS.fasta
+| | |____SAL_KA8881AA_AS.fasta
+| | |____SAL_BB9086AA_AS.fasta
+| | |____SAL_CB5243AA_AS.fasta
+| | |____SAL_TA2587AA_AS.fasta
+| | |____SAL_AB5674AA_AS.fasta
+| | |____SAL_KA0676AA_AS.fasta
+| | |____SAL_FA1940AA_AS.fasta
+| | |____SAL_WA5465AA_AS.fasta
+| | |____SAL_UA6621AA_AS.fasta
+| | |____SAL_KA5244AA_AS.fasta
+| | |____SAL_CB1324AA_AS.fasta
+| | |____SAL_CB9988AA_AS.fasta
+| | |____SAL_KA4888AA_AS.fasta
+| | |____SAL_IB3115AA_AS.fasta
+| | |____SAL_CB3409AA_AS.fasta
+| | |____SAL_BB4431AA_AS.fasta
+| | |____SAL_YA6631AA_AS.fasta
+| | |____SAL_AB6160AA_AS.fasta
+| | |____SAL_SA2453AA_AS.fasta
+| | |____SAL_UA4237AA_AS.fasta
+| | |____SAL_IB6801AA_AS.fasta
+| | |____SAL_DB1444AA_AS.fasta
+| | |____SAL_CB5376AA_AS.fasta
+| | |____SAL_YA6663AA_AS.fasta
+| | |____SAL_LA4572AA_AS.fasta
+| | |____SAL_CB6250AA_AS.fasta
+| | |____SAL_EB5876AA_AS.fasta
+| | |____SAL_RA1578AA_AS.fasta
+| | |____SAL_CB2598AA_AS.fasta
+| | |____SAL_HB5660AA_AS.fasta
+| | |____SAL_EB1045AA_AS.fasta
+| | |____SAL_KB6830AA_AS.fasta
+| | |____SAL_BB1371AA_AS.fasta
+| | |____SAL_BB1424AA_AS.fasta
+| | |____SAL_CB9820AA_AS.fasta
+| | |____SAL_BB9988AA_AS.fasta
+| | |____SAL_IB9118AA_AS.fasta
+| | |____SAL_EB4083AA_AS.fasta
+| | |____SAL_IB1406AA_AS.fasta
+| | |____SAL_TA7615AA_AS.fasta
+| | |____SAL_BB7947AA_AS.fasta
+| | |____SAL_BB7197AA_AS.fasta
+| | |____SAL_BB1066AA_AS.fasta
+| | |____SAL_KB3375AA_AS.fasta
+| | |____SAL_PA3767AA_AS.fasta
+| | |____SAL_CB1153AA_AS.fasta
+| | |____SAL_BA7945AA_AS.fasta
+| | |____SAL_AB5909AA_AS.fasta
+| | |____SAL_KB6734AA_AS.fasta
+| | |____SAL_IB9302AA_AS.fasta
+| | |____SAL_JB5221AA_AS.fasta
+| | |____SAL_MB2521AA_AS.fasta
+| | |____SAL_FB7879AA_AS.fasta
+| | |____SAL_AB9321AA_AS.fasta
+| | |____SAL_JB0953AA_AS.fasta
+| | |____SAL_XA1782AA_AS.fasta
+| | |____SAL_KB4026AA_AS.fasta
+| | |____SAL_CA4803AA_AS.fasta
+| | |____SAL_MA3067AA_AS.fasta
+| | |____SAL_AB7634AA_AS.fasta
+| | |____SAL_IA5065AA_AS.fasta
+| | |____SAL_CB2669AA_AS.fasta
+| | |____SAL_BB2967AA_AS.fasta
+| | |____SAL_QA4878AA_AS.fasta
+| | |____SAL_EB2895AA_AS.fasta
+|____README.md
+|____logs
+| |____snakemake
+| | |____snakemake.version
+| |____.DS_Store
+| |____masterlog
+| | |____master.log
+| |____abricate
+| | |____nohup_abricatelord_PIA_CT18.out
+| | |____nohup_abricatelord_PIAs.out
+| | |____nohup_abricatelord.out
+| | |____config.yaml
+| | |____abricate.yaml
+| | |____nohup_Agona_200.out
+| |____snplord
+| | |____nohup_pt_2.out
+| | |____nohup_Agona80.out
+| | |____nohup_snplord.out
+| | |____nohup_Agona_200.out
+| | |____nohup_Agona195.out
+|____.gitignore
+|____.RData
+|____figures
+| |____.DS_Store
+| |____intermediate_figures
+| |____final_figures
+| | |____Figure_4.png
+| | |____Figure_1.pdf
+| | |____Figure_3.png
+| | |____Figure_2.pdf
+|____scripts
+| |____Figure_2.R
+| |____.DS_Store
+| |____Random_subset_IncX.R
+| |____Figure_1.R
+| |____SPI-analysis.R
+|____new_figures
+| |____italicised_Flag_Figure_x_Agona80.pdf
+| |____Figure_y_flags_Agona80.R
+| |____italicised_Flag_Figure_x_Agona80.jpf
+| |____.DS_Store
+| |____italicised_Flag_Figure_x_Agona200.pdf
+| |____italicised_Flag_Figure_x_Agona200.jpf
+| |____Figure 1.pdf
+| |____old
+| | |____Figure_y_flags_Agona80.pdf
+| | |____Figure_y_flags_Agona80.R
+| | |____Flag_Figure_y_Agona_80.pdf.pdf
+| | |____Flag_Figure_y_Agona_80.pdf
+| | |____Agona80.pdf
+| | |____Flag_Figure_x_Agona200.pdf
+| | |____Agona200.pdf
+| | |____Flag_Figure_x_Agona200.R
+| |____Flag_Figure_x_Agona200.pdf
+| |____Flag_Figure_x_Agona80.pdf
+| |____Flag_Figure_x_Agona80JPG.jpg
+| |____Flag_Figure_x_Agona80.png
+| |____Supplementary Figure 1.pdf
+| |____Flag_Figure_x_Agona80.docx
+| |____new_circ_f1.pdf
+| |____Flag_Figure_x_Agona200.R
+|____.git
+| |____ORIG_HEAD
+| |____config
+| |____objects
+| | |____95
+| | | |____f21a4bd7773a64fe54fe361fae6834b70fa027
+| | |____50
+| | | |____e73450cb7f7b0172cfc6c5c54fb4a1285dc1e6
+| | | |____7110d5b1c044bef02b109d2d5697d11ee234a8
+| | |____68
+| | | |____54a3b06d74e8a7f90130a56213ad23fc9505a8
+| | |____6f
+| | | |____8ea905e5f3d3e369da6d2c711eebc76449826a
+| | |____03
+| | | |____1437f6978e66c0197db3910a8545ae1f0e44b1
+| | | |____466bbe557d09f7e0b11f9645cd66afef89e7c1
+| | | |____f9bb36bd2f4b7fc334aadbe6b7c1355d8df557
+| | |____9e
+| | | |____dd019a5f008e3cb93fcea318c49ffde5613b25
+| | | |____fb51b8a1909bd877dd72ae8a1c4625f8307e36
+| | | |____2740c64c87bbad948da2c70c659d9bb26f1dda
+| | |____04
+| | | |____a99a66dd6a7e325987f160202fb7968e28975d
+| | |____32
+| | | |____84e07dc22c9c18e8ed721dac01b23a36452791
+| | | |____2bd09a05a8be974f8d703b72700e406636d6ec
+| | |____35
+| | | |____f4f298330b0d78f1454a7da6e7e88be02dd69b
+| | |____56
+| | | |____45ec48a73243a953b75cdac3f6ca8822a0fb8f
+| | |____3d
+| | | |____353fd7f7e97abdcd8d805fb616a2c3ad2bc130
+| | |____58
+| | | |____62e4316b36ea8e5d37d402d2d2f891db834c32
+| | |____67
+| | | |____7231633d349c431f9a24ef0daee470eb6edb13
+| | |____0b
+| | | |____1ac91eda448e1f06d2587def8b9b1ed6ec7b92
+| | | |____f8c5f3f5288370d9ffb7dea1e5829d2b44c3c3
+| | |____05
+| | | |____2fc8a5ca9b39da00cc1f23830294cd20be7caf
+| | |____9d
+| | | |____6e4ed46687b80050dd2f2e5cf7931683257b62
+| | | |____a2db1c0db721c413838c4171275932dfcfbdd8
+| | |____02
+| | | |____e435a6df305c05830c30e9f4ddf89993cc567d
+| | |____a4
+| | | |____40ba89a03d248506860f4ef3ffe9020486f570
+| | |____b2
+| | | |____570d36bdc170678c7f7e38cab3a504f794b87b
+| | |____d9
+| | | |____9d92942fa6c7310c3b102a58911e0489846c6b
+| | | |____a6ccef26a0ff0832beb6461ebf42b00b80a1b7
+| | |____ac
+| | | |____0e612c9463b6a0b0414f8a23115c08140eec5f
+| | |____ad
+| | | |____7bed7461001a34714f39b27c3b0c79e924b6db
+| | |____bb
+| | | |____6985327ec53ae6e614f9e174ca5c8395e6b367
+| | |____be
+| | | |____51a02999f5713e2f90583643c337ab1fc4abce
+| | |____b3
+| | | |____7e9e978d118bedad67ef234daff6c04c16ec2c
+| | | |____85d8d8e0518b08fb11752323b56f6c59ad0f01
+| | | |____67144ea66aa5be0b48e0ab4198589efff1450f
+| | | |____f505e15658f7cdce158237e9adc810527118c1
+| | |____df
+| | | |____8cad4e567acad2dee004ec8cee1444bd1898f8
+| | |____d8
+| | | |____d45f10e8f654928d2026efee56427a94d0d7da
+| | |____ab
+| | | |____04400547e87bf8ea6779f472e0c235ce1c553c
+| | |____e5
+| | | |____b71499af109d9aaf89e713b3848e0d942bb434
+| | |____e2
+| | | |____d22e6b280e707267c02eef31547c73e24b231a
+| | |____f4
+| | | |____389f5c6e94211265603402640616c3379401fd
+| | |____f3
+| | | |____d884c66cd7f24f1ac350859bff38ce6db21678
+| | |____c0
+| | | |____95081dff90b3ffa816ca5adfc8ccdcc92f6416
+| | |____f5
+| | | |____a32d1280c5b1fdb0e884bcf6d9c0f6bd57dd0e
+| | | |____c58355c55cf9b159a8b0adb38992286373c73b
+| | |____ca
+| | | |____d8df80e50bdcec1efc7956fbeaba9d2fe12a8a
+| | | |____4c71111e431d00b9bd74d1560a461181d789b2
+| | |____e4
+| | | |____3b0f988953ae3a84b00331d0ccf5f7d51cb3cf
+| | |____fb
+| | | |____c64a2f1f93b80685fdb51540bd9e5d2a1387e7
+| | | |____f8c8b0ddb907d63074c7a0429b55c8b55b64bc
+| | | |____b581d9ca24a38b70aeabe44f615388e7336f59
+| | |____ed
+| | | |____d45a9b164796bf258908610ac7c27915b991d4
+| | | |____0bf9d46779a58290d92bd30e19601caaf53f2f
+| | | |____7030d8b5ffb2d93a071ae5791a0f78a35170b2
+| | |____c6
+| | | |____956dcd673f8308e2a4187e703d1d5c5c47df30
+| | |____ec
+| | | |____618eb97f71969eb3247a0b04c18115c7cb7cec
+| | | |____c2859df0e91d8c0787175ec72d67c3820efb08
+| | |____18
+| | | |____fbc2dc1bbeeda2fa21c69a05f1341817de79b0
+| | | |____4a393a198b1ceab6762d5cdea89aa0da3fb9fb
+| | |____27
+| | | |____3c02d509bd79837820e30ebec702cb8dd1f3d1
+| | |____4b
+| | | |____e20aa3ddaaa11063f93b05d93ea5797fa6a5f6
+| | |____pack
+| | | |____pack-348ab17d624c58a115d6f14d40d298d5a7f0cf47.pack
+| | | |____pack-348ab17d624c58a115d6f14d40d298d5a7f0cf47.idx
+| | | |____pack-b0c9cf98970bf93ed01a9d31b8fd1d393414470d.pack
+| | | |____pack-b0c9cf98970bf93ed01a9d31b8fd1d393414470d.idx
+| | |____11
+| | | |____d756b79d4682e9f7f2d746088d9183ed18bd70
+| | |____7d
+| | | |____d2874faec84ecb238b50b5fbd140d11d375aaa
+| | |____7c
+| | | |____25ae36fc9e3a31f693c8bf5723d2c5538cd4c3
+| | | |____8595b5a05e5992084f03a83183c1bf9a06a73a
+| | |____16
+| | | |____862b22bfd3938b61ce584f8e5dabb72be5b157
+| | |____42
+| | | |____68bdbc41075bd48363b473d76c0f97654c0d98
+| | | |____f2142603eab1f7b31028cf3adabda7b5216b49
+| | |____45
+| | | |____304f23046219fb91347b4a781f8d9fb2bb98f7
+| | | |____d736e9fe0b7ed230ab81068219d933cdeb11b8
+| | |____73
+| | | |____4b20d647fc8c9df0fa456e5cc31c36f7a671e8
+| | |____87
+| | | |____de4ba7a29fb120e8bce0579e065fc25867ff45
+| | | |____1199d34732f0439f742606297730c4caca0393
+| | |____1a
+| | | |____b3343150e814a912f79cf09fe09d7968a01bc8
+| | |____17
+| | | |____cc0aa5fa6238dae3fa601d5964e4f61aba88b3
+| | |____8a
+| | | |____0a7928cf89283755adce95127b4a9a4ea8328c
+| | |____19
+| | | |____aeecc8e78ded539ebc01304fc32fd80fa0bd5e
+| | |____21
+| | | |____1a9d2a6f431b0205dc516d342b4a53f7c2c26a
+| | | |____9886c39141f807bb29273e113abada10221204
+| | |____81
+| | | |____3be111e37dc629110f1bc1273241614ef362b0
+| | |____72
+| | | |____0bd7b70b3ebd8093ec226aece8582edf75f7f2
+| | |____2a
+| | | |____add885b5debcd9bc77feb843a840cde417d49f
+| | |____43
+| | | |____7a7f5069bc4fb20504f614d0231d8450d7f755
+| | |____07
+| | | |____9675ad0f49ad6b8e944753161d471644103fe0
+| | |____9a
+| | | |____ae1954223637c1236ba3b0ad6f0714e4f8f48d
+| | |____36
+| | | |____c156f64a2550d0e64db48ad7a2413a0d6a744e
+| | |____09
+| | | |____0c3160082474a18e0a40377249f6bcc9b0a5ec
+| | |____5d
+| | | |____dff2aa2edf5af1b2a65b36a09580c16bf15f7b
+| | |____31
+| | | |____689f6b2ea3a432d35daff8c2ba29db7136efc3
+| | |____info
+| | |____91
+| | | |____7ec479210d65e511e8b0d86155c1aea8ba88bf
+| | |____62
+| | | |____2197277c84f5aa2540e2636a42d41af3d8247e
+| | | |____a081867ef503d5574850e9381e99d08493f2e9
+| | |____3f
+| | | |____a20769596c9d7aefddd614ebab748def02d8d6
+| | | |____dcd5d182f73c14ac0ce051fdbf45b0b0f91769
+| | | |____2ff2d6cc8f257ffcade7ead1ca4042c0e884b9
+| | |____5e
+| | | |____54d172eebe418568aebabafe83952151b1d979
+| | |____5b
+| | | |____6a0652566d10360493952aec6d4a4febc77083
+| | | |____925be242b9277ac18c838ac4c6c4133dcb08ce
+| | |____6d
+| | | |____6ec02a393d25438cb91c425efb01a56121bdc1
+| | | |____128dcba333cfeeb7c655f1b5b7d6ef68192a49
+| | |____01
+| | | |____cbb28bf4c4737971cb67fa1d5f970d0d058604
+| | |____52
+| | | |____98d06ac969271380c7c5d96988cf3560c951a4
+| | | |____0246130f292762b59593ea5bf0846dcd165264
+| | |____63
+| | | |____e7cd7130b5c4468d6abdfc9c9cb26fdef55928
+| | |____90
+| | | |____14844e2cdc00949964944d3be11c03b9287c6a
+| | |____bf
+| | | |____b4b513e3fce26910126d17c7f80994bcc4f9ee
+| | | |____992399a2e84880a4dba1f87181ec52d4d9e941
+| | |____d4
+| | | |____5fe12492d8a9a90945912f2fc94628f9265196
+| | | |____56e775d42371f9e1c9b61a9ff134aeddeda428
+| | |____ba
+| | | |____4d40fd089411e373e5e69b2f7ff20fa7c349e5
+| | |____a7
+| | | |____7800de96e7e482988d500b54d07816c50c4b88
+| | |____b1
+| | | |____12b1da291308373de115f0323bf6458437621b
+| | | |____bba1fa91f8f45b649e8e8f6fb20527ba451e6a
+| | | |____5bf239a65db2c71879040ca11430d12ee3e636
+| | | |____2d3a28b8ac389e3e511ab8d2f0eed35af4aa83
+| | | |____89dca63e141839ee3eb9d3c386c5cf48f1cb0c
+| | | |____9e29f7c7eaef5bcc7ccbfe53d2ee2a4c2a0bab
+| | |____dd
+| | | |____2086e325e8aca577947f906e07c3ded2dae93f
+| | | |____11d7791f08d1434308646632abe099796ff2e0
+| | | |____535f88f6fe589ce88eb7d4f6aea0bda91ec721
+| | |____b6
+| | | |____54f98eac2bae47c6fd5454fe397b5b9647776c
+| | |____aa
+| | | |____217d402acec7e116796d48f8fd1ef97ebabe20
+| | |____af
+| | | |____d709253d6c1651d009acd8a8c32f963fe5c747
+| | | |____74420ded0e7feab3517809cf99fc5ebfd71bab
+| | |____b0
+| | | |____19a65f59e5111f08641bcbaaa3a8dbc0d91efc
+| | |____a6
+| | | |____99a6ab742125ff6491d03e23c184af471e72f5
+| | |____ef
+| | | |____4ce2fcf48b31097de6dc43ad304927e9db95e5
+| | | |____360706c55bdf56714a687c49bc8f81638ef07a
+| | |____c3
+| | | |____5ef26e4dd738cb0ea5103b734f23aaf08997e1
+| | |____c4
+| | | |____3f65150143a4f71217835606b11c6f0b7ae800
+| | |____ea
+| | | |____ee3cdc353b3877449abcce1845da1a6e9c7e1b
+| | |____e1
+| | | |____f4fe7e5d4a0fa029e1b7bdacfe578aee1986fe
+| | |____e6
+| | | |____55aad6593952317fc27c1d29e37c1c38904851
+| | | |____9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+| | |____f9
+| | | |____0668321fa46a8347ca13986f6f24716c4437d0
+| | | |____85d4d6f14542825ece7ee6f8d9c263f787dca5
+| | |____f0
+| | | |____50c155a6964a942b092e3f68d4defeb85d96c5
+| | | |____17c8067ad9d2e4c4b84adcaf5bcf81022d2e2e
+| | |____ff
+| | | |____8b377a8f1f17ec2e1a1413a4a034b55abebeb1
+| | |____c5
+| | | |____6e2196055bb3e858c5bea29df968f2a7fd759a
+| | |____e9
+| | | |____b761fedb0cd2518780df5262afae51ae66a3ff
+| | |____cb
+| | | |____0d6fa23ab66664e1cb6fb545da9349b50709c7
+| | |____f8
+| | | |____713886cbdb172c22621e7d09a704153a319306
+| | |____2c
+| | | |____59d1ed52377fe1fde50924bea3732e2314abc2
+| | |____2d
+| | | |____8c3ff9fc13734da8097dcd4611e508cdfc8120
+| | | |____d5d4203dbde09de731bda43a0f8bfc8c1e1184
+| | | |____b5bce29aef4297b26d24b5736cf2b8f367b17e
+| | | |____6656dcd954d1a1ef420a42e46d7597452b8ae7
+| | |____41
+| | | |____310b4b05bbcee3a11096b853f1492a4c60e3ca
+| | |____1e
+| | | |____dda9cb723bdff1094881fb3f4dc2d07564f43d
+| | |____84
+| | | |____c9b52886bf7f2eefc19a3572f984f9b4cdac6e
+| | |____4a
+| | | |____44f76550085b642b7343d1285404af439c81a4
+| | |____24
+| | | |____68dacf28a7c2517a1f11007c81c50119b53bc8
+| | | |____e2c53980a76840acfefb479a8a7cab5583676d
+| | |____4f
+| | | |____1af4cc49959453b9c432bbb7020cea17634e11
+| | | |____2accd9a575dd02e88987364cb7be232c6a0967
+| | |____8d
+| | | |____216a65fd4d685314f8830c21a7a6d2f75fffc2
+| | |____8c
+| | | |____28a25cc628a02c7ad7082798a2defd76464b3d
+| | |____85
+| | | |____ea2863fc8c8e563195764ab24f732321252e35
+| | |____1d
+| | | |____bf24a232af1121ecb95aefb55855828f247ca9
+| | |____76
+| | | |____99b421620146e20d5ba9618d086b1210865624
+| | |____82
+| | | |____53b25df2c121ca0910ddc56bd47003a081d85d
+| | |____40
+| | | |____d501ef536f5d794b06f6c259a2e5e9d8d6f7b2
+| | |____2e
+| | | |____6e0f220b24e2d42ea87328f54e7cfede07e531
+| | |____2b
+| | | |____3d2b3df1a1d57ca852efbb3fcf52e750473304
+| | | |____1bef112ac6921abda6162a65dbfcd8c6d55c80
+| | |____13
+| | | |____d25069f02018fc09b79df18eec051bd6a763ae
+| | | |____1c952efa0532decf79a606175317c9a6c0f9a6
+| | |____7f
+| | | |____3a0f39c5754dafb4f78b3b27ebe07147bd9e32
+| | |____7a
+| | | |____f1abedd48b670c87ffdf04198faf8e87b5637a
+| | | |____ec8d2d362326b437a51280682c5626cfe3550f
+| | | |____2c19c4eb26d8661b6e6311177f7fc9d7a97821
+| | |____22
+| | | |____8b68d41ee99f7e1664c901e49cd64cd9683d02
+| | |____25
+| | | |____99b9fea464b1ddc4ce301718dbe82b5f5b990e
+| |____HEAD
+| |____info
+| | |____exclude
+| |____logs
+| | |____HEAD
+| | |____refs
+| | | |____heads
+| | | | |____master
+| | | | |____resubmission
+| | | |____remotes
+| | | | |____origin
+| | | | | |____HEAD
+| | | | | |____resubmission
+| |____description
+| |____hooks
+| | |____commit-msg.sample
+| | |____pre-rebase.sample
+| | |____pre-commit.sample
+| | |____applypatch-msg.sample
+| | |____fsmonitor-watchman.sample
+| | |____pre-receive.sample
+| | |____prepare-commit-msg.sample
+| | |____post-update.sample
+| | |____pre-applypatch.sample
+| | |____pre-push.sample
+| | |____update.sample
+| |____refs
+| | |____heads
+| | | |____master
+| | | |____resubmission
+| | |____tags
+| | |____remotes
+| | | |____origin
+| | | | |____HEAD
+| | | | |____resubmission
+| |____index
+| |____packed-refs
+| |____COMMIT_EDITMSG
+| |____FETCH_HEAD
+|____metadata
+| |____.DS_Store
+| |____S.agona-3-6-20.txt
+| |____cgMLST.txt_problems
+| |____Supplementary Table 1 - Metadata and Accessions
+| |____S.agona-3-6-20.txt_problems
+| |____cgMLST.txt
+|____.Rproj.user
+| |____70889A62
+| | |____viewer_history
+| | |____pcs
+| | | |____source-pane.pper
+| | | |____windowlayoutstate.pper
+| | | |____workbench-pane.pper
+| | | |____files-pane.pper
+| | |____saved_source_markers
+| | |____explorer-cache
+| | |____rmd-outputs
+| | |____console06
+| | | |____INDEX001
+| | | |____9820F7D5
+| | | |____9820F7D5.env
+| | |____sources
+| | | |____prop
+| | | | |____A438D7D8
+| | | | |____D4DBA00
+| | | | |____92E77518
+| | | | |____7C1A3F5A
+| | | | |____98D48DD7
+| | | | |____6D16E871
+| | | | |____DDA5EBE5
+| | | | |____27695C3E
+| | | | |____BDCAD0EC
+| | | | |____BA4910AC
+| | | | |____BD399D6E
+| | | | |____9E6556C1
+| | | | |____D4B71FF8
+| | | | |____INDEX
+| | | | |____CA0E262D
+| | | | |____68716DE7
+| | | | |____5BF485C4
+| | | | |____C28A4DE
+| | | |____s-31DB9D6A
+| | | | |____2346E9E2
+| | | | |____668393E2-contents
+| | | | |____F9CE0853-contents
+| | | | |____2346E9E2-contents
+| | | | |____9ACB1ED7
+| | | | |____B69119F2-contents
+| | | | |____B98C8849-contents
+| | | | |____D8535C54-contents
+| | | | |____C7D95AA6-contents
+| | | | |____C7D95AA6
+| | | | |____78D2CF7F-contents
+| | | | |____B69119F2
+| | | | |____B98C8849
+| | | | |____9ACB1ED7-contents
+| | | | |____D8535C54
+| | | | |____lock_file
+| | | |____per
+| | | | |____u
+| | | | |____t
+| | |____profiles-cache
+| | |____ctx
+| | |____viewer-cache
+| | | |____834CECCA.Rdata
+| | |____persistent-state
+| | |____presentation
+| |____shared
+| | |____notebooks
+| | | |____paths
+| | | |____patch-chunk-names
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ tree -a -I '.git'
+sed: illegal option -- I
+usage: sed script [-Ealn] [-i extension] [file ...]
+       sed [-Ealn] [-i extension] [-e script] ... [-f script_file] ... [file ...]
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ tree -a -I '.git'[1P[1P[1P
+sed: illegal option -- I
+usage: sed script [-Ealn] [-i extension] [file ...]
+       sed [-Ealn] [-i extension] [-e script] ... [-f script_file] ... [file ...]
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ tree -I '.git'
+sed: illegal option -- I
+usage: sed script [-Ealn] [-i extension] [file ...]
+       sed [-Ealn] [-i extension] [-e script] ... [-f script_file] ... [file ...]
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ tree -I '.git'[Kls
+README.md			figures				new_figures
+SG17-135.Rproj			flags				old
+analysis			logs				scripts
+assemblies			majestic_gull_dot_jpeg.png	supplementary_material
+fasta_dbs			metadata
+]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ tree
+.
+|____.Rhistory
+|____majestic_gull_dot_jpeg.png
+|____.DS_Store
+|____flags
+| |____Ghana.png
+| |____UAE.png
+| |____Scotland.png
+| |____USA.png
+| |____Australia.jpg
+| |____United_Kindgom.png
+| |____Germany.png
+| |____Denmark.jpg
+| |____Northern_Ireland.jpg
+| |____Vietnam.png
+| |____Ireland.png
+| |____Ireland.jpg
+| |____Mexico.png
+|____analysis
+| |____.DS_Store
+| |____pointfinder
+| | |____pointfinder_results.txt
+| |____abricate
+| | |____PAIs_present_absent.csv
+| | |____abricate.txt
+| | |____abricate_files_location.log
+| | |____abricate_PAIs_CT18.txt
+| | |____abricate_PAIs.txt
+| |____snp_outputs
+| | |____.DS_Store
+| | |____location_SNP_data.log
+| | |____Agona80
+| | | |____HC5-4181_SG17-135.pairwise_snps.csv
+| | | |____HC5-4181_SG17-135.clean.fullcore.tree
+| | |____Agona_195
+| | | |____Agona_195_SG17-135.clean.fullcore.tree
+| | | |____Agona_195_SG17-135.pairwise_snps.csv
+|____SG17-135.Rproj
+|____supplementary_material
+| |____.DS_Store
+| |____Table S4 - IncX gene associations.txt
+| |____Table S2 - SNP matrix.csv
+| |____Table S3 - IncHI2 Plasmid Metadata.txt
+| |____Table S1- Metadata Genotype and Accessions.txt
+|____old
+| |____HC5-4181_subset_metadata.txt
+| |____Figure_2.R
+| |____Same_scaff.R
+| |____abricate_HC5-4181.txt
+| |____SG17-135.clean.fullcore.tree
+| |____Random_subset_IncX.R
+| |____abricate.txt
+| |____old_scripts
+| | |____Figure_y_flags_Agona80.R
+| | |____Same_scaff.R
+| | |____Random_subset_IncX.R
+| | |____Tree_Heatmap_Agona195.R
+| | |____Tree_heatmap_Agona200_final.R
+| | |____Tree_Heatmap_Agona80.R
+| | |____SPI-analysis.R
+| | |____Flag_Figure_x_Agona200.R
+| |____Figure_4.R
+| |____New_scripts
+| | |____Tree_Heatmap_Agona195.R
+| | |____Tree_Heatmap_Agona80.R
+| |____Supplementary Table 2.txt
+|____fasta_dbs
+| |____ISfinder_Feb_2020
+| | |____sequences.fasta
+| |____card
+| | |____sequences.fasta
+| |____EC_custom_Feb_2020
+| | |____sequences.fasta
+| |____plasmidfinder
+| | |____sequences.fasta
+| |____vfdb
+| | |____sequences.fasta
+| |____SPIs_1-10_12_CT18
+| | |____sequences.fasta
+| |____Salmonella_PIAs
+| | |____sequences.fasta
+|____assemblies
+| |____SG17-135.fa
+| |____Agona195
+| | |____SAL_FB8051AA_AS.fasta
+| | |____SG17-135.fa
+| | |____SAL_AB5642AA_AS.fasta
+| | |____SAL_SA1324AA_AS.fasta
+| | |____SAL_BB3127AA_AS.fasta
+| | |____SAL_OA4067AA_AS.fasta
+| | |____SAL_ZA0287AA_AS.fasta
+| | |____SAL_ZA5298AA_AS.fasta
+| | |____SAL_TA6324AA_AS.fasta
+| | |____SAL_WA9926AA_AS.fasta
+| | |____SAL_BB9562AA_AS.fasta
+| | |____SAL_XA3156AA_AS.fasta
+| | |____SAL_SA9173AA_AS.fasta
+| | |____SAL_AB8884AA_AS.fasta
+| | |____SAL_CB9243AA_AS.fasta
+| | |____SAL_YA7748AA_AS.fasta
+| | |____SAL_BA5105AA_AS.fasta
+| | |____SAL_BB1956AA_AS.fasta
+| | |____SAL_AB7542AA_AS.fasta
+| | |____SAL_BB8331AA_AS.fasta
+| | |____SAL_KB8607AA_AS.fasta
+| | |____SAL_MB7066AA_AS.fasta
+| | |____SAL_EB4088AA_AS.fasta
+| | |____SAL_JB6580AA_AS.fasta
+| | |____SAL_CB0053AA_AS.fasta
+| | |____SAL_EB8845AA_AS.fasta
+| | |____SAL_BB4937AA_AS.fasta
+| | |____SAL_BB4524AA_AS.fasta
+| | |____SAL_TA4227AA_AS.fasta
+| | |____SAL_FB5769AA_AS.fasta
+| | |____SAL_OB6949AA_AS.fasta
+| | |____SAL_EB6812AA_AS.fasta
+| | |____SAL_BB0648AA_AS.fasta
+| | |____SAL_HB6699AA_AS.fasta
+| | |____SAL_JA4169AA_AS.fasta
+| | |____SAL_BB7027AA_AS.fasta
+| | |____SAL_KB1789AA_AS.fasta
+| | |____SAL_KA0984AA_AS.fasta
+| | |____SAL_KB2744AA_AS.fasta
+| | |____SAL_TA1967AA_AS.fasta
+| | |____SAL_HB2224AA_AS.fasta
+| | |____SAL_UA7988AA_AS.fasta
+| | |____SAL_NB6620AA_AS.fasta
+| | |____SAL_YA6602AA_AS.fasta
+| | |____SAL_KB6773AA_AS.fasta
+| | |____SAL_QA5436AA_AS.fasta
+| | |____SAL_BA8052AA_AS.fasta
+| | |____SAL_AB7534AA_AS.fasta
+| | |____SAL_BB2970AA_AS.fasta
+| | |____SAL_CB1790AA_AS.fasta
+| | |____SAL_LB4034AA_AS.fasta
+| | |____SAL_KB8676AA_AS.fasta
+| | |____SAL_BB5062AA_AS.fasta
+| | |____SAL_EA3229AA_AS.fasta
+| | |____SAL_XA3268AA_AS.fasta
+| | |____SAL_GB0225AA_AS.fasta
+| | |____SAL_VA1155AA_AS.fasta
+| | |____SAL_FA5706AA_AS.fasta
+| | |____SAL_WA6251AA_AS.fasta
+| | |____SAL_CB0088AA_AS.fasta
+| | |____SAL_SA1344AA_AS.fasta
+| | |____SAL_ZA8731AA_AS.fasta
+| | |____SAL_HB2219AA_AS.fasta
+| | |____SAL_MB7965AA_AS.fasta
+| | |____SAL_JB9521AA_AS.fasta
+| | |____SAL_LA7782AA_AS.fasta
+| | |____SAL_CB3497AA_AS.fasta
+| | |____SAL_BA7932AA_AS.fasta
+| | |____SAL_KA1119AA_AS.fasta
+| | |____SAL_KB4651AA_AS.fasta
+| | |____SAL_LB8076AA_AS.fasta
+| | |____SAL_WA5013AA_AS.fasta
+| | |____SAL_AB7588AA_AS.fasta
+| | |____SAL_TA1544AA_AS.fasta
+| | |____SAL_NA5728AA_AS.fasta
+| | |____SAL_CB9835AA_AS.fasta
+| | |____SAL_KB9523AA_AS.fasta
+| | |____SAL_BB2593AA_AS.fasta
+| | |____SAL_BB8135AA_AS.fasta
+| | |____SAL_NA2865AA_AS.fasta
+| | |____SAL_XA1299AA_AS.fasta
+| | |____SAL_CA4728AA_AS.fasta
+| | |____SAL_YA6600AA_AS.fasta
+| | |____SAL_GB5373AA_AS.fasta
+| | |____SAL_PB8418AA_AS.fasta
+| | |____SAL_WA5463AA_AS.fasta
+| | |____SAL_CB9389AA_AS.fasta
+| | |____SAL_NA8627AA_AS.fasta
+| | |____SAL_EB1026AA_AS.fasta
+| | |____SAL_JB5195AA_AS.fasta
+| | |____SAL_CB2372AA_AS.fasta
+| | |____SAL_IB7996AA_AS.fasta
+| | |____SAL_JB4414AA_AS.fasta
+| | |____SAL_KB6210AA_AS.fasta
+| | |____SAL_MB5439AA_AS.fasta
+| | |____SAL_VA4537AA_AS.fasta
+| | |____SAL_NB4129AA_AS.fasta
+| | |____SAL_BB1915AA_AS.fasta
+| | |____SAL_HB2237AA_AS.fasta
+| | |____SAL_KB3640AA_AS.fasta
+| | |____SAL_JB1150AA_AS.fasta
+| | |____SAL_BB2899AA_AS.fasta
+| | |____SAL_JB9710AA_AS.fasta
+| | |____SAL_BB5050AA_AS.fasta
+| | |____SAL_BB4921AA_AS.fasta
+| | |____SAL_LA7787AA_AS.fasta
+| | |____SAL_IB7540AA_AS.fasta
+| | |____SAL_CB5468AA_AS.fasta
+| | |____SAL_AB5906AA_AS.fasta
+| | |____SAL_YA9385AA_AS.fasta
+| | |____SAL_XA1733AA_AS.fasta
+| | |____SAL_KB1136AA_AS.fasta
+| | |____SAL_BB2131AA_AS.fasta
+| | |____SAL_KB1826AA_AS.fasta
+| | |____SAL_OA4072AA_AS.fasta
+| | |____SAL_UA7989AA_AS.fasta
+| | |____SAL_WA2841AA_AS.fasta
+| | |____SAL_RA1599AA_AS.fasta
+| | |____SAL_IB6779AA_AS.fasta
+| | |____SAL_BB6687AA_AS.fasta
+| | |____SAL_SA9246AA_AS.fasta
+| | |____SAL_SA9330AA_AS.fasta
+| | |____SAL_FA2493AA_AS.fasta
+| | |____SAL_PB5476AA_AS.fasta
+| | |____SAL_BB7261AA_AS.fasta
+| | |____SAL_UA4307AA_AS.fasta
+| | |____SAL_BB6441AA_AS.fasta
+| | |____SAL_CB9822AA_AS.fasta
+| | |____SAL_CA4744AA_AS.fasta
+| | |____SAL_CB5379AA_AS.fasta
+| | |____SAL_KA8881AA_AS.fasta
+| | |____SAL_BB9086AA_AS.fasta
+| | |____SAL_CB5243AA_AS.fasta
+| | |____SAL_TA2587AA_AS.fasta
+| | |____SAL_AB5674AA_AS.fasta
+| | |____SAL_KA0676AA_AS.fasta
+| | |____SAL_FA1940AA_AS.fasta
+| | |____SAL_WA5465AA_AS.fasta
+| | |____SAL_UA6621AA_AS.fasta
+| | |____SAL_KA5244AA_AS.fasta
+| | |____SAL_CB1324AA_AS.fasta
+| | |____SAL_CB9988AA_AS.fasta
+| | |____SAL_KA4888AA_AS.fasta
+| | |____SAL_IB3115AA_AS.fasta
+| | |____SAL_CB3409AA_AS.fasta
+| | |____SAL_BB4431AA_AS.fasta
+| | |____SAL_YA6631AA_AS.fasta
+| | |____SAL_AB6160AA_AS.fasta
+| | |____SAL_SA2453AA_AS.fasta
+| | |____SAL_UA4237AA_AS.fasta
+| | |____SAL_IB6801AA_AS.fasta
+| | |____SAL_DB1444AA_AS.fasta
+| | |____SAL_CB5376AA_AS.fasta
+| | |____SAL_YA6663AA_AS.fasta
+| | |____SAL_LA4572AA_AS.fasta
+| | |____SAL_CB6250AA_AS.fasta
+| | |____SAL_EB5876AA_AS.fasta
+| | |____SAL_RA1578AA_AS.fasta
+| | |____SAL_CB2598AA_AS.fasta
+| | |____SAL_HB5660AA_AS.fasta
+| | |____SAL_EB1045AA_AS.fasta
+| | |____SAL_KB6830AA_AS.fasta
+| | |____SAL_BB1371AA_AS.fasta
+| | |____SAL_BB1424AA_AS.fasta
+| | |____SAL_CB9820AA_AS.fasta
+| | |____SAL_BB9988AA_AS.fasta
+| | |____SAL_IB9118AA_AS.fasta
+| | |____SAL_EB4083AA_AS.fasta
+| | |____SAL_IB1406AA_AS.fasta
+| | |____SAL_TA7615AA_AS.fasta
+| | |____SAL_BB7947AA_AS.fasta
+| | |____SAL_BB7197AA_AS.fasta
+| | |____SAL_BB1066AA_AS.fasta
+| | |____SAL_KB3375AA_AS.fasta
+| | |____SAL_PA3767AA_AS.fasta
+| | |____SAL_CB1153AA_AS.fasta
+| | |____SAL_BA7945AA_AS.fasta
+| | |____SAL_AB5909AA_AS.fasta
+| | |____SAL_KB6734AA_AS.fasta
+| | |____SAL_IB9302AA_AS.fasta
+| | |____SAL_JB5221AA_AS.fasta
+| | |____SAL_MB2521AA_AS.fasta
+| | |____SAL_FB7879AA_AS.fasta
+| | |____SAL_AB9321AA_AS.fasta
+| | |____SAL_JB0953AA_AS.fasta
+| | |____SAL_XA1782AA_AS.fasta
+| | |____SAL_KB4026AA_AS.fasta
+| | |____SAL_CA4803AA_AS.fasta
+| | |____SAL_MA3067AA_AS.fasta
+| | |____SAL_AB7634AA_AS.fasta
+| | |____SAL_IA5065AA_AS.fasta
+| | |____SAL_CB2669AA_AS.fasta
+| | |____SAL_BB2967AA_AS.fasta
+| | |____SAL_QA4878AA_AS.fasta
+| | |____SAL_EB2895AA_AS.fasta
+| |____Agona80_noref
+| | |____SAL_FB8051AA_AS.fasta
+| | |____SAL_SA1324AA_AS.fasta
+| | |____SAL_BB3127AA_AS.fasta
+| | |____SAL_OA4067AA_AS.fasta
+| | |____SAL_WA9926AA_AS.fasta
+| | |____SAL_BB9562AA_AS.fasta
+| | |____SAL_XA3156AA_AS.fasta
+| | |____SAL_AB8884AA_AS.fasta
+| | |____SAL_CB9243AA_AS.fasta
+| | |____SAL_AB7542AA_AS.fasta
+| | |____SAL_EB4088AA_AS.fasta
+| | |____SAL_JB6580AA_AS.fasta
+| | |____SAL_CB0053AA_AS.fasta
+| | |____SAL_EB8845AA_AS.fasta
+| | |____SAL_BB4937AA_AS.fasta
+| | |____SAL_BB4524AA_AS.fasta
+| | |____SAL_FB5769AA_AS.fasta
+| | |____SAL_EB6812AA_AS.fasta
+| | |____SAL_HB6699AA_AS.fasta
+| | |____SAL_BB7027AA_AS.fasta
+| | |____SAL_KA0984AA_AS.fasta
+| | |____SAL_KB2744AA_AS.fasta
+| | |____SAL_HB2224AA_AS.fasta
+| | |____SAL_NB6620AA_AS.fasta
+| | |____SAL_BA8052AA_AS.fasta
+| | |____SAL_AB7534AA_AS.fasta
+| | |____SAL_BB2970AA_AS.fasta
+| | |____SAL_CB1790AA_AS.fasta
+| | |____SAL_GB0225AA_AS.fasta
+| | |____SAL_CB0088AA_AS.fasta
+| | |____SAL_SA1344AA_AS.fasta
+| | |____SAL_HB2219AA_AS.fasta
+| | |____SAL_MB7965AA_AS.fasta
+| | |____SAL_JB9521AA_AS.fasta
+| | |____SAL_CB3497AA_AS.fasta
+| | |____SAL_BA7932AA_AS.fasta
+| | |____SAL_KA1119AA_AS.fasta
+| | |____SAL_BB8135AA_AS.fasta
+| | |____SAL_NA2865AA_AS.fasta
+| | |____SAL_XA1299AA_AS.fasta
+| | |____SAL_CB9389AA_AS.fasta
+| | |____SAL_EB1026AA_AS.fasta
+| | |____SAL_CB2372AA_AS.fasta
+| | |____SAL_IB7996AA_AS.fasta
+| | |____SAL_KB6210AA_AS.fasta
+| | |____SAL_BB1915AA_AS.fasta
+| | |____SAL_BB2899AA_AS.fasta
+| | |____SAL_BB5050AA_AS.fasta
+| | |____SAL_CB5468AA_AS.fasta
+| | |____SAL_BB2131AA_AS.fasta
+| | |____SAL_OA4072AA_AS.fasta
+| | |____SAL_WA2841AA_AS.fasta
+| | |____SAL_RA1599AA_AS.fasta
+| | |____SAL_SA9246AA_AS.fasta
+| | |____SAL_BB7261AA_AS.fasta
+| | |____SAL_BB6441AA_AS.fasta
+| | |____SAL_CB9822AA_AS.fasta
+| | |____SAL_CB5379AA_AS.fasta
+| | |____SAL_BB9086AA_AS.fasta
+| | |____SAL_CB5243AA_AS.fasta
+| | |____SAL_KA0676AA_AS.fasta
+| | |____SAL_KA5244AA_AS.fasta
+| | |____SAL_CB1324AA_AS.fasta
+| | |____SAL_KA4888AA_AS.fasta
+| | |____SAL_BB4431AA_AS.fasta
+| | |____SAL_IB6801AA_AS.fasta
+| | |____SAL_CB5376AA_AS.fasta
+| | |____SAL_RA1578AA_AS.fasta
+| | |____SAL_CB2598AA_AS.fasta
+| | |____SAL_BB1424AA_AS.fasta
+| | |____SAL_CB9820AA_AS.fasta
+| | |____SAL_BB9988AA_AS.fasta
+| | |____SAL_IB1406AA_AS.fasta
+| | |____SAL_BB7197AA_AS.fasta
+| | |____SAL_IB9302AA_AS.fasta
+| | |____SAL_AB7634AA_AS.fasta
+| | |____SAL_CB2669AA_AS.fasta
+| | |____SAL_BB2967AA_AS.fasta
+| | |____SAL_EB2895AA_AS.fasta
+| |____Agona80
+| | |____SAL_FB8051AA_AS.fasta
+| | |____SG17-135.fa
+| | |____SAL_SA1324AA_AS.fasta
+| | |____SAL_BB3127AA_AS.fasta
+| | |____SAL_OA4067AA_AS.fasta
+| | |____SAL_WA9926AA_AS.fasta
+| | |____SAL_BB9562AA_AS.fasta
+| | |____SAL_XA3156AA_AS.fasta
+| | |____SAL_AB8884AA_AS.fasta
+| | |____SAL_CB9243AA_AS.fasta
+| | |____SAL_AB7542AA_AS.fasta
+| | |____SAL_EB4088AA_AS.fasta
+| | |____SAL_JB6580AA_AS.fasta
+| | |____SAL_CB0053AA_AS.fasta
+| | |____SAL_EB8845AA_AS.fasta
+| | |____SAL_BB4937AA_AS.fasta
+| | |____SAL_BB4524AA_AS.fasta
+| | |____SAL_FB5769AA_AS.fasta
+| | |____SAL_EB6812AA_AS.fasta
+| | |____SAL_HB6699AA_AS.fasta
+| | |____SAL_BB7027AA_AS.fasta
+| | |____SAL_KA0984AA_AS.fasta
+| | |____SAL_KB2744AA_AS.fasta
+| | |____SAL_HB2224AA_AS.fasta
+| | |____SAL_NB6620AA_AS.fasta
+| | |____SAL_BA8052AA_AS.fasta
+| | |____SAL_AB7534AA_AS.fasta
+| | |____SAL_BB2970AA_AS.fasta
+| | |____SAL_CB1790AA_AS.fasta
+| | |____SAL_GB0225AA_AS.fasta
+| | |____SAL_CB0088AA_AS.fasta
+| | |____SAL_SA1344AA_AS.fasta
+| | |____SAL_HB2219AA_AS.fasta
+| | |____SAL_MB7965AA_AS.fasta
+| | |____SAL_JB9521AA_AS.fasta
+| | |____SAL_CB3497AA_AS.fasta
+| | |____SAL_BA7932AA_AS.fasta
+| | |____SAL_KA1119AA_AS.fasta
+| | |____SAL_BB8135AA_AS.fasta
+| | |____SAL_NA2865AA_AS.fasta
+| | |____SAL_XA1299AA_AS.fasta
+| | |____SAL_CB9389AA_AS.fasta
+| | |____SAL_EB1026AA_AS.fasta
+| | |____SAL_CB2372AA_AS.fasta
+| | |____SAL_IB7996AA_AS.fasta
+| | |____SAL_KB6210AA_AS.fasta
+| | |____SAL_BB1915AA_AS.fasta
+| | |____SAL_BB2899AA_AS.fasta
+| | |____SAL_BB5050AA_AS.fasta
+| | |____SAL_CB5468AA_AS.fasta
+| | |____SAL_BB2131AA_AS.fasta
+| | |____SAL_OA4072AA_AS.fasta
+| | |____SAL_WA2841AA_AS.fasta
+| | |____SAL_RA1599AA_AS.fasta
+| | |____SAL_SA9246AA_AS.fasta
+| | |____SAL_BB7261AA_AS.fasta
+| | |____SAL_BB6441AA_AS.fasta
+| | |____SAL_CB9822AA_AS.fasta
+| | |____SAL_CB5379AA_AS.fasta
+| | |____SAL_BB9086AA_AS.fasta
+| | |____SAL_CB5243AA_AS.fasta
+| | |____SAL_KA0676AA_AS.fasta
+| | |____SAL_KA5244AA_AS.fasta
+| | |____SAL_CB1324AA_AS.fasta
+| | |____SAL_KA4888AA_AS.fasta
+| | |____SAL_BB4431AA_AS.fasta
+| | |____SAL_IB6801AA_AS.fasta
+| | |____SAL_CB5376AA_AS.fasta
+| | |____SAL_RA1578AA_AS.fasta
+| | |____SAL_CB2598AA_AS.fasta
+| | |____SAL_BB1424AA_AS.fasta
+| | |____SAL_CB9820AA_AS.fasta
+| | |____SAL_BB9988AA_AS.fasta
+| | |____SAL_IB1406AA_AS.fasta
+| | |____SAL_BB7197AA_AS.fasta
+| | |____SAL_IB9302AA_AS.fasta
+| | |____SAL_AB7634AA_AS.fasta
+| | |____SAL_CB2669AA_AS.fasta
+| | |____SAL_BB2967AA_AS.fasta
+| | |____SAL_EB2895AA_AS.fasta
+| |____Agona195_noref
+| | |____SAL_FB8051AA_AS.fasta
+| | |____SAL_AB5642AA_AS.fasta
+| | |____SAL_SA1324AA_AS.fasta
+| | |____SAL_BB3127AA_AS.fasta
+| | |____SAL_OA4067AA_AS.fasta
+| | |____SAL_ZA0287AA_AS.fasta
+| | |____SAL_ZA5298AA_AS.fasta
+| | |____SAL_TA6324AA_AS.fasta
+| | |____SAL_WA9926AA_AS.fasta
+| | |____SAL_BB9562AA_AS.fasta
+| | |____SAL_XA3156AA_AS.fasta
+| | |____SAL_SA9173AA_AS.fasta
+| | |____SAL_AB8884AA_AS.fasta
+| | |____SAL_CB9243AA_AS.fasta
+| | |____SAL_YA7748AA_AS.fasta
+| | |____SAL_BA5105AA_AS.fasta
+| | |____SAL_BB1956AA_AS.fasta
+| | |____SAL_AB7542AA_AS.fasta
+| | |____SAL_BB8331AA_AS.fasta
+| | |____SAL_KB8607AA_AS.fasta
+| | |____SAL_MB7066AA_AS.fasta
+| | |____SAL_EB4088AA_AS.fasta
+| | |____SAL_JB6580AA_AS.fasta
+| | |____SAL_CB0053AA_AS.fasta
+| | |____SAL_EB8845AA_AS.fasta
+| | |____SAL_BB4937AA_AS.fasta
+| | |____SAL_BB4524AA_AS.fasta
+| | |____SAL_TA4227AA_AS.fasta
+| | |____SAL_FB5769AA_AS.fasta
+| | |____SAL_OB6949AA_AS.fasta
+| | |____SAL_EB6812AA_AS.fasta
+| | |____SAL_BB0648AA_AS.fasta
+| | |____SAL_HB6699AA_AS.fasta
+| | |____SAL_JA4169AA_AS.fasta
+| | |____SAL_BB7027AA_AS.fasta
+| | |____SAL_KB1789AA_AS.fasta
+| | |____SAL_KA0984AA_AS.fasta
+| | |____SAL_KB2744AA_AS.fasta
+| | |____SAL_TA1967AA_AS.fasta
+| | |____SAL_HB2224AA_AS.fasta
+| | |____SAL_UA7988AA_AS.fasta
+| | |____SAL_NB6620AA_AS.fasta
+| | |____SAL_YA6602AA_AS.fasta
+| | |____SAL_KB6773AA_AS.fasta
+| | |____SAL_QA5436AA_AS.fasta
+| | |____SAL_BA8052AA_AS.fasta
+| | |____SAL_AB7534AA_AS.fasta
+| | |____SAL_BB2970AA_AS.fasta
+| | |____SAL_CB1790AA_AS.fasta
+| | |____SAL_LB4034AA_AS.fasta
+| | |____SAL_KB8676AA_AS.fasta
+| | |____SAL_BB5062AA_AS.fasta
+| | |____SAL_EA3229AA_AS.fasta
+| | |____SAL_XA3268AA_AS.fasta
+| | |____SAL_GB0225AA_AS.fasta
+| | |____SAL_VA1155AA_AS.fasta
+| | |____SAL_FA5706AA_AS.fasta
+| | |____SAL_WA6251AA_AS.fasta
+| | |____SAL_CB0088AA_AS.fasta
+| | |____SAL_SA1344AA_AS.fasta
+| | |____SAL_ZA8731AA_AS.fasta
+| | |____SAL_HB2219AA_AS.fasta
+| | |____SAL_MB7965AA_AS.fasta
+| | |____SAL_JB9521AA_AS.fasta
+| | |____SAL_LA7782AA_AS.fasta
+| | |____SAL_CB3497AA_AS.fasta
+| | |____SAL_BA7932AA_AS.fasta
+| | |____SAL_KA1119AA_AS.fasta
+| | |____SAL_KB4651AA_AS.fasta
+| | |____SAL_LB8076AA_AS.fasta
+| | |____SAL_WA5013AA_AS.fasta
+| | |____SAL_AB7588AA_AS.fasta
+| | |____SAL_TA1544AA_AS.fasta
+| | |____SAL_NA5728AA_AS.fasta
+| | |____SAL_CB9835AA_AS.fasta
+| | |____SAL_KB9523AA_AS.fasta
+| | |____SAL_BB2593AA_AS.fasta
+| | |____SAL_BB8135AA_AS.fasta
+| | |____SAL_NA2865AA_AS.fasta
+| | |____SAL_XA1299AA_AS.fasta
+| | |____SAL_CA4728AA_AS.fasta
+| | |____SAL_YA6600AA_AS.fasta
+| | |____SAL_GB5373AA_AS.fasta
+| | |____SAL_PB8418AA_AS.fasta
+| | |____SAL_WA5463AA_AS.fasta
+| | |____SAL_CB9389AA_AS.fasta
+| | |____SAL_NA8627AA_AS.fasta
+| | |____SAL_EB1026AA_AS.fasta
+| | |____SAL_JB5195AA_AS.fasta
+| | |____SAL_CB2372AA_AS.fasta
+| | |____SAL_IB7996AA_AS.fasta
+| | |____SAL_JB4414AA_AS.fasta
+| | |____SAL_KB6210AA_AS.fasta
+| | |____SAL_MB5439AA_AS.fasta
+| | |____SAL_VA4537AA_AS.fasta
+| | |____SAL_NB4129AA_AS.fasta
+| | |____SAL_BB1915AA_AS.fasta
+| | |____SAL_HB2237AA_AS.fasta
+| | |____SAL_KB3640AA_AS.fasta
+| | |____SAL_JB1150AA_AS.fasta
+| | |____SAL_BB2899AA_AS.fasta
+| | |____SAL_JB9710AA_AS.fasta
+| | |____SAL_BB5050AA_AS.fasta
+| | |____SAL_BB4921AA_AS.fasta
+| | |____SAL_LA7787AA_AS.fasta
+| | |____SAL_IB7540AA_AS.fasta
+| | |____SAL_CB5468AA_AS.fasta
+| | |____SAL_AB5906AA_AS.fasta
+| | |____SAL_YA9385AA_AS.fasta
+| | |____SAL_XA1733AA_AS.fasta
+| | |____SAL_KB1136AA_AS.fasta
+| | |____SAL_BB2131AA_AS.fasta
+| | |____SAL_KB1826AA_AS.fasta
+| | |____SAL_OA4072AA_AS.fasta
+| | |____SAL_UA7989AA_AS.fasta
+| | |____SAL_WA2841AA_AS.fasta
+| | |____SAL_RA1599AA_AS.fasta
+| | |____SAL_IB6779AA_AS.fasta
+| | |____SAL_BB6687AA_AS.fasta
+| | |____SAL_SA9246AA_AS.fasta
+| | |____SAL_SA9330AA_AS.fasta
+| | |____SAL_FA2493AA_AS.fasta
+| | |____SAL_PB5476AA_AS.fasta
+| | |____SAL_BB7261AA_AS.fasta
+| | |____SAL_UA4307AA_AS.fasta
+| | |____SAL_BB6441AA_AS.fasta
+| | |____SAL_CB9822AA_AS.fasta
+| | |____SAL_CA4744AA_AS.fasta
+| | |____SAL_CB5379AA_AS.fasta
+| | |____SAL_KA8881AA_AS.fasta
+| | |____SAL_BB9086AA_AS.fasta
+| | |____SAL_CB5243AA_AS.fasta
+| | |____SAL_TA2587AA_AS.fasta
+| | |____SAL_AB5674AA_AS.fasta
+| | |____SAL_KA0676AA_AS.fasta
+| | |____SAL_FA1940AA_AS.fasta
+| | |____SAL_WA5465AA_AS.fasta
+| | |____SAL_UA6621AA_AS.fasta
+| | |____SAL_KA5244AA_AS.fasta
+| | |____SAL_CB1324AA_AS.fasta
+| | |____SAL_CB9988AA_AS.fasta
+| | |____SAL_KA4888AA_AS.fasta
+| | |____SAL_IB3115AA_AS.fasta
+| | |____SAL_CB3409AA_AS.fasta
+| | |____SAL_BB4431AA_AS.fasta
+| | |____SAL_YA6631AA_AS.fasta
+| | |____SAL_AB6160AA_AS.fasta
+| | |____SAL_SA2453AA_AS.fasta
+| | |____SAL_UA4237AA_AS.fasta
+| | |____SAL_IB6801AA_AS.fasta
+| | |____SAL_DB1444AA_AS.fasta
+| | |____SAL_CB5376AA_AS.fasta
+| | |____SAL_YA6663AA_AS.fasta
+| | |____SAL_LA4572AA_AS.fasta
+| | |____SAL_CB6250AA_AS.fasta
+| | |____SAL_EB5876AA_AS.fasta
+| | |____SAL_RA1578AA_AS.fasta
+| | |____SAL_CB2598AA_AS.fasta
+| | |____SAL_HB5660AA_AS.fasta
+| | |____SAL_EB1045AA_AS.fasta
+| | |____SAL_KB6830AA_AS.fasta
+| | |____SAL_BB1371AA_AS.fasta
+| | |____SAL_BB1424AA_AS.fasta
+| | |____SAL_CB9820AA_AS.fasta
+| | |____SAL_BB9988AA_AS.fasta
+| | |____SAL_IB9118AA_AS.fasta
+| | |____SAL_EB4083AA_AS.fasta
+| | |____SAL_IB1406AA_AS.fasta
+| | |____SAL_TA7615AA_AS.fasta
+| | |____SAL_BB7947AA_AS.fasta
+| | |____SAL_BB7197AA_AS.fasta
+| | |____SAL_BB1066AA_AS.fasta
+| | |____SAL_KB3375AA_AS.fasta
+| | |____SAL_PA3767AA_AS.fasta
+| | |____SAL_CB1153AA_AS.fasta
+| | |____SAL_BA7945AA_AS.fasta
+| | |____SAL_AB5909AA_AS.fasta
+| | |____SAL_KB6734AA_AS.fasta
+| | |____SAL_IB9302AA_AS.fasta
+| | |____SAL_JB5221AA_AS.fasta
+| | |____SAL_MB2521AA_AS.fasta
+| | |____SAL_FB7879AA_AS.fasta
+| | |____SAL_AB9321AA_AS.fasta
+| | |____SAL_JB0953AA_AS.fasta
+| | |____SAL_XA1782AA_AS.fasta
+| | |____SAL_KB4026AA_AS.fasta
+| | |____SAL_CA4803AA_AS.fasta
+| | |____SAL_MA3067AA_AS.fasta
+| | |____SAL_AB7634AA_AS.fasta
+| | |____SAL_IA5065AA_AS.fasta
+| | |____SAL_CB2669AA_AS.fasta
+| | |____SAL_BB2967AA_AS.fasta
+| | |____SAL_QA4878AA_AS.fasta
+| | |____SAL_EB2895AA_AS.fasta
+|____README.md
+|____logs
+| |____snakemake
+| | |____snakemake.version
+| |____.DS_Store
+| |____masterlog
+| | |____master.log
+| |____abricate
+| | |____nohup_abricatelord_PIA_CT18.out
+| | |____nohup_abricatelord_PIAs.out
+| | |____nohup_abricatelord.out
+| | |____config.yaml
+| | |____abricate.yaml
+| | |____nohup_Agona_200.out
+| |____snplord
+| | |____nohup_pt_2.out
+| | |____nohup_Agona80.out
+| | |____nohup_snplord.out
+| | |____nohup_Agona_200.out
+| | |____nohup_Agona195.out
+|____.gitignore
+|____.RData
+|____figures
+| |____.DS_Store
+| |____intermediate_figures
+| |____final_figures
+| | |____Figure_4.png
+| | |____Figure_1.pdf
+| | |____Figure_3.png
+| | |____Figure_2.pdf
+|____scripts
+| |____Figure_2.R
+| |____.DS_Store
+| |____Random_subset_IncX.R
+| |____Figure_1.R
+| |____SPI-analysis.R
+|____new_figures
+| |____italicised_Flag_Figure_x_Agona80.pdf
+| |____Figure_y_flags_Agona80.R
+| |____italicised_Flag_Figure_x_Agona80.jpf
+| |____.DS_Store
+| |____italicised_Flag_Figure_x_Agona200.pdf
+| |____italicised_Flag_Figure_x_Agona200.jpf
+| |____Figure 1.pdf
+| |____old
+| | |____Figure_y_flags_Agona80.pdf
+| | |____Figure_y_flags_Agona80.R
+| | |____Flag_Figure_y_Agona_80.pdf.pdf
+| | |____Flag_Figure_y_Agona_80.pdf
+| | |____Agona80.pdf
+| | |____Flag_Figure_x_Agona200.pdf
+| | |____Agona200.pdf
+| | |____Flag_Figure_x_Agona200.R
+| |____Flag_Figure_x_Agona200.pdf
+| |____Flag_Figure_x_Agona80.pdf
+| |____Flag_Figure_x_Agona80JPG.jpg
+| |____Flag_Figure_x_Agona80.png
+| |____Supplementary Figure 1.pdf
+| |____Flag_Figure_x_Agona80.docx
+| |____new_circ_f1.pdf
+| |____Flag_Figure_x_Agona200.R
+|____.git
+| |____ORIG_HEAD
+| |____config
+| |____objects
+| | |____95
+| | | |____f21a4bd7773a64fe54fe361fae6834b70fa027
+| | |____50
+| | | |____e73450cb7f7b0172cfc6c5c54fb4a1285dc1e6
+| | | |____7110d5b1c044bef02b109d2d5697d11ee234a8
+| | |____68
+| | | |____54a3b06d74e8a7f90130a56213ad23fc9505a8
+| | |____6f
+| | | |____8ea905e5f3d3e369da6d2c711eebc76449826a
+| | |____03
+| | | |____1437f6978e66c0197db3910a8545ae1f0e44b1
+| | | |____466bbe557d09f7e0b11f9645cd66afef89e7c1
+| | | |____f9bb36bd2f4b7fc334aadbe6b7c1355d8df557
+| | |____9e
+| | | |____dd019a5f008e3cb93fcea318c49ffde5613b25
+| | | |____fb51b8a1909bd877dd72ae8a1c4625f8307e36
+| | | |____2740c64c87bbad948da2c70c659d9bb26f1dda
+| | |____04
+| | | |____a99a66dd6a7e325987f160202fb7968e28975d
+| | |____32
+| | | |____84e07dc22c9c18e8ed721dac01b23a36452791
+| | | |____2bd09a05a8be974f8d703b72700e406636d6ec
+| | |____35
+| | | |____f4f298330b0d78f1454a7da6e7e88be02dd69b
+| | |____56
+| | | |____45ec48a73243a953b75cdac3f6ca8822a0fb8f
+| | |____3d
+| | | |____353fd7f7e97abdcd8d805fb616a2c3ad2bc130
+| | |____58
+| | | |____62e4316b36ea8e5d37d402d2d2f891db834c32
+| | |____67
+| | | |____7231633d349c431f9a24ef0daee470eb6edb13
+| | |____0b
+| | | |____1ac91eda448e1f06d2587def8b9b1ed6ec7b92
+| | | |____f8c5f3f5288370d9ffb7dea1e5829d2b44c3c3
+| | |____05
+| | | |____2fc8a5ca9b39da00cc1f23830294cd20be7caf
+| | |____9d
+| | | |____6e4ed46687b80050dd2f2e5cf7931683257b62
+| | | |____a2db1c0db721c413838c4171275932dfcfbdd8
+| | |____02
+| | | |____e435a6df305c05830c30e9f4ddf89993cc567d
+| | |____a4
+| | | |____40ba89a03d248506860f4ef3ffe9020486f570
+| | |____b2
+| | | |____570d36bdc170678c7f7e38cab3a504f794b87b
+| | |____d9
+| | | |____9d92942fa6c7310c3b102a58911e0489846c6b
+| | | |____a6ccef26a0ff0832beb6461ebf42b00b80a1b7
+| | |____ac
+| | | |____0e612c9463b6a0b0414f8a23115c08140eec5f
+| | |____ad
+| | | |____7bed7461001a34714f39b27c3b0c79e924b6db
+| | |____bb
+| | | |____6985327ec53ae6e614f9e174ca5c8395e6b367
+| | |____be
+| | | |____51a02999f5713e2f90583643c337ab1fc4abce
+| | |____b3
+| | | |____7e9e978d118bedad67ef234daff6c04c16ec2c
+| | | |____85d8d8e0518b08fb11752323b56f6c59ad0f01
+| | | |____67144ea66aa5be0b48e0ab4198589efff1450f
+| | | |____f505e15658f7cdce158237e9adc810527118c1
+| | |____df
+| | | |____8cad4e567acad2dee004ec8cee1444bd1898f8
+| | |____d8
+| | | |____d45f10e8f654928d2026efee56427a94d0d7da
+| | |____ab
+| | | |____04400547e87bf8ea6779f472e0c235ce1c553c
+| | |____e5
+| | | |____b71499af109d9aaf89e713b3848e0d942bb434
+| | |____e2
+| | | |____d22e6b280e707267c02eef31547c73e24b231a
+| | |____f4
+| | | |____389f5c6e94211265603402640616c3379401fd
+| | |____f3
+| | | |____d884c66cd7f24f1ac350859bff38ce6db21678
+| | |____c0
+| | | |____95081dff90b3ffa816ca5adfc8ccdcc92f6416
+| | |____f5
+| | | |____a32d1280c5b1fdb0e884bcf6d9c0f6bd57dd0e
+| | | |____c58355c55cf9b159a8b0adb38992286373c73b
+| | |____ca
+| | | |____d8df80e50bdcec1efc7956fbeaba9d2fe12a8a
+| | | |____4c71111e431d00b9bd74d1560a461181d789b2
+| | |____e4
+| | | |____3b0f988953ae3a84b00331d0ccf5f7d51cb3cf
+| | |____fb
+| | | |____c64a2f1f93b80685fdb51540bd9e5d2a1387e7
+| | | |____f8c8b0ddb907d63074c7a0429b55c8b55b64bc
+| | | |____b581d9ca24a38b70aeabe44f615388e7336f59
+| | |____ed
+| | | |____d45a9b164796bf258908610ac7c27915b991d4
+| | | |____0bf9d46779a58290d92bd30e19601caaf53f2f
+| | | |____7030d8b5ffb2d93a071ae5791a0f78a35170b2
+| | |____c6
+| | | |____956dcd673f8308e2a4187e703d1d5c5c47df30
+| | |____ec
+| | | |____618eb97f71969eb3247a0b04c18115c7cb7cec
+| | | |____c2859df0e91d8c0787175ec72d67c3820efb08
+| | |____18
+| | | |____fbc2dc1bbeeda2fa21c69a05f1341817de79b0
+| | | |____4a393a198b1ceab6762d5cdea89aa0da3fb9fb
+| | |____27
+| | | |____3c02d509bd79837820e30ebec702cb8dd1f3d1
+| | |____4b
+| | | |____e20aa3ddaaa11063f93b05d93ea5797fa6a5f6
+| | |____pack
+| | | |____pack-348ab17d624c58a115d6f14d40d298d5a7f0cf47.pack
+| | | |____pack-348ab17d624c58a115d6f14d40d298d5a7f0cf47.idx
+| | | |____pack-b0c9cf98970bf93ed01a9d31b8fd1d393414470d.pack
+| | | |____pack-b0c9cf98970bf93ed01a9d31b8fd1d393414470d.idx
+| | |____11
+| | | |____d756b79d4682e9f7f2d746088d9183ed18bd70
+| | |____7d
+| | | |____d2874faec84ecb238b50b5fbd140d11d375aaa
+| | |____7c
+| | | |____25ae36fc9e3a31f693c8bf5723d2c5538cd4c3
+| | | |____8595b5a05e5992084f03a83183c1bf9a06a73a
+| | |____16
+| | | |____862b22bfd3938b61ce584f8e5dabb72be5b157
+| | |____42
+| | | |____68bdbc41075bd48363b473d76c0f97654c0d98
+| | | |____f2142603eab1f7b31028cf3adabda7b5216b49
+| | |____45
+| | | |____304f23046219fb91347b4a781f8d9fb2bb98f7
+| | | |____d736e9fe0b7ed230ab81068219d933cdeb11b8
+| | |____73
+| | | |____4b20d647fc8c9df0fa456e5cc31c36f7a671e8
+| | |____87
+| | | |____de4ba7a29fb120e8bce0579e065fc25867ff45
+| | | |____1199d34732f0439f742606297730c4caca0393
+| | |____1a
+| | | |____b3343150e814a912f79cf09fe09d7968a01bc8
+| | |____17
+| | | |____cc0aa5fa6238dae3fa601d5964e4f61aba88b3
+| | |____8a
+| | | |____0a7928cf89283755adce95127b4a9a4ea8328c
+| | |____19
+| | | |____aeecc8e78ded539ebc01304fc32fd80fa0bd5e
+| | |____21
+| | | |____1a9d2a6f431b0205dc516d342b4a53f7c2c26a
+| | | |____9886c39141f807bb29273e113abada10221204
+| | |____81
+| | | |____3be111e37dc629110f1bc1273241614ef362b0
+| | |____72
+| | | |____0bd7b70b3ebd8093ec226aece8582edf75f7f2
+| | |____2a
+| | | |____add885b5debcd9bc77feb843a840cde417d49f
+| | |____43
+| | | |____7a7f5069bc4fb20504f614d0231d8450d7f755
+| | |____07
+| | | |____9675ad0f49ad6b8e944753161d471644103fe0
+| | |____9a
+| | | |____ae1954223637c1236ba3b0ad6f0714e4f8f48d
+| | |____36
+| | | |____c156f64a2550d0e64db48ad7a2413a0d6a744e
+| | |____09
+| | | |____0c3160082474a18e0a40377249f6bcc9b0a5ec
+| | |____5d
+| | | |____dff2aa2edf5af1b2a65b36a09580c16bf15f7b
+| | |____31
+| | | |____689f6b2ea3a432d35daff8c2ba29db7136efc3
+| | |____info
+| | |____91
+| | | |____7ec479210d65e511e8b0d86155c1aea8ba88bf
+| | |____62
+| | | |____2197277c84f5aa2540e2636a42d41af3d8247e
+| | | |____a081867ef503d5574850e9381e99d08493f2e9
+| | |____3f
+| | | |____a20769596c9d7aefddd614ebab748def02d8d6
+| | | |____dcd5d182f73c14ac0ce051fdbf45b0b0f91769
+| | | |____2ff2d6cc8f257ffcade7ead1ca4042c0e884b9
+| | |____5e
+| | | |____54d172eebe418568aebabafe83952151b1d979
+| | |____5b
+| | | |____6a0652566d10360493952aec6d4a4febc77083
+| | | |____925be242b9277ac18c838ac4c6c4133dcb08ce
+| | |____6d
+| | | |____6ec02a393d25438cb91c425efb01a56121bdc1
+| | | |____128dcba333cfeeb7c655f1b5b7d6ef68192a49
+| | |____01
+| | | |____cbb28bf4c4737971cb67fa1d5f970d0d058604
+| | |____52
+| | | |____98d06ac969271380c7c5d96988cf3560c951a4
+| | | |____0246130f292762b59593ea5bf0846dcd165264
+| | |____63
+| | | |____e7cd7130b5c4468d6abdfc9c9cb26fdef55928
+| | |____90
+| | | |____14844e2cdc00949964944d3be11c03b9287c6a
+| | |____bf
+| | | |____b4b513e3fce26910126d17c7f80994bcc4f9ee
+| | | |____992399a2e84880a4dba1f87181ec52d4d9e941
+| | |____d4
+| | | |____5fe12492d8a9a90945912f2fc94628f9265196
+| | | |____56e775d42371f9e1c9b61a9ff134aeddeda428
+| | |____ba
+| | | |____4d40fd089411e373e5e69b2f7ff20fa7c349e5
+| | |____a7
+| | | |____7800de96e7e482988d500b54d07816c50c4b88
+| | |____b1
+| | | |____12b1da291308373de115f0323bf6458437621b
+| | | |____bba1fa91f8f45b649e8e8f6fb20527ba451e6a
+| | | |____5bf239a65db2c71879040ca11430d12ee3e636
+| | | |____2d3a28b8ac389e3e511ab8d2f0eed35af4aa83
+| | | |____89dca63e141839ee3eb9d3c386c5cf48f1cb0c
+| | | |____9e29f7c7eaef5bcc7ccbfe53d2ee2a4c2a0bab
+| | |____dd
+| | | |____2086e325e8aca577947f906e07c3ded2dae93f
+| | | |____11d7791f08d1434308646632abe099796ff2e0
+| | | |____535f88f6fe589ce88eb7d4f6aea0bda91ec721
+| | |____b6
+| | | |____54f98eac2bae47c6fd5454fe397b5b9647776c
+| | |____aa
+| | | |____217d402acec7e116796d48f8fd1ef97ebabe20
+| | |____af
+| | | |____d709253d6c1651d009acd8a8c32f963fe5c747
+| | | |____74420ded0e7feab3517809cf99fc5ebfd71bab
+| | |____b0
+| | | |____19a65f59e5111f08641bcbaaa3a8dbc0d91efc
+| | |____a6
+| | | |____99a6ab742125ff6491d03e23c184af471e72f5
+| | |____ef
+| | | |____4ce2fcf48b31097de6dc43ad304927e9db95e5
+| | | |____360706c55bdf56714a687c49bc8f81638ef07a
+| | |____c3
+| | | |____5ef26e4dd738cb0ea5103b734f23aaf08997e1
+| | |____c4
+| | | |____3f65150143a4f71217835606b11c6f0b7ae800
+| | |____ea
+| | | |____ee3cdc353b3877449abcce1845da1a6e9c7e1b
+| | |____e1
+| | | |____f4fe7e5d4a0fa029e1b7bdacfe578aee1986fe
+| | |____e6
+| | | |____55aad6593952317fc27c1d29e37c1c38904851
+| | | |____9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+| | |____f9
+| | | |____0668321fa46a8347ca13986f6f24716c4437d0
+| | | |____85d4d6f14542825ece7ee6f8d9c263f787dca5
+| | |____f0
+| | | |____50c155a6964a942b092e3f68d4defeb85d96c5
+| | | |____17c8067ad9d2e4c4b84adcaf5bcf81022d2e2e
+| | |____ff
+| | | |____8b377a8f1f17ec2e1a1413a4a034b55abebeb1
+| | |____c5
+| | | |____6e2196055bb3e858c5bea29df968f2a7fd759a
+| | |____e9
+| | | |____b761fedb0cd2518780df5262afae51ae66a3ff
+| | |____cb
+| | | |____0d6fa23ab66664e1cb6fb545da9349b50709c7
+| | |____f8
+| | | |____713886cbdb172c22621e7d09a704153a319306
+| | |____2c
+| | | |____59d1ed52377fe1fde50924bea3732e2314abc2
+| | |____2d
+| | | |____8c3ff9fc13734da8097dcd4611e508cdfc8120
+| | | |____d5d4203dbde09de731bda43a0f8bfc8c1e1184
+| | | |____b5bce29aef4297b26d24b5736cf2b8f367b17e
+| | | |____6656dcd954d1a1ef420a42e46d7597452b8ae7
+| | |____41
+| | | |____310b4b05bbcee3a11096b853f1492a4c60e3ca
+| | |____1e
+| | | |____dda9cb723bdff1094881fb3f4dc2d07564f43d
+| | |____84
+| | | |____c9b52886bf7f2eefc19a3572f984f9b4cdac6e
+| | |____4a
+| | | |____44f76550085b642b7343d1285404af439c81a4
+| | |____24
+| | | |____68dacf28a7c2517a1f11007c81c50119b53bc8
+| | | |____e2c53980a76840acfefb479a8a7cab5583676d
+| | |____4f
+| | | |____1af4cc49959453b9c432bbb7020cea17634e11
+| | | |____2accd9a575dd02e88987364cb7be232c6a0967
+| | |____8d
+| | | |____216a65fd4d685314f8830c21a7a6d2f75fffc2
+| | |____8c
+| | | |____28a25cc628a02c7ad7082798a2defd76464b3d
+| | |____85
+| | | |____ea2863fc8c8e563195764ab24f732321252e35
+| | |____1d
+| | | |____bf24a232af1121ecb95aefb55855828f247ca9
+| | |____76
+| | | |____99b421620146e20d5ba9618d086b1210865624
+| | |____82
+| | | |____53b25df2c121ca0910ddc56bd47003a081d85d
+| | |____40
+| | | |____d501ef536f5d794b06f6c259a2e5e9d8d6f7b2
+| | |____2e
+| | | |____6e0f220b24e2d42ea87328f54e7cfede07e531
+| | |____2b
+| | | |____3d2b3df1a1d57ca852efbb3fcf52e750473304
+| | | |____1bef112ac6921abda6162a65dbfcd8c6d55c80
+| | |____13
+| | | |____d25069f02018fc09b79df18eec051bd6a763ae
+| | | |____1c952efa0532decf79a606175317c9a6c0f9a6
+| | |____7f
+| | | |____3a0f39c5754dafb4f78b3b27ebe07147bd9e32
+| | |____7a
+| | | |____f1abedd48b670c87ffdf04198faf8e87b5637a
+| | | |____ec8d2d362326b437a51280682c5626cfe3550f
+| | | |____2c19c4eb26d8661b6e6311177f7fc9d7a97821
+| | |____22
+| | | |____8b68d41ee99f7e1664c901e49cd64cd9683d02
+| | |____25
+| | | |____99b9fea464b1ddc4ce301718dbe82b5f5b990e
+| |____HEAD
+| |____info
+| | |____exclude
+| |____logs
+| | |____HEAD
+| | |____refs
+| | | |____heads
+| | | | |____master
+| | | | |____resubmission
+| | | |____remotes
+| | | | |____origin
+| | | | | |____HEAD
+| | | | | |____resubmission
+| |____description
+| |____hooks
+| | |____commit-msg.sample
+| | |____pre-rebase.sample
+| | |____pre-commit.sample
+| | |____applypatch-msg.sample
+| | |____fsmonitor-watchman.sample
+| | |____pre-receive.sample
+| | |____prepare-commit-msg.sample
+| | |____post-update.sample
+| | |____pre-applypatch.sample
+| | |____pre-push.sample
+| | |____update.sample
+| |____refs
+| | |____heads
+| | | |____master
+| | | |____resubmission
+| | |____tags
+| | |____remotes
+| | | |____origin
+| | | | |____HEAD
+| | | | |____resubmission
+| |____index
+| |____packed-refs
+| |____COMMIT_EDITMSG
+| |____FETCH_HEAD
+|____metadata
+| |____.DS_Store
+| |____S.agona-3-6-20.txt
+| |____cgMLST.txt_problems
+| |____Supplementary Table 1 - Metadata and Accessions
+| |____S.agona-3-6-20.txt_problems
+| |____cgMLST.txt
+|____.Rproj.user
+| |____70889A62
+| | |____viewer_history
+| | |____pcs
+| | | |____source-pane.pper
+| | | |____windowlayoutstate.pper
+| | | |____workbench-pane.pper
+| | | |____files-pane.pper
+| | |____saved_source_markers
+| | |____explorer-cache
+| | |____rmd-outputs
+| | |____console06
+| | | |____INDEX001
+| | | |____9820F7D5
+| | | |____9820F7D5.env
+| | |____sources
+| | | |____prop
+| | | | |____A438D7D8
+| | | | |____D4DBA00
+| | | | |____92E77518
+| | | | |____7C1A3F5A
+| | | | |____98D48DD7
+| | | | |____6D16E871
+| | | | |____DDA5EBE5
+| | | | |____27695C3E
+| | | | |____BDCAD0EC
+| | | | |____BA4910AC
+| | | | |____BD399D6E
+| | | | |____9E6556C1
+| | | | |____D4B71FF8
+| | | | |____INDEX
+| | | | |____CA0E262D
+| | | | |____68716DE7
+| | | | |____5BF485C4
+| | | | |____C28A4DE
+| | | |____s-31DB9D6A
+| | | | |____2346E9E2
+| | | | |____668393E2-contents
+| | | | |____F9CE0853-contents
+| | | | |____2346E9E2-contents
+| | | | |____9ACB1ED7
+| | | | |____B69119F2-contents
+| | | | |____B98C8849-contents
+| | | | |____D8535C54-contents
+| | | | |____C7D95AA6-contents
+| | | | |____C7D95AA6
+| | | | |____78D2CF7F-contents
+| | | | |____B69119F2
+| | | | |____B98C8849
+| | | | |____9ACB1ED7-contents
+| | | | |____D8535C54
+| | | | |____lock_file
+| | | |____per
+| | | | |____u
+| | | | |____t
+| | |____profiles-cache
+| | |____ctx
+| | |____viewer-cache
+| | | |____834CECCA.Rdata
+| | |____persistent-state
+| | |____presentation
+| |____shared
+| | |____notebooks
+| | | |____paths
+| | | |____patch-chunk-names
 ]0;~/Dropbox/Doctorate/Manuscripts/Salmonella_AMR/Submission_2-mSphere/SG17-135(base) MacBook-Air-82:SG17-135 maxcummins$ 
