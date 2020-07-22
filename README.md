@@ -3,17 +3,48 @@ This is a repository containing scripts for the generation of figures within a p
 
 DOI: **To be added post publication**
 
-Please see the scripts above for the generation of specific Figures. Note that the grey bars on Figures 2 and 4 were added manually using photoshop.
-
 ## Contents
 
-|Filename|File Contents|
+|Directory|Contents|
 |--------|------|
-|abricate_HC5-4181.txt|A tab delimited file containing the abricate output for the strains of HC5-4181|
-|Figure_2.R| A script used to generate Figure 2|
-|Figure_4.R| A script used to generate Figure 4|
-|Random_Subset_IncX.R| A script used to identify a random subset of 10 IncX *repA* gene positive strains from HC5-4181 to be analysed using BRIG|
-|SG17-135.clean.fullcore.tree|A SNP tree used in the generation of Figures 2 and 4|
+|analysis|Output of bioinformatic analysis tools|
+|assemblies|Genome assemblies from Enterobase|
+|fasta_dbs|Nucleotide databases uses in abricate|
+|figures|Final figures of manuscript|
+|flags|Flag images used in generation of figures|
+|logs|Logs generated during bioinformatic analyses|
+|metadata|Metadata on samples under analysis|
+|scripts|Scripts used for post processing of data and data visualisation|
+|supplemental_material|Supplementary material for the manuscripts|
+
+## analysis
+### abricate
+Contains abricate output, concatenated from each resulting output file:
+* abricate.txt - Contains abricate data on plasmid, virulence and AMR gene carriage
+* abricate_PAIs.txt - Contains abricate data on Salmonella Pathogenicity island (SPI) and pathogenicity associated island (PAI) carriage
+
+### snp_outputs
+Contains output of snplord pipeline
+* Agona195 - Contains snp matrix and phylogenetic tree for large subset of Agona genomes (n=195)
+* Agona80 - Contains snp matrix and phylogenetic tree for small subset of Agona genomes closely related to SG17-135 (HC5:4181 strains) (n=80)
+
+### pointfinder
+Contains output of pointfinder analysis
+* pointfinder_results.txt - lists AMR associated SNPs associated with particular genomes from the Agona195 subset
+
+## scripts
+### Figure 1.R
+This script is used to generate Figure 1, as well as Supplementary Table 1 which combines Metadata and Genotypic data of samples
+
+### Figure_2.R
+This script is used to generate Figure 2, as well as Supplementary Table 4 which combines lists the co-association of AMR genes and IncX scaffolds
+
+### Random_subset_IncX.R
+This script is used to (pseudo)randomly select 10 IncX-positive strains from the Agona80 subset for analysis using BRIG
+
+### SPI-analysis.R
+This script is used to classify strains as SPI/PAI positive or negative based on >=60% (discontiguous) coverage and >=95% nucleotide identity for a given genetic element
+
 
 
 
