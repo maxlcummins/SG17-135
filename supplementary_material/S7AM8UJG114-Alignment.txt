@@ -1,0 +1,11 @@
+# blastn
+# Iteration: 0
+# Query: 
+# RID: S7AM8UJG114
+# Database: n/a
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 2 hits found
+Query_26753	CP039170.1	100.000	18556	0	0	1	18556	42862	61417	0.0	34267
+Query_26753	CP039170.1	99.500	1200	6	0	3703	4902	193605	194804	0.0	2183
+
+
