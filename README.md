@@ -1,7 +1,7 @@
 # SG17-135
 This is a repository containing scripts for the generation of figures within a publication on an XDR strain of Salmonella sourced from an Australian Gull.
 
-DOI: **To be added post publication**
+DOI: [10.1128/mSphere.00743-20](https://doi.org/10.1128/msphere.00743-20)
 
 ## Contents
 
